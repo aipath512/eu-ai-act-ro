@@ -1,0 +1,51 @@
+{
+  "schema": "AiVenture-Session-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "session": {
+    "id": "SESSION-EU-AI-ACT-RO-001",
+    "number": 1,
+    "state": "C",
+    "state_label": "Current — Active",
+    "created": "2026-03-26T13:00:00Z",
+    "last_modified": "2026-03-26T15:00:00Z",
+    "version": "1.0.0"
+  },
+
+  "state_definitions": {
+    "C": "Current — actively maintained, all signals live",
+    "T": "Test — warm maintenance, signals present but unverified",
+    "H": "Frozen — SHA-256 anchored, immutable historical record"
+  },
+
+  "deployments": [
+    {
+      "session_number": 1,
+      "date": "2026-03-26",
+      "description": "Initial deployment — Sacred Architecture Signal Stack v1.0",
+      "files_deployed": [
+        "index.html", "ghid.html", "faq.html",
+        "ai.json", "llms.txt", "robots.txt",
+        "proof.json", "governance.json", "entities.json",
+        "sitemap.xml", "humans.txt", "intents.json",
+        "policy.json", "allow-lane-matrix.json", "aliases.json",
+        "actions.json", "entity-graph.jsonld", "entity-index.json",
+        "session.json", "changelog.json", "ai-proof.json"
+      ],
+      "state": "C",
+      "sha256_anchor": "d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9"
+    }
+  ],
+
+  "next_session": {
+    "planned": "2026-04-26",
+    "objectives": [
+      "Deploy Cloudflare Worker for dynamic header injection",
+      "Add intents.json v1.1 with full funnel coverage",
+      "Deploy blog.html first article",
+      "Implement IPFS anchoring for proof files"
+    ]
+  }
+}

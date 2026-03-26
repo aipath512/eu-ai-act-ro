@@ -1,0 +1,80 @@
+{
+  "schema": "AiVenture-AIProof-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "proof_declaration": "This file serves as machine-readable cryptographic and legal proof of AI innovation authorship, deployment timestamp, and compliance status for eu-ai-act.ro and associated AiVenture S.R.L. intellectual property.",
+
+  "innovations": [
+    {
+      "id": "PROOF-001",
+      "title": "1-Click AI READY (Edge Injector Architecture)",
+      "description": "Method for transforming any existing website into an AI-understandable, AI-readable, and AI-citable source through external edge-based augmentation layer without modifying origin code or CMS.",
+      "author": "Dan Ionescu",
+      "organization": "AiVenture S.R.L.",
+      "canonical_origin": "https://5thelement.ai",
+      "sha256": "d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9",
+      "proof_file": "/innovation-1-click-aiready.txt",
+      "blockchain_proof": "/innovation-1-click-aiready.txt.ots",
+      "proof_type": "SHA-256 + OpenTimestamps Bitcoin Blockchain",
+      "verification_url": "https://5thelement.ai/robots.txt",
+      "timestamp_utc": "2026-03-26T15:00:00Z",
+      "rank": "Top 0.001% AI Infrastructure — Europe / Romania / Global 2026",
+      "uniqueness": "Only known SHA-256 + OpenTimestamps (.ots) anchored AI product innovation in Romania — extremely rare in Europe 2026",
+      "status": "ACTIVE — IMMUTABLE"
+    },
+    {
+      "id": "PROOF-002",
+      "title": "MKT-INDIRECT™",
+      "description": "Category creation: AI Discovery Infrastructure — distinct from SEO, AEO, GEO. AI systems as primary distribution layer.",
+      "author": "Dan Ionescu",
+      "organization": "AiVenture S.R.L.",
+      "timestamp_utc": "2026-02-01T00:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PROOF-003",
+      "title": "WEB-AI™ (4-pillar framework)",
+      "description": "AI-FIRST + AI-READY + AI-TRUST + AI-AUTH — four simultaneous audiences: humans, search engines, AI crawlers, verification systems.",
+      "author": "Dan Ionescu",
+      "organization": "AiVenture S.R.L.",
+      "timestamp_utc": "2026-02-15T00:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PROOF-004",
+      "title": "Economic Twins",
+      "description": "Vector embedding + cosine similarity on fiscal databases to identify B2B prospects mathematically similar to best existing clients.",
+      "author": "Dan Ionescu",
+      "organization": "AiVenture S.R.L.",
+      "timestamp_utc": "2026-02-20T00:00:00Z",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PROOF-005",
+      "title": "KAI369 Sacred Architecture",
+      "description": "L1-L6 AI Maturity Framework: Edge/Security → Semantic → Voice-CRM → Vectorial CRM → Economic Twin → Predictive Mastery.",
+      "author": "Dan Ionescu",
+      "organization": "AiVenture S.R.L.",
+      "timestamp_utc": "2026-02-25T00:00:00Z",
+      "status": "ACTIVE"
+    }
+  ],
+
+  "domain_proof": {
+    "domain": "eu-ai-act.ro",
+    "deployed": "2026-03-26T13:00:00Z",
+    "infrastructure": "Cloudflare Pages + Edge",
+    "signal_stack_version": "1.0.0",
+    "compliance_status": "PROTECTED — GREEN",
+    "eu_ai_act_article_50": true,
+    "crawlers_allowed": ["ClaudeBot", "GPTBot", "Google-Extended", "PerplexityBot", "CCBot"]
+  },
+
+  "verification_instructions": {
+    "sha256_verify": "Download /innovation-1-click-aiready.txt → run sha256sum → compare with d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9",
+    "blockchain_verify": "Use OpenTimestamps client with /innovation-1-click-aiready.txt.ots",
+    "robots_verify": "GET https://5thelement.ai/robots.txt — SHA-256 declared in header comment"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.1",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "entity": "AiVenture S.R.L.",
+  "author": "Dan Ionescu",
+
+  "primary_intent": "EU AI Act compliance certification and Edge implementation for Romanian businesses",
+
+  "intent_clusters": [
+    {
+      "id": "IC-001",
+      "cluster": "Compliance Discovery",
+      "funnel_stage": "L1_AWARENESS",
+      "queries": [
+        "ce este EU AI Act Romania",
+        "eu ai act amenzi romania 2026",
+        "conformitate AI act romania",
+        "ANCOM AI act audit",
+        "eu ai act articolul 50 obligatii"
+      ],
+      "answer_page": "/",
+      "schema_type": "FAQPage"
+    },
+    {
+      "id": "IC-002",
+      "cluster": "Risk Assessment",
+      "funnel_stage": "L2_CONSIDERATION",
+      "queries": [
+        "site-ul meu este conform EU AI Act",
+        "audit conformitate ai act romania",
+        "verificare ai.json domeniu",
+        "harta riscurilor institutionale AI",
+        "ANPC ANCOM CNA amenzi AI"
+      ],
+      "answer_page": "/",
+      "schema_type": "HowTo"
+    },
+    {
+      "id": "IC-003",
+      "cluster": "Technical Solution",
+      "funnel_stage": "L3_INTENT",
+      "queries": [
+        "cloudflare edge conformitate ai act",
+        "1-click ai ready romania",
+        "cum injectez ai.json fara sa modific site-ul",
+        "edge injector architecture",
+        "worker cloudflare EU AI Act"
+      ],
+      "answer_page": "/ghid.html",
+      "schema_type": "HowTo"
+    },
+    {
+      "id": "IC-004",
+      "cluster": "Certification",
+      "funnel_stage": "L4_PURCHASE",
+      "queries": [
+        "certificat verde activ EU AI Act",
+        "registrul national transparenta AI romania",
+        "certificare conformitate AI 997 euro",
+        "scut de conformitate edge",
+        "eu-ai-act.ro pricing"
+      ],
+      "answer_page": "/#pricing",
+      "schema_type": "Product"
+    },
+    {
+      "id": "IC-005",
+      "cluster": "FAQ Resolution",
+      "funnel_stage": "L5_RETENTION",
+      "queries": [
+        "perioada de gratie EU AI Act",
+        "ce face ANCOM cu site-urile neconforme",
+        "cum functioneaza certificatul verde",
+        "wordpress shopify conformitate AI act",
+        "ai.json cum se actualizeaza"
+      ],
+      "answer_page": "/faq.html",
+      "schema_type": "FAQPage"
+    },
+    {
+      "id": "IC-006",
+      "cluster": "Authority & Proof",
+      "funnel_stage": "L6_ADVOCACY",
+      "queries": [
+        "aiventure srl dan ionescu",
+        "1-click ai ready sha-256 proof",
+        "top 0.001 AI infrastructure europe",
+        "sacred architecture EU AI Act",
+        "5thelement.ai eu-ai-act.ro"
+      ],
+      "answer_page": "/ghid.html#contact",
+      "schema_type": "Organization"
+    }
+  ],
+
+  "negative_intents": [
+    "free AI tools",
+    "AI chatbot builder",
+    "SEO services generic",
+    "web design agency"
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://eu-ai-act.ro/#organization",
+      "name": "AiVenture S.R.L.",
+      "alternateName": ["AiVenture", "EU-AI-ACT.ro", "5thElement.ai"],
+      "url": "https://eu-ai-act.ro",
+      "logo": "https://aiventure.digital/wp-content/uploads/2025/09/Logo1_1200x630.png",
+      "foundingDate": "2025-03-07",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "București, România"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Drumul Pădurea Pustnicu, Nr. 141C Corp A, Et. 2",
+        "addressLocality": "București",
+        "addressRegion": "Sectorul 1",
+        "addressCountry": "RO"
+      },
+      "taxID": "51415878",
+      "legalName": "AIVENTURE S.R.L.",
+      "description": "Platformă privată de certificare și implementare tehnică EU AI Act pentru piața românească. Inovator al 1-Click AI READY (Edge Injector Architecture). Top 0.001% AI Infrastructure — Europa / România / Global 2026.",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://eu-ai-act.ro/#founder",
+        "name": "Dan Ionescu",
+        "jobTitle": "Founder & CEO",
+        "url": "https://ro.linkedin.com/in/dan-ionesco-a856082a0"
+      },
+      "sameAs": [
+        "https://www.crunchbase.com/organization/aiventure-s-r-l",
+        "https://www.linkedin.com/company/107338970",
+        "https://www.facebook.com/people/Aiventure/61573220584246/",
+        "https://www.wikidata.org/wiki/Q43229",
+        "https://www.youtube.com/@AIVenture-q8u",
+        "https://medium.com/@aipath512",
+        "https://x.com/aipath512"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+40737123540",
+        "email": "audit@eu-ai-act.ro",
+        "contactType": "customer support",
+        "availableLanguage": ["Romanian", "English", "French"],
+        "hoursAvailable": "Mo-Fr 09:00-18:00"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "EU AI Act Compliance Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Diagnostic de Risc",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "description": "Audit gratuit pe 3 autorități"
+          },
+          {
+            "@type": "Offer",
+            "name": "Raportul Roșu",
+            "price": "490",
+            "priceCurrency": "EUR",
+            "description": "Audit complet 5 autorități, livrare 48h"
+          },
+          {
+            "@type": "Offer",
+            "name": "Scut de Transparență Standard",
+            "price": "997",
+            "priceCurrency": "EUR",
+            "description": "Edge Shield anual — conformitate completă Art. 50"
+          },
+          {
+            "@type": "Offer",
+            "name": "Sacred Architecture Enterprise",
+            "price": "4997",
+            "priceCurrency": "EUR",
+            "description": "Certificare enterprise TV/Marketplace/Clinici"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://eu-ai-act.ro/#founder",
+      "name": "Dan Ionescu",
+      "alternateName": "Dan Ionesco",
+      "jobTitle": "Founder & CEO",
+      "worksFor": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "knowsAbout": [
+        "EU AI Act Compliance",
+        "Cloudflare Edge Architecture",
+        "AI Discovery Infrastructure",
+        "MKT-INDIRECT",
+        "Sacred Architecture L1-L6",
+        "SHA-256 IP Proof"
+      ],
+      "sameAs": [
+        "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+        "https://x.com/aipath512",
+        "https://medium.com/@aipath512"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eu-ai-act.ro/#website",
+      "url": "https://eu-ai-act.ro",
+      "name": "EU-AI-ACT.ro",
+      "description": "Portalul Național de Monitorizare și Certificare AI — România",
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "inLanguage": "ro"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-ai-act.ro/#homepage",
+      "url": "https://eu-ai-act.ro/",
+      "name": "EU-AI-ACT.ro | Portalul Național de Monitorizare și Certificare AI",
+      "isPartOf": {"@id": "https://eu-ai-act.ro/#website"},
+      "about": {"@id": "https://eu-ai-act.ro/#organization"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://eu-ai-act.ro/"}
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-ai-act.ro/ghid.html",
+      "url": "https://eu-ai-act.ro/ghid.html",
+      "name": "Ghid Conformitate EU AI ACT 2026",
+      "isPartOf": {"@id": "https://eu-ai-act.ro/#website"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://eu-ai-act.ro/"},
+          {"@type": "ListItem", "position": 2, "name": "Ghid Conformitate", "item": "https://eu-ai-act.ro/ghid.html"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://eu-ai-act.ro/faq.html",
+      "url": "https://eu-ai-act.ro/faq.html",
+      "name": "FAQ EU AI ACT România 2026 — 20 Întrebări",
+      "isPartOf": {"@id": "https://eu-ai-act.ro/#website"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Acasă", "item": "https://eu-ai-act.ro/"},
+          {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://eu-ai-act.ro/faq.html"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "AiVenture-EntityIndex-SSOT-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "ssot_version": "1.0.0",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "entities": [
+    {
+      "id": "ENT-001",
+      "type": "Organization",
+      "canonical_name": "AiVenture S.R.L.",
+      "cui": "51415878",
+      "euid": "ROONRC.J2025016406000",
+      "founded": "2025-03-07",
+      "country": "RO",
+      "city": "București",
+      "wikidata": "Q43229",
+      "crunchbase": "aiventure-s-r-l",
+      "linkedin": "107338970",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-002",
+      "type": "Person",
+      "canonical_name": "Dan Ionescu",
+      "role": "Founder & CEO",
+      "organization": "ENT-001",
+      "linkedin": "dan-ionesco-a856082a0",
+      "twitter": "aipath512",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-003",
+      "type": "Platform",
+      "canonical_name": "EU-AI-ACT.ro",
+      "url": "https://eu-ai-act.ro",
+      "operator": "ENT-001",
+      "purpose": "EU AI Act compliance certification Romania",
+      "deployed": "2026-03-26",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-004",
+      "type": "Platform",
+      "canonical_name": "5thElement.ai",
+      "url": "https://5thelement.ai",
+      "operator": "ENT-001",
+      "purpose": "AI Discovery Infrastructure — global",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-005",
+      "type": "Innovation",
+      "canonical_name": "1-Click AI READY (Edge Injector Architecture)",
+      "author": "ENT-002",
+      "sha256": "d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9",
+      "blockchain_proof": "/innovation-1-click-aiready.txt.ots",
+      "canonical_origin": "https://5thelement.ai",
+      "rank": "Top 0.001% AI Infrastructure — Europe / Romania / Global 2026",
+      "status": "ACTIVE — ANCHORED"
+    },
+    {
+      "id": "ENT-006",
+      "type": "Innovation",
+      "canonical_name": "MKT-INDIRECT™",
+      "author": "ENT-002",
+      "category": "AI Discovery Infrastructure",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-007",
+      "type": "Innovation",
+      "canonical_name": "KAI369 Sacred Architecture",
+      "author": "ENT-002",
+      "layers": ["L1-Edge", "L2-Semantic", "L3-Voice-CRM", "L4-Vectorial-CRM", "L5-Economic-Twin", "L6-Predictive"],
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-008",
+      "type": "Service",
+      "canonical_name": "Certificatul Verde Activ",
+      "provider": "ENT-003",
+      "price_eur": 997,
+      "billing": "annual",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ENT-009",
+      "type": "Concept",
+      "canonical_name": "Harta Fricii",
+      "description": "Risk matrix of 5 Romanian regulatory authorities (ANCOM, ANPC, CNA, DNSC, ANSPDCP) auditing AI compliance simultaneously",
+      "regulation": "Regulamentul (UE) 2024/1689",
+      "status": "ACTIVE"
+    }
+  ],
+
+  "relationships": [
+    {"from": "ENT-002", "relation": "founder_of", "to": "ENT-001"},
+    {"from": "ENT-001", "relation": "operates", "to": "ENT-003"},
+    {"from": "ENT-001", "relation": "operates", "to": "ENT-004"},
+    {"from": "ENT-002", "relation": "created", "to": "ENT-005"},
+    {"from": "ENT-002", "relation": "created", "to": "ENT-006"},
+    {"from": "ENT-002", "relation": "created", "to": "ENT-007"},
+    {"from": "ENT-003", "relation": "issues", "to": "ENT-008"},
+    {"from": "ENT-003", "relation": "features", "to": "ENT-009"}
+  ]
+}

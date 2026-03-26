@@ -1,0 +1,37 @@
+{
+  "schema": "AiVenture-Changelog-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-03-26",
+      "session": "SESSION-EU-AI-ACT-RO-001",
+      "type": "MAJOR",
+      "author": "Dan Ionescu",
+      "summary": "Initial Sacred Architecture Signal Stack deployment",
+      "changes": [
+        "Deployed eu-ai-act.ro on Cloudflare Pages",
+        "Published index.html — main landing with Harta Fricii, Risk Matrix, Pricing",
+        "Published ghid.html — Visual compliance guide, 10 FAQ, all contacts",
+        "Published faq.html — 20 FAQ with FAQPage JSON-LD dual layer",
+        "Deployed full AI signal stack: ai.json, llms.txt, robots.txt, proof.json, governance.json, entities.json, sitemap.xml, humans.txt",
+        "Deployed extended signal stack: intents.json, policy.json, allow-lane-matrix.json, aliases.json, actions.json, entity-graph.jsonld, entity-index.json, session.json, changelog.json, ai-proof.json",
+        "SHA-256 innovation claim anchored: d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9",
+        "All AI crawlers explicitly allowed: ClaudeBot, GPTBot, Google-Extended, PerplexityBot, CCBot",
+        "Custom domain eu-ai-act.ro connected to Cloudflare Pages"
+      ],
+      "score_before": 0,
+      "score_after_estimated": 82,
+      "sha256": "d4004458240184cf25dfbcba9cf9b5913ab284067b53cb9b60b5ca0e633300f9"
+    }
+  ],
+
+  "versioning_policy": {
+    "MAJOR": "New pages, new signal files, architecture changes",
+    "MINOR": "Content updates, signal file updates",
+    "PATCH": "Typo fixes, metadata corrections"
+  }
+}

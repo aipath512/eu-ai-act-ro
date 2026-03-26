@@ -1,0 +1,89 @@
+{
+  "schema": "AiVenture-AllowLaneMatrix-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "matrix": [
+    {
+      "crawler": "ClaudeBot",
+      "provider": "Anthropic",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Allow",
+      "ground": "Allow",
+      "paths": ["/", "/ghid.html", "/faq.html", "/ai.json", "/llms.txt", "/entities.json", "/proof.json", "/sitemap.xml"]
+    },
+    {
+      "crawler": "GPTBot",
+      "provider": "OpenAI",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Allow",
+      "ground": "Allow",
+      "paths": ["/", "/ghid.html", "/faq.html", "/ai.json", "/llms.txt", "/entities.json", "/proof.json", "/sitemap.xml"]
+    },
+    {
+      "crawler": "Google-Extended",
+      "provider": "Google",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Allow",
+      "ground": "Allow",
+      "paths": ["/", "/ghid.html", "/faq.html", "/ai.json", "/llms.txt", "/sitemap.xml"]
+    },
+    {
+      "crawler": "PerplexityBot",
+      "provider": "Perplexity AI",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Allow",
+      "ground": "Allow",
+      "paths": ["/", "/ghid.html", "/faq.html", "/ai.json", "/llms.txt"]
+    },
+    {
+      "crawler": "CCBot",
+      "provider": "Common Crawl",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Allow",
+      "ground": "Neutral",
+      "paths": ["/", "/ghid.html", "/faq.html"]
+    },
+    {
+      "crawler": "Googlebot",
+      "provider": "Google Search",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Neutral",
+      "ground": "Allow",
+      "paths": ["/*"]
+    },
+    {
+      "crawler": "Bingbot",
+      "provider": "Microsoft",
+      "crawl": "Allow",
+      "index": "Allow",
+      "cite": "Allow",
+      "train": "Neutral",
+      "ground": "Allow",
+      "paths": ["/*"]
+    }
+  ],
+
+  "denied_crawlers": [],
+
+  "priority_paths": {
+    "highest": ["/ai.json", "/llms.txt", "/robots.txt", "/proof.json"],
+    "high": ["/", "/faq.html", "/entities.json", "/governance.json"],
+    "standard": ["/ghid.html", "/sitemap.xml", "/humans.txt"]
+  },
+
+  "last_updated": "2026-03-26T15:00:00Z"
+}

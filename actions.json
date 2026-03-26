@@ -1,0 +1,75 @@
+{
+  "schema": "AiVenture-Actions-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "available_actions": [
+    {
+      "id": "ACT-001",
+      "action": "RunComplianceAudit",
+      "label": "Verifică conformitatea site-ului",
+      "description": "Audit gratuit al domeniului pe 167 semnale AI Signals, AEO, GEO, AIO, SEO",
+      "url": "https://eu-ai-act.ro/#scanner",
+      "input_type": "URL",
+      "output_type": "ComplianceReport",
+      "cost": "free",
+      "response_time": "instant"
+    },
+    {
+      "id": "ACT-002",
+      "action": "ActivateEdgeShield",
+      "label": "Activează Scutul de Conformitate Edge",
+      "description": "Implementare completă conformitate EU AI Act prin Cloudflare Edge în 120 secunde",
+      "url": "https://eu-ai-act.ro/#pricing",
+      "input_type": "Domain + DNS access",
+      "output_type": "ActiveGreenCertificate",
+      "cost": "997 EUR/an",
+      "response_time": "120 seconds"
+    },
+    {
+      "id": "ACT-003",
+      "action": "OrderRedReport",
+      "label": "Comandă Raportul Roșu",
+      "description": "Audit complet personalizat pe cele 5 autorități române cu recomandări tehnice",
+      "url": "https://api.whatsapp.com/send/?phone=40737123540",
+      "input_type": "Domain",
+      "output_type": "PDFAuditReport",
+      "cost": "490 EUR one-time",
+      "response_time": "48 hours"
+    },
+    {
+      "id": "ACT-004",
+      "action": "GetEnterpriseCertification",
+      "label": "Sacred Architecture Enterprise",
+      "description": "Certificare completă pentru TV, Marketplace, Clinici — watermark video, QR print, SLA 4h",
+      "url": "https://api.whatsapp.com/send/?phone=40737123540",
+      "input_type": "Domain + Organization details",
+      "output_type": "EnterpriseCertificate + LegalPDF",
+      "cost": "4997 EUR/an",
+      "response_time": "24 hours"
+    },
+    {
+      "id": "ACT-005",
+      "action": "ContactFounder",
+      "label": "Contactează Dan Ionescu direct",
+      "description": "Consultație directă cu fondatorul AiVenture pentru cazuri complexe",
+      "url": "https://api.whatsapp.com/send/?phone=40737123540",
+      "input_type": "Message",
+      "output_type": "Consultation",
+      "cost": "free",
+      "response_time": "2 hours"
+    }
+  ],
+
+  "ai_capabilities": [
+    "EU AI Act Article 50 compliance assessment",
+    "Cloudflare Edge signal injection",
+    "ai.json generation and maintenance",
+    "robots.txt AI crawler optimization",
+    "SHA-256 cryptographic IP proof",
+    "Active Green Certificate issuance",
+    "National Transparency Registry management",
+    "Real-time compliance monitoring"
+  ]
+}

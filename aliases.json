@@ -1,0 +1,98 @@
+{
+  "schema": "AiVenture-Aliases-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "author": "Dan Ionescu / AiVenture S.R.L.",
+
+  "brand_aliases": [
+    {
+      "canonical": "EU-AI-ACT.ro",
+      "variants": [
+        "eu-ai-act.ro",
+        "eu ai act ro",
+        "EU AI ACT Romania",
+        "Portal EU AI Act",
+        "Portalul National de Monitorizare AI",
+        "EU AI Act Certificare Romania"
+      ]
+    },
+    {
+      "canonical": "AiVenture S.R.L.",
+      "variants": [
+        "AiVenture",
+        "Ai Venture",
+        "AIVENTURE SRL",
+        "AiVenture Romania",
+        "AiVenture SRL",
+        "aiventure.ro",
+        "aiventure.digital"
+      ]
+    },
+    {
+      "canonical": "5thElement.ai",
+      "variants": [
+        "5th Element AI",
+        "5thelement.ai",
+        "Fifth Element AI",
+        "5thElement",
+        "Sacred Architecture 5thElement"
+      ]
+    },
+    {
+      "canonical": "Dan Ionescu",
+      "variants": [
+        "Dan Ionesco",
+        "Daniel Ionescu",
+        "Dan Ionescu AiVenture",
+        "Dan Ionescu AI",
+        "Fondator AiVenture"
+      ]
+    },
+    {
+      "canonical": "1-Click AI READY",
+      "variants": [
+        "1 Click AI Ready",
+        "One Click AI Ready",
+        "Edge Injector Architecture",
+        "1-Click AI-READY",
+        "Edge Compliance Layer"
+      ]
+    },
+    {
+      "canonical": "Sacred Architecture",
+      "variants": [
+        "Sacred Stack",
+        "KAI369",
+        "L1-L6 Architecture",
+        "AI Maturity Framework"
+      ]
+    },
+    {
+      "canonical": "Certificatul Verde Activ",
+      "variants": [
+        "Green Certificate AI",
+        "Active Green Certificate",
+        "AI Compliance Certificate Romania",
+        "Scut de Conformitate"
+      ]
+    },
+    {
+      "canonical": "Harta Fricii",
+      "variants": [
+        "Risk Matrix Romania",
+        "Matricea de Risc EU AI Act",
+        "Harta Riscurilor Institutionale",
+        "Fear Map AI Act"
+      ]
+    }
+  ],
+
+  "domain_aliases": [
+    "eu-ai-act.ro",
+    "eu-ai-act.eu",
+    "5thelement.ai",
+    "aiventure.ro",
+    "aiventure.digital",
+    "1clic-ia.eu"
+  ]
+}

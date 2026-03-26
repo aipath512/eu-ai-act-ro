@@ -1,0 +1,72 @@
+{
+  "schema": "AiVenture-Policy-v1.0",
+  "domain": "eu-ai-act.ro",
+  "generated": "2026-03-26T15:00:00Z",
+  "entity": "AiVenture S.R.L.",
+  "author": "Dan Ionescu",
+
+  "ai_policy": {
+    "version": "1.0.0",
+    "effective_date": "2026-03-26",
+    "review_date": "2026-09-26",
+    "jurisdiction": "RO — EU",
+    "regulation": "Regulamentul (UE) 2024/1689"
+  },
+
+  "content_policy": {
+    "ai_generated_content": "declared",
+    "ai_assisted_content": "declared",
+    "human_reviewed": true,
+    "reviewer": "Dan Ionescu",
+    "labeling_method": "meta tags + footer declaration + JSON-LD",
+    "disclosure_location": "page header meta + footer + proof.json"
+  },
+
+  "crawler_policy": {
+    "default": "Allow",
+    "ClaudeBot": "Allow",
+    "GPTBot": "Allow",
+    "Google-Extended": "Allow",
+    "PerplexityBot": "Allow",
+    "CCBot": "Allow",
+    "Googlebot": "Allow",
+    "training_data_opt_out": false,
+    "grounding_opt_in": true,
+    "citation_opt_in": true
+  },
+
+  "data_policy": {
+    "personal_data_collected": false,
+    "cookies": "none",
+    "analytics": "Cloudflare Web Analytics — cookieless",
+    "third_party_tracking": false,
+    "ai_profiling": false,
+    "gdpr_basis": "Legitimate interest",
+    "data_location": "EU — Cloudflare Edge"
+  },
+
+  "ip_policy": {
+    "innovations_protected": [
+      "1-Click AI READY (Edge Injector Architecture)",
+      "MKT-INDIRECT™",
+      "WEB-AI™",
+      "Economic Twins",
+      "KAI369 Sacred Architecture"
+    ],
+    "proof_method": "SHA-256 + OpenTimestamps blockchain",
+    "canonical_origin": "https://5thelement.ai",
+    "verification": "https://5thelement.ai/robots.txt"
+  },
+
+  "prohibited_uses": [
+    "Reproducing site content without attribution",
+    "Using brand names without permission",
+    "Misrepresenting compliance status",
+    "Scraping for competitor intelligence"
+  ],
+
+  "contact": {
+    "policy_questions": "audit@eu-ai-act.ro",
+    "whatsapp": "+40737123540"
+  }
+}
