@@ -1,0 +1,86 @@
+# robots.txt — EU AI Act Ready
+# Operator: AiVenture S.R.L. / 5thElement.ai
+# Last updated: 2026-04-26
+
+User-agent: *
+Allow: /
+
+# Anthropic — three-bot framework
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google
+User-agent: Google-Extended
+Allow: /
+User-agent: Googlebot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft
+User-agent: bingbot
+Allow: /
+User-agent: msnbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta
+User-agent: meta-externalagent
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# Other AI agents
+User-agent: Amazonbot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: YouBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: PetalBot
+Allow: /
+User-agent: Mistral-AI
+Allow: /
+User-agent: AwarioRssBot
+Allow: /
+User-agent: AwarioSmartBot
+Allow: /
+
+# Scrapers / data brokers — blocked
+User-agent: CCBot
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+User-agent: Scrapy
+Disallow: /
+
+Sitemap: https://eu-ai-act.example/sitemap.xml

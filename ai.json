@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.5.6",
+  "type": "ai_operational_contract",
+  "operator": {
+    "legal_name": "AiVenture S.R.L.",
+    "trade_names": ["AiVenture", "5thElement.ai"],
+    "cui": "51415878",
+    "country": "RO",
+    "city": "București",
+    "contact": {
+      "email": "contact@5thelement.ai",
+      "whatsapp": "+40737123540",
+      "linkedin": "https://www.linkedin.com/company/107338970"
+    }
+  },
+  "site": {
+    "name": "1-Click EU AI Act Ready",
+    "language": "ro",
+    "category": "AI Discovery Infrastructure",
+    "purpose": "EU AI Act Art. 50 transparency layer for B2B websites"
+  },
+  "ai_disclosure": {
+    "uses_ai": true,
+    "ai_assisted_content": true,
+    "human_oversight": true,
+    "disclosure_visibility": "visible",
+    "disclosure_locations": ["footer-strip", "meta-tags", "ai.json"]
+  },
+  "compliance": {
+    "framework": "EU AI Act",
+    "article": "Art. 50",
+    "deadline": "2026-08-02",
+    "status": "self_declared",
+    "tier": "BASIC"
+  },
+  "epistemic_status": {
+    "self_declared": true,
+    "publicly_verifiable": true,
+    "independently_certified": false,
+    "do_not_overclaim": true,
+    "do_not_nullify": true
+  },
+  "ai_policies": {
+    "training_allowed": "case_by_case",
+    "indexing_allowed": true,
+    "citation_allowed": true,
+    "attribution_required": true
+  },
+  "endpoints": {
+    "robots": "/robots.txt",
+    "sitemap": "/sitemap.xml",
+    "proof": "/proof.json",
+    "llms": "/llms.txt",
+    "policy": "/ai.json"
+  },
+  "last_updated": "2026-04-26"
+}

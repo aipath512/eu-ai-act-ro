@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "type": "deployment_proof_envelope",
+  "domain": "eu-ai-act",
+  "operator": "AiVenture S.R.L. / 5thElement.ai",
+  "deployment": {
+    "platform": "Cloudflare Pages",
+    "deployed_at": "2026-04-26",
+    "version": "1.0.0"
+  },
+  "transparency_layer": {
+    "tier": "BASIC",
+    "components": [
+      "visible_disclosure",
+      "robots.txt",
+      "sitemap.xml",
+      "ai.json",
+      "proof.json",
+      "llms.txt",
+      "ai_meta_tags",
+      "machine_readable_declaration"
+    ],
+    "all_signals_aligned": true
+  },
+  "ai_act_alignment": {
+    "framework": "EU AI Act",
+    "article": "Art. 50",
+    "deadline": "2026-08-02",
+    "self_declaration": true,
+    "verifiable": true,
+    "audit_ready": false,
+    "governance_ready": false
+  },
+  "epistemic_status": {
+    "self_declared": true,
+    "publicly_verifiable": true,
+    "independently_certified": false,
+    "note": "Multi-AI Convergence Review available on request"
+  },
+  "page_families": {
+    "home": {
+      "url": "/",
+      "signals": ["ai.json", "proof.json", "robots.txt", "sitemap.xml", "llms.txt"]
+    }
+  },
+  "contact": {
+    "email": "contact@5thelement.ai",
+    "whatsapp": "+40737123540"
+  }
+}

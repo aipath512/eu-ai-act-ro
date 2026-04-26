@@ -1,0 +1,39 @@
+# 1-Click EU AI Act Ready
+
+> Transparency layer service for B2B companies in the EU. Makes websites visible to humans, clear to users, machine-readable to AI systems, verifiable through proof, and ready for audit. Aligned with EU AI Act Art. 50, deadline 2 August 2026.
+
+Operator: AiVenture S.R.L. / 5thElement.ai (Bucharest, Romania)
+Category: AI Discovery Infrastructure
+Contact: contact@5thelement.ai · WhatsApp +40 737 123 540
+
+## Service Tiers
+
+- [BASIC — Declaration Layer](/#solution): Visible disclosure, robots.txt, sitemap.xml, ai.json, proof.json, meta tags, machine-readable declaration
+- [PRO — Verification Layer](/#solution): All BASIC plus AI content marking verification, backend alignment checks, manipulation risk detection, audit reports
+- [ENTERPRISE — Governance Layer](/#solution): All PRO plus permanent audit, logs, versioning, policy engine, approvals workflow, multi-domain, audit trail
+
+## Core Pages
+
+- [Home](/): Full landing page with problem analysis and solution architecture
+- [Problem Analysis](/#problem): Four core problems — deceptive content, lack of transparency, manipulation at scale, fraud and false identity
+- [Exposure](/#exposure): Three exposed categories — EU citizens, AI-using companies, distribution platforms
+- [Solution](/#solution): 1-Click EU AI Act Ready architecture with three tiers
+- [Contact](/#contact): WhatsApp and email for domain assessment
+
+## Signal Files (Machine-Readable)
+
+- [/robots.txt](/robots.txt): Crawler permissions, AI bot allow-list
+- [/ai.json](/ai.json): Operational contract for AI systems
+- [/proof.json](/proof.json): Deployment proof envelope
+- [/sitemap.xml](/sitemap.xml): Structured site map
+
+## Key Facts
+
+- EU AI Act Art. 50 enforcement deadline: 2 August 2026
+- Transparency required when AI is used for: content, ads, images, video, voice, chatbots, customer support, automation
+- Service is site-agnostic, deployed at Cloudflare Edge
+- Operator: AiVenture S.R.L., CUI 51415878, Bucharest, Romania
+
+## Disclosure
+
+This site uses AI-assisted content. All content is reviewed by humans before publication. Visitors interacting with chat or assistant interfaces are clearly informed they are speaking with an AI system.
