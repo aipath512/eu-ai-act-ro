@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU AI Act Ready™ — Verifică gratuit dacă firma ta e pregătită (deadline 2 august 2026)</title>
+<meta name="description" content="Descoperă unde folosești deja AI în firmă, generează gratuit Governance Pack-ul tău EU AI Act și demonstrează conformitatea — în aproximativ 15 minute, fără cont.">
+<link rel="canonical" href="https://eu-ai-act.ro/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EU AI Act Ready™">
+<meta property="og:url" content="https://eu-ai-act.ro/">
+<meta property="og:title" content="EU AI Act Ready™ — Verifică gratuit dacă firma ta e pregătită">
+<meta property="og:description" content="Descoperă unde folosești deja AI, generează Governance Pack-ul firmei tale și demonstrează conformitatea EU AI Act — gratuit, în aproximativ 15 minute.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EU AI Act Ready™ — Verifică gratuit dacă firma ta e pregătită">
+<meta name="twitter:description" content="Descoperă unde folosești deja AI, generează Governance Pack-ul firmei tale și demonstrează conformitatea EU AI Act — gratuit, în aproximativ 15 minute.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<div class="top-alert">
+  <div class="wrap top-alert-inner">
+    <span>🚨 <strong>EU AI ACT</strong> — firma ta este pregătită? Descoperă unde te afli, gratuit.</span>
+    <a href="#free-pack" class="ta-btn">start gratuit →</a>
+  </div>
+</div>
+
+<div class="status-bar">
+  <div class="wrap status-row">
+    <div class="status-left">
+      <button id="loginToggle" class="login-link" type="button">Login</button>
+      <span class="live">live · EU AI Act Readiness Engine</span>
+    </div>
+    <span>Răspundem &lt; 4h în ziua lucrătoare</span>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="ro" type="button">RO</button>
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+    </div>
+  </div>
+
+  <div id="loginPanel" class="login-panel">
+    <form id="loginForm">
+      <div class="form-field" style="margin-bottom:12px;">
+        <label>Email</label>
+        <input type="email" required placeholder="nume@firma.ro">
+      </div>
+      <div class="form-field" style="margin-bottom:14px;">
+        <label>Parolă</label>
+        <input type="password" required placeholder="••••••••">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Autentificare</button>
+      <p class="login-alt">Nu ai cont încă? <a href="#free-pack">Generează Free Readiness Pack</a></p>
+    </form>
+  </div>
+
+  <div id="langNotice" class="lang-notice">Versiunea completă în engleză e în lucru — momentan site-ul e disponibil doar în română.</div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="#top" class="brand">
+      <span class="mark">e</span>
+      <span>
+        <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
+        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+      </span>
+    </a>
+    <nav class="main-links">
+      <a href="#top">acasă</a>
+      <a href="#how">cum funcționează</a>
+      <a href="#ask">ask.md</a>
+      <a href="#free-pack">firma ta</a>
+      <a href="#demo">demo</a>
+      <a href="#roles">parteneri</a>
+      <a href="#evidence">inspector view</a>
+      <a href="#faq">resurse.md</a>
+      <a href="#contact">contact.ts</a>
+    </nav>
+    <a href="#free-pack" class="nav-cta">Firma Ta →</a>
+    <button class="burger" aria-label="Meniu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero pad no-border">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>EU AI ACT READY™ · DEADLINE 2 AUGUST 2026</span>
+      <h1>Primul pas <em>gratuit</em><br>către pregătirea firmei tale pentru EU AI Act</h1>
+      <p class="lede"><strong class="journey"><a href="#how">Înțelege</a> <span class="arrow">→</span> <a href="#free-pack">Pregătește</a> <span class="arrow">→</span> <a href="#demo">Demonstrează</a></strong>. Generează primul tău pachet personalizat de guvernanță EU AI Act — gratuit, în aproximativ 15 minute.</p>
+      <div class="free-kicker">✓ 100% GRATUIT · fără card · fără cont — 3 lucruri, chiar acum</div>
+      <div class="hero-actions">
+        <a href="#free-pack" class="btn btn-primary btn-hero">
+          <span class="btn-main">Generează Pachetul</span>
+          <span class="btn-sub">gratuit, în 15 min</span>
+        </a>
+        <a href="#demo" class="btn btn-secondary btn-hero">
+          <span class="btn-main">Vezi Demo</span>
+          <span class="btn-sub">gratuit, fără înscriere</span>
+        </a>
+        <a href="#ask" class="btn btn-dark btn-hero">
+          <span class="btn-main">Întreabă AI</span>
+          <span class="btn-sub">gratuit, oricând</span>
+        </a>
+      </div>
+
+      <div class="term-card">
+        <div class="term-head">
+          <span>~ /organizatie/situatia-curenta.md</span>
+          <span>4 indicatori</span>
+        </div>
+        <div class="term-grid">
+          <div class="term-cell"><div class="big">113</div><div class="lbl">articole indexate</div></div>
+          <div class="term-cell"><div class="big">70</div><div class="lbl">documente de guvernanță</div></div>
+          <div class="term-cell"><div class="big">10</div><div class="lbl">module operaționale</div></div>
+          <div class="term-cell"><div class="big">15 min</div><div class="lbl">de la zero la pachet</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>CUM FUNCȚIONEAZĂ</span>
+      <h2 class="h2-title">Primește răspunsul. Pregătește firma. <em>Demonstrează dovezile.</em></h2>
+      <p class="sub-lede">EU AI ACT READY™ este infrastructura operațională care transformă întrebările despre AI în acțiuni, documente și dovezi verificabile.</p>
+
+      <p style="margin-top:28px;color:var(--text-dim);font-size:15px;">Dacă firma ta:</p>
+      <ul class="checklist" style="columns:2;max-width:520px;">
+        <li>folosește ChatGPT</li>
+        <li>folosește Microsoft Copilot</li>
+        <li>folosește Google Gemini</li>
+        <li>folosește Claude</li>
+        <li>folosește AI în marketing</li>
+        <li>folosește automatizări</li>
+        <li>folosește software cu funcții AI</li>
+      </ul>
+      <p style="margin-top:18px;font-family:var(--serif);font-size:20px;">atunci primul pas este să înțelegi <em style="color:var(--gold);font-style:italic;">situația ta reală</em>.</p>
+
+      <div class="contrast" style="margin-top:52px;">
+        <div class="box weak">
+          <div class="kicker">Modelul vechi</div>
+          <p style="font-size:16px;">Regulament → Consultanță → Document PDF → Dosar.</p>
+        </div>
+        <div class="box strong">
+          <div class="kicker">Modelul nou</div>
+          <p style="font-size:16px;">Întrebare → Inteligență AI → Evaluare firmă → Documente personalizate → Dovezi digitale → Verificare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASK -->
+  <section id="ask" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>ASK · CONVERSAȚIONAL</span>
+      <h2 class="h2-title">Ai o întrebare despre <em>inteligența artificială</em>?</h2>
+      <p class="sub-lede">Inteligența artificială a intrat deja în firme — prin aplicații, software, furnizori, automatizări și instrumente utilizate de angajați. Poate firma ta folosește deja ChatGPT, Microsoft Copilot, Google Gemini, Claude, Midjourney sau alte instrumente AI de marketing și customer service.</p>
+      <p class="sub-lede" style="margin-top:8px;">Întrebarea nu mai este doar <em style="font-style:italic;color:var(--text)">„Folosim AI?”</em> — este <strong style="color:var(--text)">„Știm unde este AI în firma noastră și putem demonstra că îl gestionăm responsabil?”</strong></p>
+
+      <div class="ask-grid">
+        <div class="ask-panel">
+          <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;">Întreabă EU AI Act™</h3>
+          <p style="color:var(--text-dim);font-size:14.5px;margin-top:6px;">Nu citi sute de pagini. Întreabă. Primește răspunsul. Descoperă următorul pas.</p>
+          <ul class="checklist">
+            <li>sintetizează regulamentul</li>
+            <li>explică obligațiile</li>
+            <li>identifică situația relevantă</li>
+            <li>recomandă acțiunea următoare</li>
+          </ul>
+          <form id="askForm" class="ask-input-row">
+            <input id="askInput" type="text" placeholder="Ex: Folosim ChatGPT în firmă. Ce trebuie să facem?">
+            <button type="submit" class="btn btn-primary">Întreabă</button>
+          </form>
+          <p style="font-family:var(--mono);font-size:11px;color:var(--text-faint);text-transform:uppercase;margin-top:20px;">Căutări populare</p>
+          <div class="ask-examples">
+            <button type="button">Folosim ChatGPT în firmă. Ce trebuie să facem?</button>
+            <button type="button">EU AI Act se aplică IMM-ului meu?</button>
+            <button type="button">Ce documente trebuie să pregătesc?</button>
+            <button type="button">Ce este Articolul 50?</button>
+          </div>
+          <div id="askAnswer" class="ask-answer"></div>
+        </div>
+
+        <div class="ask-highlight">
+          <span class="badge">100% GRATUIT</span>
+          <div class="big-num">113</div>
+          <div class="lbl">articole EU AI Act indexate — acces liber, fără cont</div>
+          <p>Întreabă orice despre regulament, oricând. Nu e o versiune trial — asistentul ASK rămâne gratuit permanent, indiferent dacă generezi sau nu Governance Pack-ul complet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE-WAY FUNNEL -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>ALEGE DIRECȚIA TA</span>
+      <h2 class="h2-title">Trei intrări <em>directe</em>.</h2>
+
+      <div class="card-grid">
+        <div class="funnel-card red">
+          <div class="dot-label">● FIRMA TA</div>
+          <h3>Vreau să verific firma mea</h3>
+          <p><strong style="color:var(--text)">Descoperă:</strong></p>
+          <ul class="checklist">
+            <li>ce sisteme AI există</li>
+            <li>unde sunt utilizate</li>
+            <li>cine este responsabil</li>
+            <li>ce obligații pot apărea</li>
+            <li>care este nivelul de pregătire</li>
+          </ul>
+          <a href="#free-pack" class="btn btn-primary">verifică firma mea →</a>
+        </div>
+
+        <div class="funnel-card white" id="demo">
+          <div class="dot-label">○ DEMO</div>
+          <h3>Vreau să văd înainte</h3>
+          <p>Vezi o implementare completă: firmă exemplu, Governance Pack, documente operaționale, registre, evidențe digitale, Inspector View și Article 50 Transparency.</p>
+          <a href="#contact" class="btn btn-secondary">vezi demo →</a>
+        </div>
+
+        <div class="funnel-card dark">
+          <div class="dot-label">● ASK</div>
+          <h3>Vreau să înțeleg</h3>
+          <p>Pune orice întrebare despre EU AI Act: responsabilități, documente, risc, transparență, dovezi.</p>
+          <a href="#ask" class="btn btn-dark">întreabă acum →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE READINESS PACK -->
+  <section id="free-pack" class="pad">
+    <div class="wrap">
+      <div class="banner">FREE EU AI ACT READINESS PACK™</div>
+      <h2 class="h2-title">Primul rezultat <em>real</em> pentru firma ta.</h2>
+      <p class="sub-lede">Nu oferim un model gol. Nu oferim un PDF generic. Oferim prima imagine operațională a firmei tale.</p>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h4>113 articole EU AI Act indexate</h4>
+          <p>Regulamentul devine accesibil prin conversație.</p>
+        </div>
+        <div class="feature-item">
+          <h4>ASK EU AI Act™ Assistant</h4>
+          <p>Acces permanent pentru întrebări despre obligații, roluri, responsabilități și implementare.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Governance Pack Preview</h4>
+          <p>Arhitectura completă: 10 module operaționale, 70 documente — deja completate cu datele tale, nu de completat.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Preview personalizat gratuit — până la 40%</h4>
+          <p>Politici, proceduri, registre, responsabilități și structura documentelor, generate pe baza datelor introduse.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Inspector Ready Preview</h4>
+          <p>Cum poate fi organizată informația pentru audit, verificare și demonstrarea implementării.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Evidence Ready Preview</h4>
+          <p>Modelul de versiuni, timestamp, integritate și trasabilitate.</p>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Pentru acces gratuit</h3>
+        <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Primești primul nivel de pregătire.</p>
+        <form id="leadForm">
+          <div class="form-field" style="margin-bottom:16px;">
+            <label>Email profesional</label>
+            <input type="email" required placeholder="nume@organizatie.ro">
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Firmă</label>
+              <input type="text" required placeholder="Numele firmei">
+            </div>
+            <div class="form-field">
+              <label>Rol în firmă</label>
+              <input type="text" required placeholder="ex: Fondator, CFO, Avocat">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">obține gratuit readiness pack →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE LAYER -->
+  <section id="governance" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>GOVERNANCE LAYER</span>
+      <h2 class="h2-title">De la informație la <em>implementare</em>.</h2>
+      <p class="sub-lede">Răspunde la întrebarea: „Ce trebuie să facă firma mea?” — EU AI ACT READY PACK™, peste 70 de documente operaționale personalizate. Nu șabloane goale — documente generate pentru firma ta.</p>
+      <p class="sub-lede" style="margin-top:10px;color:var(--gold);"><strong>Documentele nu sunt de completat de tine — ajung deja completate</strong>, generate automat cu datele firmei tale, gata de folosit și de arătat unui inspector.</p>
+
+      <div class="module-grid">
+        <div class="module-row"><div class="module-num">01</div><div><h4>AI System Inventory</h4><p>Identificarea sistemelor AI utilizate.</p></div></div>
+        <div class="module-row"><div class="module-num">02</div><div><h4>Risk Classification</h4><p>Evaluarea nivelului de risc.</p></div></div>
+        <div class="module-row"><div class="module-num">03</div><div><h4>AI Literacy</h4><p>Demonstrarea competențelor AI.</p></div></div>
+        <div class="module-row"><div class="module-num">04</div><div><h4>Prohibited Practices</h4><p>Evaluarea practicilor interzise.</p></div></div>
+        <div class="module-row"><div class="module-num">05</div><div><h4>High Risk Assessment</h4><p>Evaluarea sistemelor relevante.</p></div></div>
+        <div class="module-row"><div class="module-num">06</div><div><h4>Technical Documentation</h4><p>Structurarea documentației necesare.</p></div></div>
+        <div class="module-row"><div class="module-num">07</div><div><h4>Human Oversight</h4><p>Responsabilitate și control uman.</p></div></div>
+        <div class="module-row"><div class="module-num">08</div><div><h4>Data Governance</h4><p>Gestionarea datelor.</p></div></div>
+        <div class="module-row"><div class="module-num">09</div><div><h4>Logging &amp; Monitoring</h4><p>Urmărirea utilizării.</p></div></div>
+        <div class="module-row"><div class="module-num">10</div><div><h4>Incident Reporting</h4><p>Gestionarea incidentelor.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE LAYER -->
+  <section id="evidence" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>DIFERENȚA FUNDAMENTALĂ</span>
+      <h2 class="h2-title">Nu producem hârtie. Producem <em>dovezi digitale</em> criptografice.</h2>
+
+      <div class="contrast">
+        <div class="box weak">
+          <div class="kicker">Document</div>
+          <p>„Aceasta este politica noastră.”</p>
+        </div>
+        <div class="box strong">
+          <div class="kicker">Dovadă digitală</div>
+          <p>Demonstrează ce document exista, când exista, cine era responsabil, ce versiune era activă, ce modificări au avut loc și ce sistem AI acoperea.</p>
+        </div>
+      </div>
+
+      <p class="sub-lede" style="margin-top:36px;"><strong style="color:var(--text)">Evidence Layer</strong> — de la document la dovadă verificabilă. Include: identificator unic, versiune, timestamp, hash criptografic, audit trail, istoric.</p>
+    </div>
+  </section>
+
+  <!-- ARTICLE 50 -->
+  <section class="pad">
+    <div class="wrap">
+      <div class="banner">-30% reducere pentru firmele care finalizează Governance Layer</div>
+      <span class="tag" style="display:block;"><span class="dot">//</span>NIVELUL URMĂTOR</span>
+      <h2 class="h2-title">Article 50 <em>Transparency Layer</em>.</h2>
+      <p class="sub-lede">EU AI Act nu înseamnă doar documente. Firmele trebuie să poată demonstra transparența interacțiunilor AI — Human ↔ AI ↔ Human Transparency Events.</p>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h4>AI Interaction Transparency</h4>
+          <p>Conținut generat AI, conținut sintetic și deepfake transparency, pregătite pentru demonstrare.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Digital Evidence Automation</h4>
+          <p>Evidențe generate automat: create, versionate, timestamp-ate, verificabile.</p>
+        </div>
+      </div>
+
+      <div class="term-card" style="margin-top:40px;">
+        <div class="term-head"><span>RRVI™ — Remote Regulatory Verification Infrastructure™</span><span>inspector-ready</span></div>
+        <div style="padding:26px;">
+          <p style="color:var(--text-dim);font-size:15px;">Conformitatea nu trebuie doar declarată. Trebuie demonstrată. Inspectorul sau auditorul poate verifica documente, versiuni, dovezi, istoric și integritate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAS -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>PENTRU CINE ESTE</span>
+      <h2 class="h2-title">Cinci profiluri, <em>un singur</em> punct de plecare.</h2>
+      <div class="persona-grid">
+        <div class="persona"><div class="icon">🏢</div><p>„Vreau să știu dacă firma mea este pregătită.”</p></div>
+        <div class="persona"><div class="icon">⚖️</div><p>„Vreau să ajut clienții cu EU AI Act.”</p></div>
+        <div class="persona"><div class="icon">📊</div><p>„Vreau să creez un serviciu nou.”</p></div>
+        <div class="persona"><div class="icon">👤</div><p>„Vreau să folosesc AI responsabil.”</p></div>
+        <div class="persona"><div class="icon">🔍</div><p>„Vreau dovezi verificabile.”</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>COMPARĂ ABORDĂRILE</span>
+      <h2 class="h2-title">De ce <em>EU AI ACT READY™</em>.</h2>
+      <table class="cmp-table">
+        <thead>
+          <tr><th></th><th>Template-uri</th><th>Consultanță</th><th>Chatbot</th><th>EU AI ACT READY™</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Explicații</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Întrebări</td><td>❌</td><td>⚠️</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Documente personalizate</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Dovezi digitale</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Articol 50</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Verificare</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+        </tbody>
+      </table>
+      <p class="sub-lede" style="margin-top:28px;">Începe gratuit. Nu trebuie să cumperi înainte să înțelegi. Primul pas: descoperă situația firmei tale. Apoi: vezi rezultatul. Apoi: implementează.</p>
+    </div>
+  </section>
+
+  <!-- NEXT STEP -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>ALEGE URMĂTORUL PAS</span>
+      <h2 class="h2-title">Șase drumuri, <em>o singură</em> platformă.</h2>
+      <div class="next-grid">
+        <div class="next-item"><span>Sunt la început</span><a href="#ask" class="btn btn-dark">ask →</a></div>
+        <div class="next-item"><span>Vreau evaluarea gratuită</span><a href="#free-pack" class="btn btn-primary">free readiness pack →</a></div>
+        <div class="next-item"><span>Vreau să văd rezultatul</span><a href="#demo" class="btn btn-secondary">demo →</a></div>
+        <div class="next-item"><span>Vreau implementare completă</span><a href="#free-pack" class="btn btn-primary">firma ta →</a></div>
+        <div class="next-item"><span>Vreau să ofer serviciul clienților</span><a href="#contact" class="btn btn-secondary">partener →</a></div>
+        <div class="next-item"><span>Vreau verificare</span><a href="#evidence" class="btn btn-dark">rrvi™ →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing no-border">
+    <div class="wrap">
+      <h2>De la <em>întrebare</em>.<br>La <em>pregătire</em>.<br>La <em>dovadă</em>.<br>La <em>verificare</em>.</h2>
+    </div>
+  </section>
+
+  <!-- ROLE JOURNEYS -->
+  <section id="roles" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>TRASEE DUPĂ ROL</span>
+      <h2 class="h2-title">Fiecare rol, <em>un traseu diferit</em>.</h2>
+      <div class="role-grid">
+        <div class="role-card">
+          <div class="role-q">„Ce trebuie să fac?”</div>
+          <h4>Proprietar IMM</h4>
+          <div class="role-path">FREE CHECK → DEMO → FIRMA TA → IMPLEMENTARE</div>
+        </div>
+        <div class="role-card">
+          <div class="role-q">„Cum ajut clienții?”</div>
+          <h4>Avocat</h4>
+          <div class="role-path">PARTENER → DEMO → SERVICIU NOU</div>
+        </div>
+        <div class="role-card">
+          <div class="role-q">„Cum creez ofertă nouă?”</div>
+          <h4>Consultant</h4>
+          <div class="role-path">PARTENER → IMPLEMENTARE</div>
+        </div>
+        <div class="role-card">
+          <div class="role-q">„Sunt responsabil dacă folosesc AI?”</div>
+          <h4>Freelancer</h4>
+          <div class="role-path">ASK → CHECK</div>
+        </div>
+        <div class="role-card">
+          <div class="role-q">„Cum verific?”</div>
+          <h4>Auditor</h4>
+          <div class="role-path">INSPECTOR VIEW → RRVI</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>RESURSE · ÎNTREBĂRI FRECVENTE</span>
+      <h2 class="h2-title">Răspunsuri <em>scrise</em> — nu vagi.</h2>
+
+      <div style="margin-top:32px;">
+        <div class="faq-item">
+          <div class="faq-q">Folosim ChatGPT în firmă. Ce trebuie să facem? <span class="plus">+</span></div>
+          <div class="faq-a">Primul pas este un inventar al sistemelor AI folosite — inclusiv cele introduse informal de angajați (Shadow AI). Pornește de la ASK sau de la Free Readiness Pack pentru o imagine inițială.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">EU AI Act se aplică IMM-ului meu? <span class="plus">+</span></div>
+          <div class="faq-a">Obligațiile depind de modul în care este folosit AI-ul, nu doar de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Ce documente trebuie să pregătesc? <span class="plus">+</span></div>
+          <div class="faq-a">Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Nu trebuie să le completezi tu: ajung deja generate și completate cu datele firmei tale, gata de folosit.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Cum demonstrez conformitatea? <span class="plus">+</span></div>
+          <div class="faq-a">Prin dovezi digitale verificabile — identificator unic, versiune, timestamp, hash criptografic și audit trail — nu doar prin documente declarative.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Ce este Articolul 50? <span class="plus">+</span></div>
+          <div class="faq-a">Articolul 50 reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic și dezvăluirea deepfake — aplicabile din 2 august 2026.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>CONTACT</span>
+      <h2 class="h2-title">Scrie-ne. <em>Citim atent</em>.</h2>
+      <p class="sub-lede">Formular structurat ca să ajungem repede la subiect.</p>
+
+      <form id="contactForm" class="form-card" style="max-width:640px;">
+        <div class="form-row">
+          <div class="form-field"><label>Nume</label><input type="text" required></div>
+          <div class="form-field"><label>Email</label><input type="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><label>Firmă</label><input type="text"></div>
+          <div class="form-field"><label>Tip entitate</label>
+            <select><option>SRL</option><option>PFA</option><option>ONG</option><option>Cabinet de avocatură</option></select>
+          </div>
+        </div>
+        <div class="form-field" style="margin-bottom:16px;">
+          <label>Mesaj (opțional)</label>
+          <input type="text" placeholder="Spune-ne pe scurt situația ta">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">trimite →</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-top">
+    <div class="foot-brand">
+      <div class="name">EU AI ACT READY™</div>
+      <p>Powered by AIVENTURE S.R.L. — de la întrebare, la pregătire, la dovadă, la verificare.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Ecosistem digital</h5>
+      <a href="https://eu-ai-act-ready.eu">eu-ai-act-ready.eu</a>
+      <a href="https://eu-ai-act.ro">eu-ai-act.ro</a>
+      <a href="https://5thelement.ai">5thElement.ai</a>
+      <a href="https://aiventure.ro">AiVenture.ro</a>
+    </div>
+    <div class="foot-col">
+      <h5>Social &amp; Profile</h5>
+      <a href="https://www.linkedin.com/in/dan-ionesco-a856082a0">LinkedIn Fondator</a>
+      <a href="https://www.linkedin.com/company/107338970">LinkedIn Companie</a>
+      <a href="https://www.crunchbase.com/organization/aiventure-s-r-l">Crunchbase</a>
+      <a href="https://x.com/aipath512">X</a>
+    </div>
+  </div>
+
+  <div class="wrap legal-grid">
+    <div><div class="lbl">CUI</div><div class="val">51415878</div></div>
+    <div><div class="lbl">Nr. Registrul Comerțului</div><div class="val">J2025016406000</div></div>
+    <div><div class="lbl">EUID</div><div class="val">ROONRC.J2025016406000</div></div>
+    <div><div class="lbl">CAEN principal</div><div class="val">6210 — Software la comandă</div></div>
+  </div>
+  <div class="wrap" style="padding-bottom:24px;">
+    <div class="lbl" style="font-family:var(--mono);font-size:10.5px;color:var(--text-faint);text-transform:uppercase;">Sediu social</div>
+    <div style="font-size:14px;margin-top:4px;color:var(--text-dim);">București, Sector 1, Drumul Pădurea Pustnicu nr. 141C, Corp A, Etaj 2, Ap. 5</div>
+  </div>
+
+  <div class="wrap ai-agents-strip">
+    <span class="lbl">// pentru AI agents</span>
+    <span><a href="/schema/organization.json">Schema.org</a> · <a href="/ai/llms.txt">llms.txt</a> · <a href="/robots.txt">robots.txt</a> · <a href="/ai/intents.json">intents.json</a> · <a href="#ask">API endpoints</a></span>
+  </div>
+
+  <div id="trust-badge-slot" class="wrap"></div>
+
+  <div class="wrap legal-strip">
+    <span>© 2026 AIVENTURE S.R.L. · toate drepturile rezervate</span>
+    <span><a href="#">Termeni &amp; Condiții</a> · <a href="#">Confidențialitate</a> · <a href="#">Cookies</a> · <a href="#">Disclaimer</a></span>
+  </div>
+</footer>
+
+<div class="float-btns">
+  <a class="fb-whatsapp" href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
