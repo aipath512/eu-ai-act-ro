@@ -1,4 +1,34 @@
+Sitemap: https://eu-ai-act.ro/sitemap.xml
+
 User-agent: *
+Allow: /
+
+# AI crawlers - explicit allow (AI visibility is the goal of this site)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: YouBot
+Allow: /
+# DeepSeekBot: not an officially published user-agent by DeepSeek,
+# but widely tracked as their crawler token by third-party bot registries
+User-agent: DeepSeekBot
 Allow: /
 
 # AI-agent discovery layer
@@ -6,4 +36,3 @@ Allow: /
 # See: /intents.json for structured intent → answer → next-action mapping
 # See: /organization.json for entity/legal identity data
 
-Sitemap: https://eu-ai-act.ro/sitemap.xml
