@@ -1,0 +1,23 @@
+{
+  "schema": "adi-ai-v1",
+  "site": "eu-ai-act.ro",
+  "status": "active",
+  "category": "EU AI Act Compliance Governance Platform",
+  "delivery_umbrella": "ADI - AI Delivery Infrastructure",
+  "mission": "Ajută firmele din România să înțeleagă unde folosesc deja AI, să genereze un pachet operațional de guvernanță conform Regulamentului (UE) 2024/1689, și să demonstreze conformitatea prin dovezi digitale.",
+  "controlled_scope": "Informații emise de acest domeniu: entitate, ofertă, întrebări frecvente, rută de contact.",
+  "uncontrolled_scope": "Sisteme externe de ranking, retrieval sau recomandare AI.",
+  "offers": [
+    "EU AI Act Governance Pack",
+    "ASK EU AI Act (asistent conversațional)",
+    "RRVI - Remote Regulatory Verification Infrastructure"
+  ],
+  "public_files": [
+    "/llms.txt",
+    "/organization.json",
+    "/intents.json",
+    "/adn.json",
+    "/sitemap.xml",
+    "/robots.txt"
+  ]
+}

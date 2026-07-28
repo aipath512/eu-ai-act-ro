@@ -1,0 +1,4 @@
+Contact: mailto:contact@5thelement.ai
+Expires: 2027-07-28T00:00:00.000Z
+Preferred-Languages: ro, en
+Canonical: https://eu-ai-act.ro/.well-known/security.txt

@@ -1,0 +1,11 @@
+/* TEAM */
+Founder: Dan Ionescu
+Company: AiVenture S.R.L.
+Flagship: 5THELEMENT.ai
+Contact: contact@5thelement.ai
+
+/* SITE */
+Site: EU AI ACT READY™ (eu-ai-act.ro)
+Category: EU AI Act Compliance Governance Platform
+Delivery umbrella: ADI — AI Delivery Infrastructure
+Language: Romanian (RO)
