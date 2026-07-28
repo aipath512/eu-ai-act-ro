@@ -2,8 +2,8 @@ User-agent: *
 Allow: /
 
 # AI-agent discovery layer
-# See: /ai/llms.txt for a plain-language site summary for LLMs
-# See: /ai/intents.json for structured intent → answer → next-action mapping
-# See: /schema/organization.json for entity/legal identity data
+# See: /llms.txt for a plain-language site summary for LLMs
+# See: /intents.json for structured intent → answer → next-action mapping
+# See: /organization.json for entity/legal identity data
 
 Sitemap: https://eu-ai-act.ro/sitemap.xml

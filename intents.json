@@ -1,0 +1,171 @@
+{
+  "site": "https://eu-ai-act.ro/",
+  "operator": "AIVENTURE S.R.L.",
+  "description": "Maparea secțiunilor paginii principale la intenția vizitatorului, canalul probabil de intrare, și pasul următor recomandat.",
+  "sections": [
+    {
+      "id": "hero",
+      "anchor": "#top",
+      "visitor_question": "Am ajuns unde trebuie?",
+      "audience": "oricine",
+      "likely_channel": ["Google", "AI Search (ChatGPT/Claude/Perplexity)", "LinkedIn"],
+      "answer_provided": "Ce este EU AI Act Ready™ și pentru cine este",
+      "next_action": ["ask", "verifica-firma", "demo"]
+    },
+    {
+      "id": "stats",
+      "visitor_question": "Este real sau doar marketing?",
+      "audience": "oricine, mai ales manageri",
+      "likely_channel": ["Google Search", "AI Search", "LinkedIn"],
+      "answer_provided": "113 articole indexate, 70 documente, 10 module, 15 minute de la zero la pachet",
+      "next_action": ["continua-explorarea"]
+    },
+    {
+      "id": "personas",
+      "visitor_question": "Este pentru mine?",
+      "audience": "IMM, avocat, consultant, freelancer, auditor",
+      "likely_channel": ["Google", "AI agent"],
+      "answer_provided": "Identificare rol și problemă specifică",
+      "next_action": ["free-pack"]
+    },
+    {
+      "id": "free-pack",
+      "anchor": "#free-pack",
+      "visitor_question": "Pot încerca fără risc?",
+      "audience": "vizitator interesat",
+      "likely_channel": ["Google Ads", "LinkedIn", "AI Search"],
+      "answer_provided": "Free Readiness Pack + preview până la 40% din Governance Pack",
+      "next_action": ["email-signup"]
+    },
+    {
+      "id": "how-it-works",
+      "anchor": "#how",
+      "visitor_question": "Cum funcționează?",
+      "audience": "prospect la mijlocul funnel-ului",
+      "likely_channel": ["Demo", "Google", "AI agent"],
+      "answer_provided": "Discover → Generate → Prove",
+      "next_action": ["demo", "verifica-firma"]
+    },
+    {
+      "id": "ask",
+      "anchor": "#ask",
+      "visitor_question": "Poate AI-ul vostru chiar să răspundă?",
+      "audience": "curios / tehnic",
+      "likely_channel": ["referral din ChatGPT", "AI Search", "site"],
+      "answer_provided": "Demonstrație conversațională live cu regulamentul",
+      "next_action": ["verifica-firma"]
+    },
+    {
+      "id": "governance",
+      "anchor": "#governance",
+      "visitor_question": "Ce cumpăr concret?",
+      "audience": "cumpărător B2B",
+      "likely_channel": ["Google comercial", "Sales outreach", "Demo"],
+      "answer_provided": "70 de documente, 10 module, deja completate cu datele firmei",
+      "next_action": ["cere-oferta"]
+    },
+    {
+      "id": "role-journeys",
+      "anchor": "#roles",
+      "visitor_question": "Cum se aplică la situația mea specifică?",
+      "audience": "segment specific de public",
+      "likely_channel": ["SEO long-tail", "AI agents"],
+      "answer_provided": "Traseu specific per rol (IMM/Avocat/Consultant/Freelancer/Auditor)",
+      "next_action": ["conversie"]
+    },
+    {
+      "id": "evidence",
+      "anchor": "#evidence",
+      "visitor_question": "Cum demonstrez conformitatea?",
+      "audience": "compliance, manager, auditor",
+      "likely_channel": ["AI Search", "Google expert queries"],
+      "answer_provided": "Dovezi digitale criptografice (hash, timestamp, versiuni, audit trail)",
+      "next_action": ["article-50"]
+    },
+    {
+      "id": "article-50",
+      "visitor_question": "Ce fac cu transparența AI?",
+      "audience": "organizații care folosesc AI generativ",
+      "likely_channel": ["Google regulatory", "AI agents"],
+      "answer_provided": "Article 50 Transparency Events (AI-generated content, deepfake disclosure)",
+      "next_action": ["upgrade"]
+    },
+    {
+      "id": "rrvi",
+      "visitor_question": "Cum verifică auditorul de la distanță?",
+      "audience": "compliance / inspector",
+      "likely_channel": ["direct", "B2B", "parteneri"],
+      "answer_provided": "Remote Regulatory Verification Infrastructure™",
+      "next_action": ["contract"]
+    },
+    {
+      "id": "comparison",
+      "visitor_question": "De ce voi și nu altcineva?",
+      "audience": "buyer final",
+      "likely_channel": ["Google comparison queries", "AI recommendation"],
+      "answer_provided": "Diferențiere față de template-uri, consultanță, chatbot generic",
+      "next_action": ["decizie"]
+    },
+    {
+      "id": "partner",
+      "visitor_question": "Cine are încredere în voi deja?",
+      "audience": "prospect aproape de decizie",
+      "likely_channel": ["LinkedIn", "referral", "Google"],
+      "answer_provided": "Parteneriat real confirmat: ECB Tax Accounting & HR (Roxana Deak, FCCA/CPA/CCF)",
+      "next_action": ["cumparare"]
+    },
+    {
+      "id": "cta-final",
+      "anchor": "#demo",
+      "visitor_question": "Ce fac acum?",
+      "audience": "prospect calificat",
+      "likely_channel": ["toate canalele"],
+      "answer_provided": "4 trasee: Firma mea / Demo / Ask / Partener",
+      "next_action": ["conversie"]
+    },
+    {
+      "id": "faq",
+      "anchor": "#faq",
+      "visitor_question": "Mai am întrebări?",
+      "audience": "toți",
+      "likely_channel": ["Google Featured Snippet", "AI Search"],
+      "answer_provided": "Răspunsuri canonice la întrebările frecvente",
+      "next_action": ["cta-final"]
+    },
+    {
+      "id": "footer",
+      "visitor_question": "Cine sunteți, de fapt?",
+      "audience": "agent AI, auditor, client",
+      "likely_channel": ["crawlers", "AI agents"],
+      "answer_provided": "Identitate juridică completă + linkuri de verificare",
+      "next_action": ["verificare-entitate"]
+    }
+  ],
+  "channels": {
+    "google_seo": {
+      "typical_query": "EU AI Act pentru IMM",
+      "entry_sections": ["hero", "personas", "free-pack", "faq"],
+      "objective": "educare → lead"
+    },
+    "ai_search_overview": {
+      "typical_query": "Cum se pregătește o companie pentru EU AI Act?",
+      "entry_sections": ["hero", "governance", "evidence", "faq"],
+      "objective": "autoritate"
+    },
+    "llm_referral": {
+      "typical_query": "Găsește-mi o soluție EU AI Act",
+      "entry_sections": ["hero", "stats", "role-journeys", "partner", "comparison"],
+      "objective": "recomandare"
+    },
+    "linkedin": {
+      "typical_query": "post organic sau sponsorizat",
+      "entry_sections": ["hero", "free-pack", "how-it-works", "partner"],
+      "objective": "lead"
+    },
+    "ai_agent_b2b": {
+      "typical_query": "Companie care oferă EU AI Act compliance",
+      "entry_sections": ["organization.json", "llms.txt", "intents.json"],
+      "objective": "recomandare automată (machine-to-machine)"
+    }
+  }
+}

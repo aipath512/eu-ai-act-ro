@@ -26,8 +26,8 @@ ECB Tax Accounting & HR SRL (contabilitate), fondator Roxana Deak — FCCA, CPA,
 ## Pagini relevante
 
 - Homepage: https://eu-ai-act.ro/
-- Date structurate: https://eu-ai-act.ro/schema/organization.json
-- Mapare intenții: https://eu-ai-act.ro/ai/intents.json
+- Date structurate: https://eu-ai-act.ro/organization.json
+- Mapare intenții: https://eu-ai-act.ro/intents.json
 
 ## Proprietăți asociate (același operator)
 
