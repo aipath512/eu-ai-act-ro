@@ -3,7 +3,7 @@
 
   "version": "1.0",
 
-  "domain": "https://eu-ai-act-ready.eu",
+  "domain": "https://eu-ai-act.ro",
 
   "node_role": "client_business_node",
 
@@ -39,10 +39,10 @@
 
     "category": "EU AI Act Compliance Knowledge Platform",
 
-    "domain": "https://eu-ai-act-ready.eu",
+    "domain": "https://eu-ai-act.ro",
 
     "purpose":
-    "Provide AI governance knowledge, readiness resources and operational compliance infrastructure based on Regulation (EU) 2024/1689."
+    "Oferă cunoștințe de guvernanță AI, resurse de pregătire și infrastructură operațională de conformitate, bazate pe Regulamentul (UE) 2024/1689, pentru piața din România."
 
   },
 
@@ -50,7 +50,7 @@
   "relationship_model": {
 
     "platform":
-    "EU AI Act Ready™",
+    "EU AI Act Ready™ (RO)",
 
     "technology_provider":
     "AiVenture SRL",
