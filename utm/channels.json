@@ -1,0 +1,46 @@
+{
+  "channels": [
+    {
+      "id": "google_seo",
+      "utm_source": "google",
+      "utm_medium": "organic",
+      "description": "Căutări organice Google — 'EU AI Act IMM', 'conformitate AI Act România' etc."
+    },
+    {
+      "id": "google_ads",
+      "utm_source": "google",
+      "utm_medium": "paid",
+      "description": "Campanii plătite Google Ads"
+    },
+    {
+      "id": "ai_search",
+      "utm_source": ["chatgpt", "claude", "perplexity"],
+      "utm_medium": "referral",
+      "description": "Trafic din recomandări/citări în ChatGPT, Claude, Perplexity"
+    },
+    {
+      "id": "linkedin_organic",
+      "utm_source": "linkedin",
+      "utm_medium": "social",
+      "description": "Postări organice pe LinkedIn (personal sau companie)"
+    },
+    {
+      "id": "partner_ecbtax",
+      "utm_source": "ecbtax",
+      "utm_medium": "partner",
+      "description": "Trafic trimis de partenerul ECBTax către clienții lor"
+    },
+    {
+      "id": "email",
+      "utm_source": "email",
+      "utm_medium": "email",
+      "description": "Newsletter sau email direct"
+    },
+    {
+      "id": "whatsapp",
+      "utm_source": "whatsapp",
+      "utm_medium": "referral",
+      "description": "Linkuri trimise prin WhatsApp"
+    }
+  ]
+}

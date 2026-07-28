@@ -1,0 +1,34 @@
+{
+  "audiences": [
+    {
+      "utm_content": "sme_owner",
+      "matches_persona": "🏢 IMM / Firmă",
+      "description": "Proprietar sau manager IMM"
+    },
+    {
+      "utm_content": "lawyer",
+      "matches_persona": "⚖️ Avocat",
+      "description": "Cabinet de avocatură care vrea să ofere serviciul clienților"
+    },
+    {
+      "utm_content": "consultant",
+      "matches_persona": "📊 Consultant",
+      "description": "Consultant care vrea un serviciu nou de oferit"
+    },
+    {
+      "utm_content": "freelancer",
+      "matches_persona": "👤 Freelancer",
+      "description": "Freelancer care folosește AI și vrea claritate privind responsabilitatea"
+    },
+    {
+      "utm_content": "compliance_auditor",
+      "matches_persona": "🔍 Compliance / Auditor",
+      "description": "Persoană responsabilă de compliance sau auditor extern"
+    },
+    {
+      "utm_content": "hero_button",
+      "matches_persona": null,
+      "description": "Nu un segment de public, ci elementul de conținut — click direct din hero, folosit când testezi variante de buton, nu variante de public"
+    }
+  ]
+}

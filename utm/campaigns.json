@@ -1,0 +1,34 @@
+{
+  "campaigns": [
+    {
+      "utm_campaign": "free_readiness_pack",
+      "description": "Promovarea Free EU AI Act Readiness Pack — lead magnet-ul principal",
+      "target_action": "completare formular /#free-pack"
+    },
+    {
+      "utm_campaign": "article50_launch",
+      "description": "Comunicare despre deadline-ul Articolului 50 (2 august 2026) și Transparency Layer",
+      "target_action": "click pe #article-50 sau upgrade după Governance Pack"
+    },
+    {
+      "utm_campaign": "lawyers_campaign",
+      "description": "Campanie dedicată cabinetelor de avocatură — parteneriat, nu client final",
+      "target_action": "click pe #contact, segment 'partener'"
+    },
+    {
+      "utm_campaign": "sme_campaign",
+      "description": "Campanie dedicată IMM-urilor — mesaj de urgență/deadline",
+      "target_action": "completare formular /#free-pack"
+    },
+    {
+      "utm_campaign": "partner_program",
+      "description": "Recrutare de noi parteneri (asemănător ECBTax)",
+      "target_action": "click pe #contact"
+    },
+    {
+      "utm_campaign": "ask_demo",
+      "description": "Promovarea directă a funcției ASK conversaționale",
+      "target_action": "interacțiune cu #ask"
+    }
+  ]
+}

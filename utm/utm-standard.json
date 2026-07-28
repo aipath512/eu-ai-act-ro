@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "site": "https://eu-ai-act.ro/",
+  "parameters": {
+    "utm_source": {
+      "description": "De unde vine vizitatorul",
+      "allowed_values": [
+        "google", "linkedin", "chatgpt", "claude", "perplexity",
+        "ecbtax", "email", "whatsapp", "youtube", "medium", "x", "facebook", "direct"
+      ]
+    },
+    "utm_medium": {
+      "description": "Tipul canalului",
+      "allowed_values": ["organic", "paid", "social", "referral", "email", "partner", "direct"]
+    },
+    "utm_campaign": {
+      "description": "Obiectivul/campania — vezi campaigns.json pentru lista curentă",
+      "format": "snake_case, fără spații"
+    },
+    "utm_content": {
+      "description": "Segmentul de public sau elementul specific de conținut — vezi audiences.json",
+      "format": "snake_case, fără spații"
+    },
+    "utm_term": {
+      "description": "Cuvânt cheie asociat (mai ales pentru Google Ads)",
+      "format": "snake_case, fără spații",
+      "optional": true
+    }
+  },
+  "naming_rules": [
+    "Toate valorile în minuscule, snake_case",
+    "Niciun spațiu, folosește underscore",
+    "Consistent între campanii — reutilizează valorile din acest fișier, nu inventa altele noi fără să le adaugi aici"
+  ]
+}
