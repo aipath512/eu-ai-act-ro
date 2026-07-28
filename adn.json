@@ -1,0 +1,78 @@
+{
+  "$schema": "https://5thelement.ai/schemas/adn.v1.json",
+
+  "version": "1.0",
+
+  "domain": "https://eu-ai-act-ready.eu",
+
+  "node_role": "client_business_node",
+
+  "network_name": "AiVenture ADI Network",
+
+  "belongs_to_network": "https://5thelement.ai/adn.json",
+
+  "root_domain": "https://5thelement.ai",
+
+
+  "technology_partner": {
+
+    "name": "AiVenture SRL",
+
+    "delivery_domain": "https://aiventure.ro",
+
+    "technology_flagship": "https://5thelement.ai",
+
+    "legal_id": "CUI 51415878",
+
+    "contact": "contact@5thelement.ai",
+
+    "technology_category": "AI Delivery Infrastructure",
+
+    "technology_acronym": "ADI"
+
+  },
+
+
+  "platform_identity": {
+
+    "name": "EU AI Act Ready™",
+
+    "category": "EU AI Act Compliance Knowledge Platform",
+
+    "domain": "https://eu-ai-act-ready.eu",
+
+    "purpose":
+    "Provide AI governance knowledge, readiness resources and operational compliance infrastructure based on Regulation (EU) 2024/1689."
+
+  },
+
+
+  "relationship_model": {
+
+    "platform":
+    "EU AI Act Ready™",
+
+    "technology_provider":
+    "AiVenture SRL",
+
+    "network":
+    "AiVenture ADI Network"
+
+  },
+
+
+  "trust_signals": [
+
+    "Entity Identity",
+
+    "Technology Attribution",
+
+    "Version Control",
+
+    "Knowledge Infrastructure",
+
+    "Traceability"
+
+  ]
+
+}
