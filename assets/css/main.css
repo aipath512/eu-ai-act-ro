@@ -385,6 +385,7 @@ footer{background:var(--bg-alt);}
 
 /* ---------- responsive ---------- */
 @media(max-width:900px){
+  .login-panel{left:16px;right:16px;width:auto;}
   nav.main-links{display:none;}
   .burger{display:block;}
   .term-grid{grid-template-columns:repeat(2,1fr);}
