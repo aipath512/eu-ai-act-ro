@@ -207,9 +207,22 @@ nav.main-links a:hover{color:var(--gold);}
 .term-cell .lbl{font-family:var(--mono);font-size:11px;color:var(--text-dim);margin-top:6px;text-transform:uppercase;letter-spacing:.04em;}
 
 /* ---------- ask box ---------- */
+.ask-section{background:radial-gradient(ellipse at top, #1a1408 0%, var(--bg) 55%);}
+.diff-badge{
+  display:inline-block;font-family:var(--mono);font-weight:700;font-size:12.5px;
+  color:#0a0a0a;background:linear-gradient(90deg,var(--gold),#ffe08a);
+  padding:9px 18px;border-radius:5px;margin-bottom:20px;letter-spacing:.02em;
+  box-shadow:0 0 24px rgba(240,193,75,.45);
+}
+.diff-badge.diff-1{box-shadow:0 0 34px rgba(240,193,75,.65);font-size:13px;}
+.diff-badge.diff-2{box-shadow:0 0 20px rgba(240,193,75,.35);}
+.diff-badge.diff-3{
+  background:linear-gradient(90deg,var(--gold-dim),var(--gold));
+  box-shadow:0 0 14px rgba(240,193,75,.22);font-size:12px;
+}
 .ask-panel{
-  background:var(--panel);border:1px solid var(--border);border-radius:10px;
-  padding:36px;margin-top:30px;
+  background:linear-gradient(160deg,#151107,var(--panel));border:1.5px solid var(--gold);border-radius:10px;
+  padding:36px;margin-top:30px;box-shadow:0 0 40px rgba(240,193,75,.15);
 }
 .ask-input-row{display:flex;gap:10px;margin-top:20px;}
 .ask-input-row input{
@@ -217,12 +230,13 @@ nav.main-links a:hover{color:var(--gold);}
   padding:14px 16px;color:var(--text);font-family:var(--sans);font-size:15px;
 }
 .ask-input-row input:focus{outline:none;border-color:var(--gold-dim);}
-.ask-examples{margin-top:18px;display:flex;flex-direction:column;gap:8px;}
+.ask-examples{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .ask-examples button{
-  text-align:left;background:none;border:1px dashed var(--border);color:var(--text-dim);
-  font-family:var(--sans);font-size:14px;padding:10px 14px;border-radius:5px;cursor:pointer;
+  text-align:left;background:var(--panel);border:1px solid var(--border);color:var(--text-dim);
+  font-family:var(--sans);font-size:13.5px;line-height:1.4;padding:14px 16px;border-radius:14px;cursor:pointer;
 }
-.ask-examples button:hover{border-color:var(--gold-dim);color:var(--text);}
+.ask-examples button:hover{border-color:var(--gold-dim);color:var(--text);background:#171310;}
+@media(max-width:640px){.ask-examples{grid-template-columns:1fr;}}
 .ask-answer{
   margin-top:18px;padding:16px 18px;border-left:2px solid var(--gold-dim);
   background:#0d0d0d;font-size:14.5px;color:var(--text-dim);display:none;white-space:pre-wrap;line-height:1.7;
