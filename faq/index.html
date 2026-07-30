@@ -47,6 +47,13 @@ content="https://eu-ai-act.ro/faq/">
  },
 
  {
+  "@type":"WebSite",
+  "@id":"https://eu-ai-act.ro/#website",
+  "url":"https://eu-ai-act.ro/",
+  "name":"EU AI ACT READY™"
+ },
+
+ {
   "@type":"WebPage",
   "@id":"https://eu-ai-act.ro/faq/",
   "url":"https://eu-ai-act.ro/faq/",
@@ -56,18 +63,28 @@ content="https://eu-ai-act.ro/faq/">
  {
   "@type":"BreadcrumbList",
   "itemListElement":[
+
    {
     "@type":"ListItem",
     "position":1,
     "name":"Acasă",
     "item":"https://eu-ai-act.ro/"
    },
+
    {
     "@type":"ListItem",
     "position":2,
     "name":"FAQ",
     "item":"https://eu-ai-act.ro/faq/"
    }
+
+  ]
+ },
+
+ {
+  "@type":"FAQPage",
+  "@id":"https://eu-ai-act.ro/faq/#faq",
+  "mainEntity":[
   ]
  }
 
@@ -76,7 +93,91 @@ content="https://eu-ai-act.ro/faq/">
 </script>
 
 
-<link rel="stylesheet" href="faq.css">
+
+<style>
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+margin:0;
+padding:0;
+background:#ffffff;
+color:#111111;
+line-height:1.6;
+}
+
+
+main{
+max-width:1100px;
+margin:auto;
+padding:30px 20px;
+}
+
+
+.breadcrumb{
+max-width:1100px;
+margin:20px auto;
+padding:0 20px;
+font-size:14px;
+}
+
+
+.breadcrumb a{
+color:#0057ff;
+text-decoration:none;
+}
+
+
+h1{
+font-size:42px;
+line-height:1.2;
+}
+
+
+.intro{
+font-size:20px;
+color:#444;
+}
+
+
+.faq-category{
+margin-top:50px;
+}
+
+
+.faq-category h2{
+font-size:30px;
+border-bottom:2px solid #eee;
+padding-bottom:10px;
+}
+
+
+.faq-item{
+background:#f7f7f7;
+border-radius:10px;
+padding:22px;
+margin:20px 0;
+}
+
+
+.faq-item h3{
+font-size:21px;
+margin-top:0;
+}
+
+
+@media(max-width:700px){
+
+h1{
+font-size:32px;
+}
+
+.faq-category h2{
+font-size:24px;
+}
+
+}
+
+</style>
 
 
 </head>
@@ -137,7 +238,6 @@ EU AI Act este regulamentul Uniunii Europene care stabilește reguli pentru dezv
 </div>
 
 
-
 <div class="faq-item">
 
 <h3>
@@ -149,7 +249,6 @@ Se aplică organizațiilor care dezvoltă, furnizează, distribuie sau utilizeaz
 </p>
 
 </div>
-
 
 
 <div class="faq-item">
@@ -165,7 +264,6 @@ Da. IMM-urile trebuie să înțeleagă modul în care utilizează AI și respons
 </div>
 
 
-
 <div class="faq-item">
 
 <h3>
@@ -177,7 +275,6 @@ Organizația trebuie să stabilească reguli interne pentru utilizarea AI și ge
 </p>
 
 </div>
-
 
 
 <div class="faq-item">
@@ -267,7 +364,6 @@ Prin inventarierea AI, evaluarea riscurilor și stabilirea unui plan de acțiune
 <h2>
 02 — IMM & Antreprenori
 </h2>
-
 
 
 <div class="faq-item">
@@ -401,6 +497,7 @@ Pentru ca angajații și clienții să înțeleagă modul în care este utilizat
 
 
 </section>
+
 
 
 
@@ -540,8 +637,11 @@ Prin rezultate măsurabile: reducerea riscurilor, documentare și pregătire ope
 </p>
 
 </div>
+
+
 </section>
-<section class="faq-category">
+
+ <section class="faq-category">
 
 
 <h2>
@@ -680,6 +780,7 @@ O utilizare AI mai sigură, transparentă și controlată.
 
 
 </section>
+
 
 
 
@@ -825,6 +926,7 @@ Reduce timpul de pregătire și crește capacitatea organizației de a demonstra
 
 
 
+
 <section class="faq-category">
 
 
@@ -964,15 +1066,15 @@ Va deveni o interfață naturală între oameni, informații și sisteme AI.
 
 
 </section>
-
-
-
 <section class="faq-category">
+
 
 <h2>
 07 — AI Risk Management
 </h2>
- <div class="faq-item">
+
+
+<div class="faq-item">
 
 <h3>
 Ce este AI Risk Management?
@@ -1107,6 +1209,7 @@ O utilizare AI mai sigură și mai predictibilă.
 
 
 <section class="faq-category">
+
 
 <h2>
 08 — Evidence Layer & Audit
@@ -1249,6 +1352,7 @@ Dovezile permit verificarea obiectivă a proceselor.
 
 <section class="faq-category">
 
+
 <h2>
 09 — Article 50 Transparency Layer
 </h2>
@@ -1383,7 +1487,7 @@ Pentru creșterea încrederii în utilizarea inteligenței artificiale.
 
 </div>
 </section>
-<section class="faq-category">
+ <section class="faq-category">
 
 <h2>
 10 — RRVI™ Remote Verification
@@ -1661,5 +1765,4 @@ Prin evaluarea situației actuale și stabilirea unui plan de pregătire.
 </body>
 
 </html>
- 
  
