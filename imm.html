@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/assets/css/main.css?v=3">
-<link rel="stylesheet" href="/assets/css/additions.css?v=15">
+<link rel="stylesheet" href="/assets/css/additions.css?v=20">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,16 +33,23 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Trebuie firma mea să respecte EU AI Act dacă folosesc doar ChatGPT?", "acceptedAnswer": { "@type": "Answer", "text": "Da, posibil. Obligațiile depind de modul în care este folosit AI-ul, nu de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul." } },
-        { "@type": "Question", "name": "Ce se întâmplă dacă nu fac nimic până pe 2 august 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Rămâi expus la sancțiuni și, mai ales, fără dovezi pregătite în cazul unui control din partea autorității competente (ex: ANCOM)." } },
-        { "@type": "Question", "name": "De unde încep, concret?", "acceptedAnswer": { "@type": "Answer", "text": "De la un inventar al sistemelor AI folosite în firmă — pasul de bază din Free Readiness Pack, gratuit." } },
-        { "@type": "Question", "name": "Cât costă primul pas?", "acceptedAnswer": { "@type": "Answer", "text": "Nimic. Demo-ul și evaluarea inițială sunt 100% gratuite, fără card, fără risc financiar." } }
-      ]
+      "mainEntity": [{"@type": "Question", "name": "Mă privește EU AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Foarte probabil da — obligațiile depind de cum folosești AI, nu de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul, indiferent dacă ai 3 sau 300 de angajați."}}, {"@type": "Question", "name": "Folosesc AI fără să-mi dau seama?", "acceptedAnswer": {"@type": "Answer", "text": "Da, foarte probabil. Shadow AI înseamnă instrumente AI introduse informal de angajați — ChatGPT pentru redactare, Canva AI pentru imagini, Copilot pentru cod — fără ca firma să aibă un inventar oficial. Primul pas e exact acest inventar."}}, {"@type": "Question", "name": "Ce se întâmplă dacă nu fac nimic?", "acceptedAnswer": {"@type": "Answer", "text": "Rămâi expus la sancțiuni, dar și la un risc mai concret pe termen scurt: lipsa dovezilor pregătite dacă un client, partener sau autoritate (ex: ANCOM) cere clarificări. Termenul pentru obligațiile de transparență e 2 august 2026."}}, {"@type": "Question", "name": "Ce documente trebuie să pregătesc, exact?", "acceptedAnswer": {"@type": "Answer", "text": "Structura completă acoperă 10 module operaționale și până la 70 de documente — dar Free Readiness Pack-ul îți arată din capul locului o previzualizare (până la 40%) adaptată situației reale a firmei, nu lista completă generică."}}, {"@type": "Question", "name": "Cine e responsabil AI în firma mea?", "acceptedAnswer": {"@type": "Answer", "text": "Da — regulamentul cere o persoană responsabilă AI desemnată, al cărei nume e populat automat în toate documentele generate. Nu trebuie să fie un specialist tehnic; poate fi orice persoană din organizație care preia responsabilitatea operațională."}}, {"@type": "Question", "name": "Cum știu ce nivel de risc au sistemele mele AI?", "acceptedAnswer": {"@type": "Answer", "text": "Clasificarea de risc e al doilea modul din Governance Pack — se face automat, pe baza inventarului inițial, pentru fiecare sistem AI identificat, nu manual de tine."}}, {"@type": "Question", "name": "De ce EU AI Act Ready™ și nu o consultanță clasică?", "acceptedAnswer": {"@type": "Answer", "text": "Consultanța clasică înseamnă proiecte, tarif orar și livrabile statice pe hârtie. Aici primești pachetul completat cu datele firmei în ~15 minute, cu dovezi digitale verificabile — nu doar un document care devine depășit rapid."}}, {"@type": "Question", "name": "Cât costă, de fapt?", "acceptedAnswer": {"@type": "Answer", "text": "Demo-ul și evaluarea inițială (Free Readiness Pack) sunt 100% gratuite, fără card — vezi rezultatul real înainte de orice discuție comercială despre pachetul complet."}}, {"@type": "Question", "name": "Cum încep, chiar acum?", "acceptedAnswer": {"@type": "Answer", "text": "Scrii emailul în formularul „Firma Ta”, primești un link de acces, iar Free Readiness Pack-ul se generează în aproximativ 15 minute — fără cont creat manual, fără parolă."}}]
     }
   ]
 }
 </script>
+<style>
+  .intent-cluster { margin-top:26px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+  .intent-cluster:first-of-type { border-top:none; margin-top:16px; padding-top:0; }
+  .intent-canonical { font-family:var(--serif); font-size:18px; color:var(--text); font-weight:600; }
+  .intent-variants { margin-top:6px; padding-left:18px; }
+  .intent-variants li { color:var(--text-faint); font-size:12.5px; font-style:italic; margin-bottom:3px; }
+  .intent-answer { margin-top:10px; color:var(--text-dim); font-size:14px; line-height:1.65; }
+  .intent-evidence { margin-top:8px; font-size:11.5px; color:var(--gold); }
+  .intent-evidence span { font-family:var(--mono); text-transform:uppercase; color:var(--text-faint); margin-right:8px; }
+  .stage-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-top:36px; padding-bottom:8px; border-bottom:1px solid rgba(240,193,75,0.25); }
+  .stage-label:first-child { margin-top:0; }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,7 @@
       <span class="mark">e</span>
       <span>
         <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
-        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
       </span>
     </a>
     <nav class="main-links">
@@ -96,54 +103,77 @@
 
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PROBLEMA TA</span>
-      <h2 class="h2-title">Nu știi de unde să începi, și nu ai timp de proiecte lungi.</h2>
-      <p class="sub-lede">Majoritatea proprietarilor de IMM nu au un departament de compliance sau juriști interni. EU AI Act Ready™ e construit exact pentru acest scenariu — nu pentru corporații cu echipe dedicate.</p>
-      <div class="feature-grid" style="margin-top:28px;">
-        <div class="feature-item">
-          <h4>Inventar automat, nu foaie goală</h4>
-          <p>Identifici în câteva minute unde folosești deja AI în firmă — inclusiv Shadow AI, instrumentele introduse informal de angajați.</p>
-        </div>
-        <div class="feature-item">
-          <h4>70 documente, gata completate</h4>
-          <p>Nu primești șabloane goale de completat — documentele ajung generate cu datele firmei tale, gata de arătat unui inspector.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Fără cunoștințe tehnice necesare</h4>
-          <p>Nu trebuie să știi ce e Machine Learning sau risc algoritmic — platforma traduce regulamentul în pași concreți.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Gratuit să începi</h4>
-          <p>Demo fără cont, evaluare inițială gratuită — plătești doar dacă mergi mai departe.</p>
+      <span class="tag"><span class="dot">//</span>PARCURSUL TĂU, SPECIFIC ACESTUI ROL</span>
+      <h2 class="h2-title">De la <em>întrebare</em> la <em>decizie</em>.</h2>
+      <p class="stage-label">CONȘTIENTIZARE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Mă privește EU AI Act?</div>
+          <ul class="intent-variants"><li>Firma mea este afectată de EU AI Act?</li><li>Se aplică regulamentul și IMM-urilor?</li><li>Cum știu dacă sunt vizat de lege?</li></ul>
+          <p class="intent-answer">Foarte probabil da — obligațiile depind de cum folosești AI, nu de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul, indiferent dacă ai 3 sau 300 de angajați.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Articolul 50, Regulamentul (UE) 2024/1689 — aplicabil din 2 august 2026.</div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>ÎNTREBĂRI FRECVENTE</span>
-      <h2 class="h2-title">Răspunsuri <em>directe</em>, pentru proprietari imm.</h2>
-      <div style="margin-top:32px;">
-        <div class="faq-item">
-          <div class="faq-q">Trebuie firma mea să respecte EU AI Act dacă folosesc doar ChatGPT? <span class="plus">+</span></div>
-          <div class="faq-a">Da, posibil. Obligațiile depind de modul în care este folosit AI-ul, nu de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Ce se întâmplă dacă nu fac nimic până pe 2 august 2026? <span class="plus">+</span></div>
-          <div class="faq-a">Rămâi expus la sancțiuni și, mai ales, fără dovezi pregătite în cazul unui control din partea autorității competente (ex: ANCOM).</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">De unde încep, concret? <span class="plus">+</span></div>
-          <div class="faq-a">De la un inventar al sistemelor AI folosite în firmă — pasul de bază din Free Readiness Pack, gratuit.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Cât costă primul pas? <span class="plus">+</span></div>
-          <div class="faq-a">Nimic. Demo-ul și evaluarea inițială sunt 100% gratuite, fără card, fără risc financiar.</div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Folosesc AI fără să-mi dau seama?</div>
+          <ul class="intent-variants"><li>ChatGPT sau Copilot contează ca AI?</li><li>Angajații mei pot folosi AI fără să știu?</li><li>Ce este Shadow AI?</li></ul>
+          <p class="intent-answer">Da, foarte probabil. Shadow AI înseamnă instrumente AI introduse informal de angajați — ChatGPT pentru redactare, Canva AI pentru imagini, Copilot pentru cod — fără ca firma să aibă un inventar oficial. Primul pas e exact acest inventar.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 01 — Inventarul Sistemelor AI, din Governance Pack.</div>
         </div>
 
-      </div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce se întâmplă dacă nu fac nimic?</div>
+          <ul class="intent-variants"><li>Ce risc am dacă ignor regulamentul?</li><li>Ce pierd dacă nu mă pregătesc?</li><li>Cât de urgent e, de fapt?</li></ul>
+          <p class="intent-answer">Rămâi expus la sancțiuni, dar și la un risc mai concret pe termen scurt: lipsa dovezilor pregătite dacă un client, partener sau autoritate (ex: ANCOM) cere clarificări. Termenul pentru obligațiile de transparență e 2 august 2026.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Calendarul de implementare al Regulamentului (UE) 2024/1689.</div>
+        </div>
+
+      <p class="stage-label">ÎNȚELEGERE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce documente trebuie să pregătesc, exact?</div>
+          <ul class="intent-variants"><li>Care e lista completă, nu doar generalități?</li><li>Am nevoie de toate cele 70 sau doar de o parte?</li><li>De unde știu ce se aplică firmei mele?</li></ul>
+          <p class="intent-answer">Structura completă acoperă 10 module operaționale și până la 70 de documente — dar Free Readiness Pack-ul îți arată din capul locului o previzualizare (până la 40%) adaptată situației reale a firmei, nu lista completă generică.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Governance Pack Preview — arhitectura completă, 10 module, 70 documente.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cine e responsabil AI în firma mea?</div>
+          <ul class="intent-variants"><li>Trebuie să numesc oficial pe cineva?</li><li>Poate fi proprietarul firmei, sau trebuie un rol tehnic?</li><li>Ce responsabilitate reală are această persoană?</li></ul>
+          <p class="intent-answer">Da — regulamentul cere o persoană responsabilă AI desemnată, al cărei nume e populat automat în toate documentele generate. Nu trebuie să fie un specialist tehnic; poate fi orice persoană din organizație care preia responsabilitatea operațională.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Câmpul „Persoană Responsabilă AI”, populat automat în cele 70 de documente generate.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum știu ce nivel de risc au sistemele mele AI?</div>
+          <ul class="intent-variants"><li>ChatGPT și Copilot sunt risc mare sau mic?</li><li>Cine face clasificarea, eu sau platforma?</li><li>Ce se întâmplă dacă clasific greșit?</li></ul>
+          <p class="intent-answer">Clasificarea de risc e al doilea modul din Governance Pack — se face automat, pe baza inventarului inițial, pentru fiecare sistem AI identificat, nu manual de tine.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 02 — Clasificarea Riscului.</div>
+        </div>
+
+      <p class="stage-label">DECIZIE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">De ce EU AI Act Ready™ și nu o consultanță clasică?</div>
+          <ul class="intent-variants"><li>Ce mă costă în plus consultanța tradițională?</li><li>De ce nu apelez direct la un avocat?</li><li>Ce câștig concret alegând platforma?</li></ul>
+          <p class="intent-answer">Consultanța clasică înseamnă proiecte, tarif orar și livrabile statice pe hârtie. Aici primești pachetul completat cu datele firmei în ~15 minute, cu dovezi digitale verificabile — nu doar un document care devine depășit rapid.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Tabel comparativ: Template-uri / Consultanță / Chatbot / EU AI Act Ready™.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cât costă, de fapt?</div>
+          <ul class="intent-variants"><li>E gratuit sau plătesc de la început?</li><li>Ce primesc fără să scot cardul?</li><li>Unde apare prețul real?</li></ul>
+          <p class="intent-answer">Demo-ul și evaluarea inițială (Free Readiness Pack) sunt 100% gratuite, fără card — vezi rezultatul real înainte de orice discuție comercială despre pachetul complet.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„100% GRATUIT · fără card” — afișat pe pagina principală.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum încep, chiar acum?</div>
+          <ul class="intent-variants"><li>Care e primul pas concret?</li><li>Am nevoie de cont din prima?</li><li>Cât durează până văd un rezultat?</li></ul>
+          <p class="intent-answer">Scrii emailul în formularul „Firma Ta”, primești un link de acces, iar Free Readiness Pack-ul se generează în aproximativ 15 minute — fără cont creat manual, fără parolă.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Fluxul „Firma Ta” — magic-link, cont creat automat la primul acces.</div>
+        </div>
+
     </div>
   </section>
 

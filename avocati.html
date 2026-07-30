@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/assets/css/main.css?v=3">
-<link rel="stylesheet" href="/assets/css/additions.css?v=15">
+<link rel="stylesheet" href="/assets/css/additions.css?v=20">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,16 +33,23 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Cum pot oferi conformitate AI Act ca serviciu clienților mei?", "acceptedAnswer": { "@type": "Answer", "text": "Prin parteneriat de distribuție — cabinetul rămâne interfața cu clientul, iar infrastructura tehnică (generare documente, dovezi) vine din platformă." } },
-        { "@type": "Question", "name": "Am nevoie de cunoștințe tehnice despre AI?", "acceptedAnswer": { "@type": "Answer", "text": "Nu. Platforma generează documentele operaționale; expertiza ta juridică rămâne valoarea adăugată către client." } },
-        { "@type": "Question", "name": "Cum mă diferențiez de alte cabinete care oferă doar consultanță?", "acceptedAnswer": { "@type": "Answer", "text": "Oferi un serviciu deja construit — guvernanță completă, nu doar o opinie punctuală pe hârtie." } },
-        { "@type": "Question", "name": "Există deja un exemplu real de parteneriat?", "acceptedAnswer": { "@type": "Answer", "text": "Da — ECBTax Accounting & HR (Roxana Deak, FCCA/CPA/CCF) oferă deja clienților un prim nivel de pregătire EU AI Act prin acest parteneriat." } }
-      ]
+      "mainEntity": [{"@type": "Question", "name": "Cum ofer clienților un serviciu nou de conformitate AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu ai nevoie de cunoștințe tehnice de AI. Platforma generează documentația operațională (inventar, politici, proceduri); expertiza ta juridică rămâne valoarea adăugată către client — exact modelul folosit deja de ECBTax Accounting & HR."}}, {"@type": "Question", "name": "Ce documente sunt cerute de EU AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Documentele ajung generate automat cu datele clientului, nu de completat manual."}}, {"@type": "Question", "name": "Cum mă diferențiez de alte cabinete?", "acceptedAnswer": {"@type": "Answer", "text": "Oferi un rezultat operațional concret — documente și dovezi verificabile criptografic (RRVI™) — nu doar o opinie juridică pe hârtie. Diferența contează mai ales când clientul trebuie să demonstreze conformitatea unui partener sau auditor."}}, {"@type": "Question", "name": "Cum funcționează practic generarea automată a documentelor?", "acceptedAnswer": {"@type": "Answer", "text": "Introduci datele firmei client (nume, responsabil AI, sisteme folosite); platforma generează documentele completate cu aceste date, pe structura celor 10 module. Rămân editabile — tu adaugi judecata juridică specifică cazului."}}, {"@type": "Question", "name": "Ce este RRVI și cum îl explic unui client?", "acceptedAnswer": {"@type": "Answer", "text": "RRVI™ permite unui auditor sau inspector să verifice documente, versiuni și dovezi de la distanță — fără deplasare fizică — prin identificatori unici, timestamp și hash criptografic."}}, {"@type": "Question", "name": "Cum arată un audit trail digital, concret?", "acceptedAnswer": {"@type": "Answer", "text": "O dovadă digitală conține identificator unic, versiune, timestamp, hash criptografic și istoric de modificări — demonstrează nu doar ce document există, ci când exista, cine era responsabil și ce s-a schimbat."}}, {"@type": "Question", "name": "De ce acest parteneriat și nu construiesc singur infrastructura?", "acceptedAnswer": {"@type": "Answer", "text": "Construirea unei infrastructuri proprii de generare documente + dovezi digitale înseamnă luni de dezvoltare tehnică pe care cabinetul tău nu le are ca prioritate. Parteneriatul elimină acest cost complet."}}, {"@type": "Question", "name": "Ce investiție inițială presupune?", "acceptedAnswer": {"@type": "Answer", "text": "Testarea (Demo, evaluare inițială) e gratuită, fără card — poți arăta clientului rezultatul real înainte de orice angajament financiar, al tău sau al clientului."}}, {"@type": "Question", "name": "Care e primul pas concret pentru cabinetul meu?", "acceptedAnswer": {"@type": "Answer", "text": "Începi testând Demo-ul și ASK-ul cu un caz ipotetic, apoi contactezi echipa pentru discuția de parteneriat — fără angajament la acest prim pas."}}]
     }
   ]
 }
 </script>
+<style>
+  .intent-cluster { margin-top:26px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+  .intent-cluster:first-of-type { border-top:none; margin-top:16px; padding-top:0; }
+  .intent-canonical { font-family:var(--serif); font-size:18px; color:var(--text); font-weight:600; }
+  .intent-variants { margin-top:6px; padding-left:18px; }
+  .intent-variants li { color:var(--text-faint); font-size:12.5px; font-style:italic; margin-bottom:3px; }
+  .intent-answer { margin-top:10px; color:var(--text-dim); font-size:14px; line-height:1.65; }
+  .intent-evidence { margin-top:8px; font-size:11.5px; color:var(--gold); }
+  .intent-evidence span { font-family:var(--mono); text-transform:uppercase; color:var(--text-faint); margin-right:8px; }
+  .stage-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-top:36px; padding-bottom:8px; border-bottom:1px solid rgba(240,193,75,0.25); }
+  .stage-label:first-child { margin-top:0; }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,7 @@
       <span class="mark">e</span>
       <span>
         <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
-        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
       </span>
     </a>
     <nav class="main-links">
@@ -96,54 +103,77 @@
 
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PROBLEMA TA</span>
-      <h2 class="h2-title">Cunoști legislația, dar nu ai infrastructura tehnică din spate.</h2>
-      <p class="sub-lede">EU AI Act cere nu doar interpretare juridică, ci și documentație operațională, inventar tehnic și dovezi digitale — lucruri greu de produs manual, pentru fiecare client în parte.</p>
-      <div class="feature-grid" style="margin-top:28px;">
-        <div class="feature-item">
-          <h4>Fără cunoștințe tehnice AI necesare</h4>
-          <p>Platforma generează documentele operaționale; tu oferi consultanța juridică pe baza lor, ca și până acum.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Serviciu nou, fără cost de dezvoltare</h4>
-          <p>Nu construiești nimic de la zero — te distribui prin parteneriat, la fel ca ECBTax Accounting & HR.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Diferențiere reală față de alte cabinete</h4>
-          <p>Poți oferi clienților un pachet complet de guvernanță AI, nu doar o opinie juridică punctuală.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Dovezi verificabile pentru clienți</h4>
-          <p>RRVI™ permite verificarea la distanță a documentelor — utile inclusiv în discuții cu autoritățile.</p>
+      <span class="tag"><span class="dot">//</span>PARCURSUL TĂU, SPECIFIC ACESTUI ROL</span>
+      <h2 class="h2-title">De la <em>întrebare</em> la <em>decizie</em>.</h2>
+      <p class="stage-label">CONȘTIENTIZARE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum ofer clienților un serviciu nou de conformitate AI?</div>
+          <ul class="intent-variants"><li>Pot construi o practică de AI Governance fără resurse tehnice?</li><li>Cum extind serviciile cabinetului cu EU AI Act?</li><li>Am nevoie de cunoștințe tehnice ca să ofer asta?</li></ul>
+          <p class="intent-answer">Nu ai nevoie de cunoștințe tehnice de AI. Platforma generează documentația operațională (inventar, politici, proceduri); expertiza ta juridică rămâne valoarea adăugată către client — exact modelul folosit deja de ECBTax Accounting & HR.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Parteneriat confirmat: ECBTax Accounting & HR (Roxana Deak, FCCA/CPA/CCF).</div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>ÎNTREBĂRI FRECVENTE</span>
-      <h2 class="h2-title">Răspunsuri <em>directe</em>, pentru avocați.</h2>
-      <div style="margin-top:32px;">
-        <div class="faq-item">
-          <div class="faq-q">Cum pot oferi conformitate AI Act ca serviciu clienților mei? <span class="plus">+</span></div>
-          <div class="faq-a">Prin parteneriat de distribuție — cabinetul rămâne interfața cu clientul, iar infrastructura tehnică (generare documente, dovezi) vine din platformă.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Am nevoie de cunoștințe tehnice despre AI? <span class="plus">+</span></div>
-          <div class="faq-a">Nu. Platforma generează documentele operaționale; expertiza ta juridică rămâne valoarea adăugată către client.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Cum mă diferențiez de alte cabinete care oferă doar consultanță? <span class="plus">+</span></div>
-          <div class="faq-a">Oferi un serviciu deja construit — guvernanță completă, nu doar o opinie punctuală pe hârtie.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Există deja un exemplu real de parteneriat? <span class="plus">+</span></div>
-          <div class="faq-a">Da — ECBTax Accounting & HR (Roxana Deak, FCCA/CPA/CCF) oferă deja clienților un prim nivel de pregătire EU AI Act prin acest parteneriat.</div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce documente sunt cerute de EU AI Act?</div>
+          <ul class="intent-variants"><li>Ce trebuie să pregătească un client conform legii?</li><li>Care e lista completă de documentație?</li><li>Există un checklist pentru cabinete de avocatură?</li></ul>
+          <p class="intent-answer">Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Documentele ajung generate automat cu datele clientului, nu de completat manual.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Governance Pack — 10 module, 70 documente.</div>
         </div>
 
-      </div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum mă diferențiez de alte cabinete?</div>
+          <ul class="intent-variants"><li>De ce ar alege clientul serviciul meu, nu al altcuiva?</li><li>Ce ofer în plus față de o opinie juridică punctuală?</li><li>Are sens să investesc timp în asta acum?</li></ul>
+          <p class="intent-answer">Oferi un rezultat operațional concret — documente și dovezi verificabile criptografic (RRVI™) — nu doar o opinie juridică pe hârtie. Diferența contează mai ales când clientul trebuie să demonstreze conformitatea unui partener sau auditor.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>RRVI™ — Remote Regulatory Verification Infrastructure.</div>
+        </div>
+
+      <p class="stage-label">ÎNȚELEGERE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum funcționează practic generarea automată a documentelor?</div>
+          <ul class="intent-variants"><li>Ce introduc eu, ce generează platforma?</li><li>Cât control am asupra conținutului final?</li><li>Pot edita documentele generate?</li></ul>
+          <p class="intent-answer">Introduci datele firmei client (nume, responsabil AI, sisteme folosite); platforma generează documentele completate cu aceste date, pe structura celor 10 module. Rămân editabile — tu adaugi judecata juridică specifică cazului.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Fluxul Governance Pack: date firmă → generare automată → documente completate.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce este RRVI și cum îl explic unui client?</div>
+          <ul class="intent-variants"><li>De ce contează verificarea la distanță?</li><li>Cum diferă de un document PDF obișnuit?</li><li>Ce întreabă concret un auditor prin RRVI?</li></ul>
+          <p class="intent-answer">RRVI™ permite unui auditor sau inspector să verifice documente, versiuni și dovezi de la distanță — fără deplasare fizică — prin identificatori unici, timestamp și hash criptografic.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>RRVI™ — secțiune dedicată pe eu-ai-act.ro.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum arată un audit trail digital, concret?</div>
+          <ul class="intent-variants"><li>Ce conține exact o dovadă digitală?</li><li>E doar un log, sau mai mult?</li><li>Cum arăt asta unui client neîncrezător?</li></ul>
+          <p class="intent-answer">O dovadă digitală conține identificator unic, versiune, timestamp, hash criptografic și istoric de modificări — demonstrează nu doar ce document există, ci când exista, cine era responsabil și ce s-a schimbat.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Evidence Layer — identificator unic, versiune, timestamp, hash criptografic, audit trail.</div>
+        </div>
+
+      <p class="stage-label">DECIZIE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">De ce acest parteneriat și nu construiesc singur infrastructura?</div>
+          <ul class="intent-variants"><li>Cât ar costa să dezvolt eu ceva similar?</li><li>Cât durează să construiesc de la zero?</li><li>Merită efortul intern?</li></ul>
+          <p class="intent-answer">Construirea unei infrastructuri proprii de generare documente + dovezi digitale înseamnă luni de dezvoltare tehnică pe care cabinetul tău nu le are ca prioritate. Parteneriatul elimină acest cost complet.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Model de parteneriat, nu dezvoltare internă.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce investiție inițială presupune?</div>
+          <ul class="intent-variants"><li>Trebuie să plătesc ceva ca să testez?</li><li>Ce ofer clientului gratuit, ce e plătit?</li><li>Cum funcționează comercial?</li></ul>
+          <p class="intent-answer">Testarea (Demo, evaluare inițială) e gratuită, fără card — poți arăta clientului rezultatul real înainte de orice angajament financiar, al tău sau al clientului.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Demo — gratuit, fără înscriere.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Care e primul pas concret pentru cabinetul meu?</div>
+          <ul class="intent-variants"><li>Cum încep parteneriatul?</li><li>Ce fac chiar azi?</li><li>Cu cine discut mai departe?</li></ul>
+          <p class="intent-answer">Începi testând Demo-ul și ASK-ul cu un caz ipotetic, apoi contactezi echipa pentru discuția de parteneriat — fără angajament la acest prim pas.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Secțiunea „Ce faci acum” — patru trasee, inclusiv „Partener →”.</div>
+        </div>
+
     </div>
   </section>
 

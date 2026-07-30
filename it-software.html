@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/assets/css/main.css?v=3">
-<link rel="stylesheet" href="/assets/css/additions.css?v=15">
+<link rel="stylesheet" href="/assets/css/additions.css?v=20">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,16 +33,23 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Ce diferență e între Provider și Deployer conform EU AI Act?", "acceptedAnswer": { "@type": "Answer", "text": "Provider e cine dezvoltă sau introduce pe piață un sistem AI sub numele/marca proprie; Deployer e cine folosește un sistem AI în activitatea proprie, fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite." } },
-        { "@type": "Question", "name": "Integrez un LLM extern (ex: OpenAI) în produsul meu — sunt Provider?", "acceptedAnswer": { "@type": "Answer", "text": "Foarte probabil da, pentru produsul final — chiar dacă modelul de bază vine de la altcineva. Rolul de Provider se aplică la sistemul pe care tu îl pui pe piață." } },
-        { "@type": "Question", "name": "Ce documentație tehnică mi se cere ca Provider?", "acceptedAnswer": { "@type": "Answer", "text": "Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață." } },
-        { "@type": "Question", "name": "De unde știu dacă produsul meu e „risc înalt”?", "acceptedAnswer": { "@type": "Answer", "text": "Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești." } }
-      ]
+      "mainEntity": [{"@type": "Question", "name": "Sistemul nostru AI e clasificat drept risc înalt?", "acceptedAnswer": {"@type": "Answer", "text": "Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești, înainte de a decide ce documentație tehnică e necesară."}}, {"@type": "Question", "name": "Sunt Provider sau Deployer conform EU AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Provider e cine dezvoltă sau introduce pe piață un sistem AI sub marca proprie; Deployer e cine folosește un sistem AI fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite ale aceleiași firme."}}, {"@type": "Question", "name": "Ce documentație tehnică mi se cere?", "acceptedAnswer": {"@type": "Answer", "text": "Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață."}}, {"@type": "Question", "name": "Ce structură trebuie să aibă documentația tehnică pentru risc înalt?", "acceptedAnswer": {"@type": "Answer", "text": "Documentația tehnică cerută e mai structurată decât documentația internă tipică de dezvoltare — modulul dedicat din Governance Pack organizează exact secțiunile necesare."}}, {"@type": "Question", "name": "Cum facem evaluarea de conformitate practic?", "acceptedAnswer": {"@type": "Answer", "text": "Pornește de la clasificarea de risc (modulul 02) și continuă cu documentația tehnică — un proces structurat pe module, nu un audit extern separat."}}, {"@type": "Question", "name": "Ce înseamnă monitorizarea post-lansare pentru noi?", "acceptedAnswer": {"@type": "Answer", "text": "Obligațiile continuă după lansare — modulele de Înregistrare și Monitorizare și Raportarea Incidentelor acoperă urmărirea utilizării și gestionarea incidentelor pe termen lung."}}, {"@type": "Question", "name": "De ce o platformă externă și nu documentăm intern?", "acceptedAnswer": {"@type": "Answer", "text": "Documentația tehnică internă de dezvoltare nu e structurată pentru cerințele specifice ale regulamentului — platforma organizează exact secțiunile cerute, plus dovezi verificabile (RRVI™) peste documentația brută."}}, {"@type": "Question", "name": "Cât costă pentru o echipă tehnică mică?", "acceptedAnswer": {"@type": "Answer", "text": "Free Readiness Pack și Demo rămân gratuite — testezi clasificarea de risc pentru produsul tău real înainte de orice decizie de cost."}}, {"@type": "Question", "name": "Cum testăm asta pe un singur produs, înainte să extindem?", "acceptedAnswer": {"@type": "Answer", "text": "Generezi clasificarea de risc și inventarul pentru un singur sistem AI, în aproximativ 15 minute — suficient pentru un pilot tehnic real, nu o demonstrație abstractă."}}]
     }
   ]
 }
 </script>
+<style>
+  .intent-cluster { margin-top:26px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+  .intent-cluster:first-of-type { border-top:none; margin-top:16px; padding-top:0; }
+  .intent-canonical { font-family:var(--serif); font-size:18px; color:var(--text); font-weight:600; }
+  .intent-variants { margin-top:6px; padding-left:18px; }
+  .intent-variants li { color:var(--text-faint); font-size:12.5px; font-style:italic; margin-bottom:3px; }
+  .intent-answer { margin-top:10px; color:var(--text-dim); font-size:14px; line-height:1.65; }
+  .intent-evidence { margin-top:8px; font-size:11.5px; color:var(--gold); }
+  .intent-evidence span { font-family:var(--mono); text-transform:uppercase; color:var(--text-faint); margin-right:8px; }
+  .stage-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-top:36px; padding-bottom:8px; border-bottom:1px solid rgba(240,193,75,0.25); }
+  .stage-label:first-child { margin-top:0; }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,7 @@
       <span class="mark">e</span>
       <span>
         <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
-        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
       </span>
     </a>
     <nav class="main-links">
@@ -80,7 +87,7 @@
         <a href="/" style="color:#8a8578;text-decoration:none;">Home</a> &gt; Firme IT & Software
       </nav>
       <h1>Construiești software cu AI. <em>Ești Provider sau Deployer?</em></h1>
-      <p class="hero-subtitle">EU AI Act tratează diferit firmele care dezvoltă sisteme AI (Provideri) față de cele care doar le integrează sau folosesc (Deployeri). Dacă firma ta face ambele, obligațiile se cumulează — și majoritatea companiilor IT nu realizează asta din timp.</p>
+      <p class="hero-subtitle">EU AI Act tratează diferit firmele care dezvoltă sisteme AI (Provideri) față de cele care doar le integrează sau folosesc (Deployeri). Dacă firma ta face ambele, obligațiile se cumulează.</p>
       <div class="hero-actions" style="margin-top:24px;">
         <a href="/#free-pack" class="btn btn-primary btn-hero">
           <span class="btn-main">Generează pentru firma ta</span>
@@ -96,54 +103,77 @@
 
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PROBLEMA TA</span>
-      <h2 class="h2-title">Rolul tău legal nu e mereu evident — și schimbă complet ce trebuie să faci.</h2>
-      <p class="sub-lede">O firmă care integrează un model AI extern într-un produs propriu poate fi, simultan, Deployer față de modelul respectiv și Provider față de propriul produs final. Fiecare rol are documentație și obligații diferite.</p>
-      <div class="feature-grid" style="margin-top:28px;">
-        <div class="feature-item">
-          <h4>Clarifici rolul: Provider vs. Deployer</h4>
-          <p>Inventarul inițial identifică exact ce rol ai pentru fiecare sistem AI folosit sau dezvoltat, nu doar „folosești AI da/nu”.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Documentație tehnică, nu doar politici</h4>
-          <p>Pentru Provideri, generăm structura de documentație tehnică și evaluare de risc cerută explicit de regulament.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Pregătit pentru High-Risk AI Systems</h4>
-          <p>Dacă produsul tău se încadrează la risc înalt, vezi din timp ce evaluare de conformitate și marcaj sunt necesare.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Aceeași infrastructură de dovezi (RRVI)</h4>
-          <p>Indiferent de rol, ai timestamp, hash și audit trail — utile atât pentru clienți enterprise, cât și pentru autorități.</p>
+      <span class="tag"><span class="dot">//</span>PARCURSUL TĂU, SPECIFIC ACESTUI ROL</span>
+      <h2 class="h2-title">De la <em>întrebare</em> la <em>decizie</em>.</h2>
+      <p class="stage-label">CONȘTIENTIZARE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Sistemul nostru AI e clasificat drept risc înalt?</div>
+          <ul class="intent-variants"><li>Cum clasific corect un sistem AI?</li><li>Ce categorii de risc există?</li><li>De unde știu dacă produsul meu se încadrează la High Risk?</li></ul>
+          <p class="intent-answer">Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești, înainte de a decide ce documentație tehnică e necesară.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 02 — Clasificarea Riscului.</div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>ÎNTREBĂRI FRECVENTE</span>
-      <h2 class="h2-title">Răspunsuri <em>directe</em>, pentru firme it & software.</h2>
-      <div style="margin-top:32px;">
-        <div class="faq-item">
-          <div class="faq-q">Ce diferență e între Provider și Deployer conform EU AI Act? <span class="plus">+</span></div>
-          <div class="faq-a">Provider e cine dezvoltă sau introduce pe piață un sistem AI sub numele/marca proprie; Deployer e cine folosește un sistem AI în activitatea proprie, fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Integrez un LLM extern (ex: OpenAI) în produsul meu — sunt Provider? <span class="plus">+</span></div>
-          <div class="faq-a">Foarte probabil da, pentru produsul final — chiar dacă modelul de bază vine de la altcineva. Rolul de Provider se aplică la sistemul pe care tu îl pui pe piață.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Ce documentație tehnică mi se cere ca Provider? <span class="plus">+</span></div>
-          <div class="faq-a">Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">De unde știu dacă produsul meu e „risc înalt”? <span class="plus">+</span></div>
-          <div class="faq-a">Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești.</div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Sunt Provider sau Deployer conform EU AI Act?</div>
+          <ul class="intent-variants"><li>Integrez un LLM extern — sunt Provider pentru produsul final?</li><li>Ce diferență practică e între cele două roluri?</li><li>Pot fi ambele simultan?</li></ul>
+          <p class="intent-answer">Provider e cine dezvoltă sau introduce pe piață un sistem AI sub marca proprie; Deployer e cine folosește un sistem AI fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite ale aceleiași firme.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Distincție explicită Provider/Deployer, Regulamentul (UE) 2024/1689.</div>
         </div>
 
-      </div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce documentație tehnică mi se cere?</div>
+          <ul class="intent-variants"><li>E suficientă documentația internă de dezvoltare?</li><li>Ce structură trebuie să aibă documentația?</li><li>Cine verifică asta?</li></ul>
+          <p class="intent-answer">Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 06 — Documentație Tehnică.</div>
+        </div>
+
+      <p class="stage-label">ÎNȚELEGERE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce structură trebuie să aibă documentația tehnică pentru risc înalt?</div>
+          <ul class="intent-variants"><li>E suficientă documentația noastră de dezvoltare existentă?</li><li>Ce secțiuni specifice cere regulamentul?</li><li>Cine validează documentația?</li></ul>
+          <p class="intent-answer">Documentația tehnică cerută e mai structurată decât documentația internă tipică de dezvoltare — modulul dedicat din Governance Pack organizează exact secțiunile necesare.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 06 — Documentație Tehnică.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum facem evaluarea de conformitate practic?</div>
+          <ul class="intent-variants"><li>E un proces intern sau extern?</li><li>Cât durează realist?</li><li>Ce documente rezultă din evaluare?</li></ul>
+          <p class="intent-answer">Pornește de la clasificarea de risc (modulul 02) și continuă cu documentația tehnică — un proces structurat pe module, nu un audit extern separat.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulele 02 și 06, secvențiale.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce înseamnă monitorizarea post-lansare pentru noi?</div>
+          <ul class="intent-variants"><li>Se termină obligațiile după lansare?</li><li>Ce trebuie urmărit continuu?</li><li>Cum documentăm incidentele?</li></ul>
+          <p class="intent-answer">Obligațiile continuă după lansare — modulele de Înregistrare și Monitorizare și Raportarea Incidentelor acoperă urmărirea utilizării și gestionarea incidentelor pe termen lung.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulele 09 și 10 — Înregistrare și Monitorizare / Raportarea Incidentelor.</div>
+        </div>
+
+      <p class="stage-label">DECIZIE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">De ce o platformă externă și nu documentăm intern?</div>
+          <ul class="intent-variants"><li>Nu putem folosi doar documentația noastră tehnică existentă?</li><li>Ce adaugă platforma peste ce avem deja?</li><li>Merită integrarea?</li></ul>
+          <p class="intent-answer">Documentația tehnică internă de dezvoltare nu e structurată pentru cerințele specifice ale regulamentului — platforma organizează exact secțiunile cerute, plus dovezi verificabile (RRVI™) peste documentația brută.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>RRVI™ — strat de verificare peste documentația tehnică existentă.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cât costă pentru o echipă tehnică mică?</div>
+          <ul class="intent-variants"><li>Există o variantă de testare fără cost?</li><li>Plătim per produs sau per organizație?</li><li>Cum decidem dacă merită investiția?</li></ul>
+          <p class="intent-answer">Free Readiness Pack și Demo rămân gratuite — testezi clasificarea de risc pentru produsul tău real înainte de orice decizie de cost.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Free Readiness Pack — gratuit, fără card.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum testăm asta pe un singur produs, înainte să extindem?</div>
+          <ul class="intent-variants"><li>Putem pilota pe un singur sistem AI?</li><li>Cât durează un test real?</li><li>Ce vedem la finalul testului?</li></ul>
+          <p class="intent-answer">Generezi clasificarea de risc și inventarul pentru un singur sistem AI, în aproximativ 15 minute — suficient pentru un pilot tehnic real, nu o demonstrație abstractă.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„De la zero la pachet” — 15 min, per sistem AI testat.</div>
+        </div>
+
     </div>
   </section>
 

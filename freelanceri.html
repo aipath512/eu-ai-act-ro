@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/assets/css/main.css?v=3">
-<link rel="stylesheet" href="/assets/css/additions.css?v=15">
+<link rel="stylesheet" href="/assets/css/additions.css?v=20">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,16 +33,23 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Sunt responsabil dacă livrez conținut generat cu ChatGPT către un client?", "acceptedAnswer": { "@type": "Answer", "text": "Depinde de context — Articolul 50 impune obligații de transparență privind conținutul generat sau sintetic AI, mai ales dacă interacționează direct cu publicul." } },
-        { "@type": "Question", "name": "Trebuie să am documentație formală, ca o firmă mare?", "acceptedAnswer": { "@type": "Answer", "text": "Nivelul de obligații variază după caz; ASK EU AI Act™ te ajută să identifici exact ce se aplică la situația ta specifică." } },
-        { "@type": "Question", "name": "Costă ceva să aflu unde mă situez?", "acceptedAnswer": { "@type": "Answer", "text": "Nu — ASK și Demo sunt gratuite, fără cont, exact pentru acest tip de informare inițială." } },
-        { "@type": "Question", "name": "Ce fac dacă folosesc și AI de imagine (Midjourney) și AI de text?", "acceptedAnswer": { "@type": "Answer", "text": "Fiecare instrument intră în discuție separat, în funcție de utilizare — inventarul inițial acoperă toate categoriile de instrumente AI folosite." } }
-      ]
+      "mainEntity": [{"@type": "Question", "name": "Sunt responsabil dacă livrez conținut generat cu ChatGPT către un client?", "acceptedAnswer": {"@type": "Answer", "text": "Depinde de context — Articolul 50 impune obligații de transparență privind conținutul generat sau sintetic AI, mai ales dacă interacționează direct cu publicul, indiferent dacă ești PFA sau corporație."}}, {"@type": "Question", "name": "Trebuie să am documentație formală, ca o firmă mare?", "acceptedAnswer": {"@type": "Answer", "text": "Nivelul de obligații variază după caz; ASK EU AI Act™ te ajută să identifici exact ce se aplică la situația ta specifică, fără să presupui automat același nivel ca o corporație."}}, {"@type": "Question", "name": "Costă ceva să aflu unde mă situez?", "acceptedAnswer": {"@type": "Answer", "text": "Nu — ASK și Demo sunt gratuite, fără cont, exact pentru acest tip de informare inițială, fără niciun angajament."}}, {"@type": "Question", "name": "Ce nivel de documentație realist am nevoie ca persoană fizică?", "acceptedAnswer": {"@type": "Answer", "text": "Nivelul de obligații e proporțional cu modul în care folosești AI, nu cu mărimea activității — ASK EU AI Act™ te ajută să identifici exact ce documentație are sens pentru situația ta specifică."}}, {"@type": "Question", "name": "Cum arată o declarație de transparență pentru clienți?", "acceptedAnswer": {"@type": "Answer", "text": "Poate fi o mențiune scurtă, documentată cu dovadă (timestamp), nu neapărat un document juridic lung — esențial e că poate fi verificată ulterior, nu doar comunicată verbal."}}, {"@type": "Question", "name": "Cât timp și efort cere menținerea conformității?", "acceptedAnswer": {"@type": "Answer", "text": "Generarea inițială durează aproximativ 15 minute; menținerea ulterioară e minimă dacă activitatea nu se schimbă semnificativ — actualizări doar când adaugi instrumente AI noi în activitate."}}, {"@type": "Question", "name": "De ce să folosesc o platformă, nu doar bunul-simț?", "acceptedAnswer": {"@type": "Answer", "text": "Bunul-simț nu produce o dovadă verificabilă dacă un client sau autoritate cere clarificări ulterior — platforma îți dă exact acel document, nu doar intenția bună."}}, {"@type": "Question", "name": "Cât costă pentru cineva care lucrează singur?", "acceptedAnswer": {"@type": "Answer", "text": "ASK și Demo rămân gratuite permanent, fără cont — testezi tot ce ai nevoie ca informare înainte să iei orice decizie de cost."}}, {"@type": "Question", "name": "Cum încep, practic, chiar azi?", "acceptedAnswer": {"@type": "Answer", "text": "Deschizi ASK și întrebi direct situația ta specifică — fără cont, fără date introduse — și primești un răspuns imediat despre ce se aplică exact la tine."}}]
     }
   ]
 }
 </script>
+<style>
+  .intent-cluster { margin-top:26px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+  .intent-cluster:first-of-type { border-top:none; margin-top:16px; padding-top:0; }
+  .intent-canonical { font-family:var(--serif); font-size:18px; color:var(--text); font-weight:600; }
+  .intent-variants { margin-top:6px; padding-left:18px; }
+  .intent-variants li { color:var(--text-faint); font-size:12.5px; font-style:italic; margin-bottom:3px; }
+  .intent-answer { margin-top:10px; color:var(--text-dim); font-size:14px; line-height:1.65; }
+  .intent-evidence { margin-top:8px; font-size:11.5px; color:var(--gold); }
+  .intent-evidence span { font-family:var(--mono); text-transform:uppercase; color:var(--text-faint); margin-right:8px; }
+  .stage-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-top:36px; padding-bottom:8px; border-bottom:1px solid rgba(240,193,75,0.25); }
+  .stage-label:first-child { margin-top:0; }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,7 @@
       <span class="mark">e</span>
       <span>
         <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
-        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
       </span>
     </a>
     <nav class="main-links">
@@ -96,54 +103,77 @@
 
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PROBLEMA TA</span>
-      <h2 class="h2-title">Ești o singură persoană, fără departament juridic în spate.</h2>
-      <p class="sub-lede">Nu ai timp sau resurse pentru consultanță juridică extinsă, dar trebuie totuși să știi unde te situezi — mai ales dacă livrezi conținut generat AI către clienți.</p>
-      <div class="feature-grid" style="margin-top:28px;">
-        <div class="feature-item">
-          <h4>Răspunsuri directe, nu jargon juridic</h4>
-          <p>ASK EU AI Act™ traduce regulamentul în răspunsuri concrete, la întrebările tale specifice.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Fără cont pentru informare de bază</h4>
-          <p>Demo-ul și ASK-ul sunt gratuite, fără înscriere — te informezi înainte să decizi orice.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Claritate despre Articolul 50</h4>
-          <p>Afli exact ce înseamnă transparența privind conținutul generat AI, în activitatea ta.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Scalabil dacă activitatea crește</h4>
-          <p>Dacă angajezi sau te extinzi, ai deja infrastructura de guvernanță pregătită.</p>
+      <span class="tag"><span class="dot">//</span>PARCURSUL TĂU, SPECIFIC ACESTUI ROL</span>
+      <h2 class="h2-title">De la <em>întrebare</em> la <em>decizie</em>.</h2>
+      <p class="stage-label">CONȘTIENTIZARE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Sunt responsabil dacă livrez conținut generat cu ChatGPT către un client?</div>
+          <ul class="intent-variants"><li>Ce risc am ca persoană fizică autorizată?</li><li>Trebuie să declar clientului că am folosit AI?</li><li>Se aplică legea și mie, nu doar firmelor mari?</li></ul>
+          <p class="intent-answer">Depinde de context — Articolul 50 impune obligații de transparență privind conținutul generat sau sintetic AI, mai ales dacă interacționează direct cu publicul, indiferent dacă ești PFA sau corporație.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Articolul 50 — se aplică oricărei entități care folosește AI în interacțiunea cu publicul.</div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>ÎNTREBĂRI FRECVENTE</span>
-      <h2 class="h2-title">Răspunsuri <em>directe</em>, pentru freelanceri.</h2>
-      <div style="margin-top:32px;">
-        <div class="faq-item">
-          <div class="faq-q">Sunt responsabil dacă livrez conținut generat cu ChatGPT către un client? <span class="plus">+</span></div>
-          <div class="faq-a">Depinde de context — Articolul 50 impune obligații de transparență privind conținutul generat sau sintetic AI, mai ales dacă interacționează direct cu publicul.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Trebuie să am documentație formală, ca o firmă mare? <span class="plus">+</span></div>
-          <div class="faq-a">Nivelul de obligații variază după caz; ASK EU AI Act™ te ajută să identifici exact ce se aplică la situația ta specifică.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Costă ceva să aflu unde mă situez? <span class="plus">+</span></div>
-          <div class="faq-a">Nu — ASK și Demo sunt gratuite, fără cont, exact pentru acest tip de informare inițială.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Ce fac dacă folosesc și AI de imagine (Midjourney) și AI de text? <span class="plus">+</span></div>
-          <div class="faq-a">Fiecare instrument intră în discuție separat, în funcție de utilizare — inventarul inițial acoperă toate categoriile de instrumente AI folosite.</div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Trebuie să am documentație formală, ca o firmă mare?</div>
+          <ul class="intent-variants"><li>E excesiv pentru un singur freelancer?</li><li>Ce nivel de conformitate mi se cere realist?</li><li>Există o variantă simplificată?</li></ul>
+          <p class="intent-answer">Nivelul de obligații variază după caz; ASK EU AI Act™ te ajută să identifici exact ce se aplică la situația ta specifică, fără să presupui automat același nivel ca o corporație.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>ASK EU AI Act™ — asistent conversațional, gratuit, fără cont.</div>
         </div>
 
-      </div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Costă ceva să aflu unde mă situez?</div>
+          <ul class="intent-variants"><li>Pot testa gratuit înainte să decid orice?</li><li>Am nevoie de cont ca să întreb ceva?</li><li>Există risc financiar la informare?</li></ul>
+          <p class="intent-answer">Nu — ASK și Demo sunt gratuite, fără cont, exact pentru acest tip de informare inițială, fără niciun angajament.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„100% gratuit să începi” — Demo fără cont, restul cu cont gratuit în 1 minut.</div>
+        </div>
+
+      <p class="stage-label">ÎNȚELEGERE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce nivel de documentație realist am nevoie ca persoană fizică?</div>
+          <ul class="intent-variants"><li>E excesiv un Governance Pack complet pentru un freelancer?</li><li>Există o variantă proporțională cu activitatea mea?</li><li>Ce se aplică efectiv la scara mea?</li></ul>
+          <p class="intent-answer">Nivelul de obligații e proporțional cu modul în care folosești AI, nu cu mărimea activității — ASK EU AI Act™ te ajută să identifici exact ce documentație are sens pentru situația ta specifică.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>ASK EU AI Act™ — răspunsuri personalizate situației concrete.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum arată o declarație de transparență pentru clienți?</div>
+          <ul class="intent-variants"><li>Trebuie un document formal sau o mențiune simplă?</li><li>Există un exemplu concret?</li><li>Cum o adaptez la fiecare client?</li></ul>
+          <p class="intent-answer">Poate fi o mențiune scurtă, documentată cu dovadă (timestamp), nu neapărat un document juridic lung — esențial e că poate fi verificată ulterior, nu doar comunicată verbal.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Evidence Layer — aplicabil și declarațiilor scurte de transparență.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cât timp și efort cere menținerea conformității?</div>
+          <ul class="intent-variants"><li>E un efort unic sau continuu?</li><li>Cât timp pierd lunar cu asta?</li><li>Se poate automatiza pentru o singură persoană?</li></ul>
+          <p class="intent-answer">Generarea inițială durează aproximativ 15 minute; menținerea ulterioară e minimă dacă activitatea nu se schimbă semnificativ — actualizări doar când adaugi instrumente AI noi în activitate.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„De la zero la pachet” — 15 min, indicator afișat pe eu-ai-act.ro.</div>
+        </div>
+
+      <p class="stage-label">DECIZIE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">De ce să folosesc o platformă, nu doar bunul-simț?</div>
+          <ul class="intent-variants"><li>Nu e suficient să fiu atent și gata?</li><li>Ce diferență face o dovadă digitală?</li><li>Merită pentru un singur freelancer?</li></ul>
+          <p class="intent-answer">Bunul-simț nu produce o dovadă verificabilă dacă un client sau autoritate cere clarificări ulterior — platforma îți dă exact acel document, nu doar intenția bună.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Evidence Layer — dovadă, nu doar declarație de intenție.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cât costă pentru cineva care lucrează singur?</div>
+          <ul class="intent-variants"><li>E scump pentru un freelancer?</li><li>Există un nivel gratuit suficient?</li><li>Cum știu că nu plătesc pentru ceva inutil?</li></ul>
+          <p class="intent-answer">ASK și Demo rămân gratuite permanent, fără cont — testezi tot ce ai nevoie ca informare înainte să iei orice decizie de cost.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>ASK EU AI Act™ — gratuit permanent, nu versiune trial.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum încep, practic, chiar azi?</div>
+          <ul class="intent-variants"><li>Ce fac primul pas?</li><li>Am nevoie de date complexe despre activitatea mea?</li><li>Cât durează prima interacțiune?</li></ul>
+          <p class="intent-answer">Deschizi ASK și întrebi direct situația ta specifică — fără cont, fără date introduse — și primești un răspuns imediat despre ce se aplică exact la tine.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>ASK EU AI Act™ — răspuns imediat, fără cont.</div>
+        </div>
+
     </div>
   </section>
 

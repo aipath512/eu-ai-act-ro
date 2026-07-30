@@ -10,7 +10,7 @@
 <meta name="theme-color" content="#0a0a0a">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/assets/css/main.css?v=3">
-<link rel="stylesheet" href="/assets/css/additions.css?v=15">
+<link rel="stylesheet" href="/assets/css/additions.css?v=20">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,16 +33,23 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "Cum adaug acest serviciu la portofoliul meu de consultanță?", "acceptedAnswer": { "@type": "Answer", "text": "Prin parteneriat de distribuție — testezi gratuit, apoi propui clienților ca extensie a serviciilor existente." } },
-        { "@type": "Question", "name": "Trebuie să înțeleg tehnic sistemele AI ale clienților?", "acceptedAnswer": { "@type": "Answer", "text": "Nu la nivel de inginerie. Platforma face inventarul și clasificarea de risc; tu aduci contextul de business al clientului." } },
-        { "@type": "Question", "name": "Ce mă diferențiază față de alți consultanți?", "acceptedAnswer": { "@type": "Answer", "text": "Poți oferi un rezultat operațional concret — documente și dovezi — nu doar recomandări generale." } },
-        { "@type": "Question", "name": "Cât durează implementarea pentru un client nou?", "acceptedAnswer": { "@type": "Answer", "text": "Free Readiness Pack-ul inițial se generează în aproximativ 15 minute, pentru o primă imagine." } }
-      ]
+      "mainEntity": [{"@type": "Question", "name": "Pot adăuga guvernanța AI la portofoliul meu de servicii?", "acceptedAnswer": {"@type": "Answer", "text": "Da — prin parteneriat de distribuție, nu construind nimic de la zero. Testezi gratuit (Demo, fără cont), apoi propui clienților ca extensie firească a serviciilor de consultanță deja existente."}}, {"@type": "Question", "name": "Trebuie să înțeleg tehnic sistemele AI ale clienților?", "acceptedAnswer": {"@type": "Answer", "text": "Nu la nivel de inginerie. Platforma face inventarul și clasificarea de risc automat; tu aduci contextul de business al clientului — exact rolul unui consultant, nu al unui inginer AI."}}, {"@type": "Question", "name": "Cât durează implementarea pentru un client nou?", "acceptedAnswer": {"@type": "Answer", "text": "Free Readiness Pack-ul inițial se generează în aproximativ 15 minute — suficient pentru o primă imagine operațională, înainte de orice discuție de preț sau angajament pe termen lung."}}, {"@type": "Question", "name": "Cum structurez o ofertă de guvernanță AI pentru un client?", "acceptedAnswer": {"@type": "Answer", "text": "Începi cu Free Readiness Pack ca demonstrație live — clientul vede imediat unde folosește deja AI (inclusiv Shadow AI), ceea ce face problema tangibilă înainte să propui soluția completă."}}, {"@type": "Question", "name": "Ce diferență e între Free Readiness Pack și Governance Pack complet?", "acceptedAnswer": {"@type": "Answer", "text": "Free Readiness Pack oferă un preview personalizat de până la 40% din Governance Pack complet — suficient pentru o imagine reală, dar nu documentația operațională integrală de 70 de documente."}}, {"@type": "Question", "name": "Cum demonstrez rezultate unui client sceptic?", "acceptedAnswer": {"@type": "Answer", "text": "Modalul de Demo arată exact formatul documentelor reale (inventar, politică, dovadă digitală), cu date exemplu — fără cont, fără card, înainte de orice discuție comercială."}}, {"@type": "Question", "name": "De ce acest parteneriat și nu o soluție internă?", "acceptedAnswer": {"@type": "Answer", "text": "O soluție internă cere echipă tehnică, întreținere continuă și actualizare la fiecare schimbare de regulament — parteneriatul elimină tot acest cost recurent, tu rămâi advisor-ul de business."}}, {"@type": "Question", "name": "Ce cost am eu, ca și consultant, în acest model?", "acceptedAnswer": {"@type": "Answer", "text": "Testarea (Demo, Free Readiness Pack) e gratuită, fără card — discuția comercială despre parteneriat vine după ce ai văzut rezultatul real cu un caz de test."}}, {"@type": "Question", "name": "Cum fac primul pas cu un client real?", "acceptedAnswer": {"@type": "Answer", "text": "Arăți direct modalul de Demo (formatul real al documentelor) în cadrul discuției — un exemplu concret convinge mai repede decât o descriere abstractă a serviciului."}}]
     }
   ]
 }
 </script>
+<style>
+  .intent-cluster { margin-top:26px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08); }
+  .intent-cluster:first-of-type { border-top:none; margin-top:16px; padding-top:0; }
+  .intent-canonical { font-family:var(--serif); font-size:18px; color:var(--text); font-weight:600; }
+  .intent-variants { margin-top:6px; padding-left:18px; }
+  .intent-variants li { color:var(--text-faint); font-size:12.5px; font-style:italic; margin-bottom:3px; }
+  .intent-answer { margin-top:10px; color:var(--text-dim); font-size:14px; line-height:1.65; }
+  .intent-evidence { margin-top:8px; font-size:11.5px; color:var(--gold); }
+  .intent-evidence span { font-family:var(--mono); text-transform:uppercase; color:var(--text-faint); margin-right:8px; }
+  .stage-label { font-family:var(--mono); font-size:11px; letter-spacing:0.08em; color:var(--gold); text-transform:uppercase; margin-top:36px; padding-bottom:8px; border-bottom:1px solid rgba(240,193,75,0.25); }
+  .stage-label:first-child { margin-top:0; }
+</style>
 </head>
 <body>
 
@@ -52,7 +59,7 @@
       <span class="mark">e</span>
       <span>
         <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
-        <span class="sub">GOVERNANCE · TRANSPARENCY · EVIDENCE</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
       </span>
     </a>
     <nav class="main-links">
@@ -96,54 +103,77 @@
 
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PROBLEMA TA</span>
-      <h2 class="h2-title">Ai relația cu clientul, dar nu instrumentul tehnic.</h2>
-      <p class="sub-lede">Construirea unei oferte proprii de guvernanță AI de la zero înseamnă luni de dezvoltare. Parteneriatul elimină acest cost — te concentrezi pe relația cu clientul, nu pe infrastructură.</p>
-      <div class="feature-grid" style="margin-top:28px;">
-        <div class="feature-item">
-          <h4>Model de distribuție, nu revânzare simplă</h4>
-          <p>Clienții tăi rămân clienții tăi — platforma e infrastructura din spate, nu un intermediar.</p>
-        </div>
-        <div class="feature-item">
-          <h4>70 documente, 10 module, gata generate</h4>
-          <p>Livrezi rezultate concrete rapid, nu propuneri teoretice.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Barieră zero de intrare</h4>
-          <p>Testezi gratuit înainte să propui clienților — demo fără cont.</p>
-        </div>
-        <div class="feature-item">
-          <h4>Dovezi digitale ca argument de vânzare</h4>
-          <p>RRVI™ și Evidence Layer sunt un diferențiator concret față de consultanța clasică bazată pe PDF-uri.</p>
+      <span class="tag"><span class="dot">//</span>PARCURSUL TĂU, SPECIFIC ACESTUI ROL</span>
+      <h2 class="h2-title">De la <em>întrebare</em> la <em>decizie</em>.</h2>
+      <p class="stage-label">CONȘTIENTIZARE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Pot adăuga guvernanța AI la portofoliul meu de servicii?</div>
+          <ul class="intent-variants"><li>Are sens ca IMM-urile mele client să primească și acest serviciu?</li><li>Cum extind oferta fără cost de dezvoltare?</li><li>E un serviciu ușor de propus?</li></ul>
+          <p class="intent-answer">Da — prin parteneriat de distribuție, nu construind nimic de la zero. Testezi gratuit (Demo, fără cont), apoi propui clienților ca extensie firească a serviciilor de consultanță deja existente.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Free Readiness Pack — evaluare inițială gratuită, fără card.</div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>ÎNTREBĂRI FRECVENTE</span>
-      <h2 class="h2-title">Răspunsuri <em>directe</em>, pentru consultanți.</h2>
-      <div style="margin-top:32px;">
-        <div class="faq-item">
-          <div class="faq-q">Cum adaug acest serviciu la portofoliul meu de consultanță? <span class="plus">+</span></div>
-          <div class="faq-a">Prin parteneriat de distribuție — testezi gratuit, apoi propui clienților ca extensie a serviciilor existente.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Trebuie să înțeleg tehnic sistemele AI ale clienților? <span class="plus">+</span></div>
-          <div class="faq-a">Nu la nivel de inginerie. Platforma face inventarul și clasificarea de risc; tu aduci contextul de business al clientului.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Ce mă diferențiază față de alți consultanți? <span class="plus">+</span></div>
-          <div class="faq-a">Poți oferi un rezultat operațional concret — documente și dovezi — nu doar recomandări generale.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q">Cât durează implementarea pentru un client nou? <span class="plus">+</span></div>
-          <div class="faq-a">Free Readiness Pack-ul inițial se generează în aproximativ 15 minute, pentru o primă imagine.</div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Trebuie să înțeleg tehnic sistemele AI ale clienților?</div>
+          <ul class="intent-variants"><li>Am nevoie de cunoștințe de Machine Learning?</li><li>Cine face clasificarea de risc?</li><li>Ce rol tehnic am eu, de fapt?</li></ul>
+          <p class="intent-answer">Nu la nivel de inginerie. Platforma face inventarul și clasificarea de risc automat; tu aduci contextul de business al clientului — exact rolul unui consultant, nu al unui inginer AI.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Modulul 02 — Clasificarea Riscului, generat automat.</div>
         </div>
 
-      </div>
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cât durează implementarea pentru un client nou?</div>
+          <ul class="intent-variants"><li>E un proiect de luni de zile?</li><li>Pot arăta un rezultat rapid unui client sceptic?</li><li>Care e primul livrabil concret?</li></ul>
+          <p class="intent-answer">Free Readiness Pack-ul inițial se generează în aproximativ 15 minute — suficient pentru o primă imagine operațională, înainte de orice discuție de preț sau angajament pe termen lung.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„De la zero la pachet” — 15 min, indicator afișat live pe eu-ai-act.ro.</div>
+        </div>
+
+      <p class="stage-label">ÎNȚELEGERE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum structurez o ofertă de guvernanță AI pentru un client?</div>
+          <ul class="intent-variants"><li>De unde încep discuția cu un client nou?</li><li>Ce prezint mai întâi — problema sau soluția?</li><li>Am nevoie de un pitch standard?</li></ul>
+          <p class="intent-answer">Începi cu Free Readiness Pack ca demonstrație live — clientul vede imediat unde folosește deja AI (inclusiv Shadow AI), ceea ce face problema tangibilă înainte să propui soluția completă.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Free Readiness Pack — evaluare inițială gratuită, generată live.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce diferență e între Free Readiness Pack și Governance Pack complet?</div>
+          <ul class="intent-variants"><li>Unde e granița dintre gratuit și plătit?</li><li>Cât din cele 70 de documente sunt în varianta gratuită?</li><li>Ce primește clientul dacă nu plătește nimic?</li></ul>
+          <p class="intent-answer">Free Readiness Pack oferă un preview personalizat de până la 40% din Governance Pack complet — suficient pentru o imagine reală, dar nu documentația operațională integrală de 70 de documente.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„Mostră personalizată gratuit — până la 40%”, secțiune Free Readiness Pack.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum demonstrez rezultate unui client sceptic?</div>
+          <ul class="intent-variants"><li>Ce arăt dacă clientul nu are încredere în AI generat?</li><li>Există o versiune demo, fără angajament?</li><li>Cât de repede văd un rezultat concret?</li></ul>
+          <p class="intent-answer">Modalul de Demo arată exact formatul documentelor reale (inventar, politică, dovadă digitală), cu date exemplu — fără cont, fără card, înainte de orice discuție comercială.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Demo — mostră cu date exemplu, fără cont.</div>
+        </div>
+
+      <p class="stage-label">DECIZIE</p>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">De ce acest parteneriat și nu o soluție internă?</div>
+          <ul class="intent-variants"><li>Am putea construi noi o unealtă similară?</li><li>Ce cost ascuns are varianta internă?</li><li>Merită să depind de un partener extern?</li></ul>
+          <p class="intent-answer">O soluție internă cere echipă tehnică, întreținere continuă și actualizare la fiecare schimbare de regulament — parteneriatul elimină tot acest cost recurent, tu rămâi advisor-ul de business.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Model de distribuție prin Parteneri de Încredere, nu dezvoltare proprie.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Ce cost am eu, ca și consultant, în acest model?</div>
+          <ul class="intent-variants"><li>Plătesc un abonament fix?</li><li>Cum se împarte comercial relația?</li><li>Testarea costă ceva?</li></ul>
+          <p class="intent-answer">Testarea (Demo, Free Readiness Pack) e gratuită, fără card — discuția comercială despre parteneriat vine după ce ai văzut rezultatul real cu un caz de test.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>„100% gratuit să începi” — fără risc financiar inițial.</div>
+        </div>
+
+        <div class="intent-cluster">
+          <div class="intent-canonical">Cum fac primul pas cu un client real?</div>
+          <ul class="intent-variants"><li>Propun direct Demo-ul sau explic mai întâi?</li><li>Ce le arăt în prima discuție?</li><li>Cât timp durează prima demonstrație?</li></ul>
+          <p class="intent-answer">Arăți direct modalul de Demo (formatul real al documentelor) în cadrul discuției — un exemplu concret convinge mai repede decât o descriere abstractă a serviciului.</p>
+          <div class="intent-evidence"><span>Dovadă / sursă</span>Demo — modal cu 3 tab-uri: inventar, politică, dovadă digitală.</div>
+        </div>
+
     </div>
   </section>
 
