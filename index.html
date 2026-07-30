@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="stylesheet" href="assets/css/main.css?v=3">
-<link rel="stylesheet" href="assets/css/additions.css?v=21">
+<link rel="stylesheet" href="assets/css/additions.css?v=22">
 <style>
 @media (max-width: 640px) {
   .hero.no-border {
@@ -440,30 +440,60 @@ window.addEventListener("error", function (e) {
 
       <div id="freePackLoggedIn" style="display:none;">
       <div class="form-card">
-        <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Pentru acces gratuit</h3>
-        <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Primești primul nivel de pregătire.</p>
-        <form id="leadForm">
+        <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Generează pachetul firmei tale</h3>
+        <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Completează firma și persoana responsabilă AI — primești cele 70 de documente, gratuit (2 generări gratuite / email).</p>
+        <form id="genForm">
           <div class="form-field" style="margin-bottom:16px;">
-            <label>Email profesional</label>
-            <input id="leadEmail" type="email" required placeholder="nume@firma.ro">
+            <label>Firmă (denumire legală)</label>
+            <input id="genFirmName" type="text" required placeholder="ex: Firma Mea S.R.L.">
           </div>
           <div class="form-row">
             <div class="form-field">
-              <label>Firmă</label>
-              <input id="leadCompany" type="text" required placeholder="Numele firmei">
+              <label>Prenume responsabil AI</label>
+              <input id="genFirstName" type="text" required placeholder="Prenume">
             </div>
             <div class="form-field">
-              <label>Rol în firmă</label>
-              <input id="leadRole" type="text" required placeholder="ex: Fondator, CFO, Avocat">
+              <label>Nume responsabil AI</label>
+              <input id="genLastName" type="text" required placeholder="Nume">
             </div>
           </div>
-          <button type="submit" class="btn btn-primary btn-block" id="leadSubmit">obține gratuit readiness pack →</button>
-          <div id="leadStatus" class="form-status" aria-live="polite"></div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Limba documentelor</label>
+              <select id="genLang">
+                <option value="ro" selected>Română</option>
+                <option value="en">Engleză</option>
+                <option value="fr">Franceză</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Format fișier</label>
+              <select id="genFormat">
+                <option value="md" selected>Markdown (.md)</option>
+                <option value="docx">Word (.docx)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="genSubmit">⚡ Generează toate cele 70 de documente</button>
+          <div id="genStatus" class="form-status" aria-live="polite"></div>
         </form>
+
+        <div id="genDocGroups" class="gen-doc-groups"></div>
       </div>
       </div>
     </div>
   </section>
+
+  <!-- Document viewer overlay (single document preview) -->
+  <div id="genViewerOverlay" class="gen-viewer-overlay">
+    <div class="gen-viewer-panel">
+      <div class="gen-viewer-head">
+        <span id="genViewerTitle"></span>
+        <button type="button" id="genViewerClose" aria-label="Închide">✕</button>
+      </div>
+      <pre id="genViewerBody" class="gen-viewer-body"></pre>
+    </div>
+  </div>
 
   <!-- HOW IT WORKS -->
   <section id="how" class="pad">
@@ -970,6 +1000,7 @@ window.addEventListener("error", function (e) {
 
 <script src="assets/js/script.js?v=3"></script>
 <script src="assets/js/ask-demo-lead.js?v=5"></script>
+<script src="assets/js/generator.js?v=1"></script>
 <script src="assets/js/auth.js?v=2"></script>
 </body>
 </html>
