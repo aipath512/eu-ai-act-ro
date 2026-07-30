@@ -63,6 +63,30 @@
     }
   }
 
+  function paragraphize(text) {
+    // Break long generated text into readable chunks — a paragraph break
+    // roughly every 3 sentences — instead of one solid wall of text.
+    // Respects any paragraph breaks the model already produced (\n\n).
+    var existingParagraphs = String(text)
+      .split(/\n\s*\n/)
+      .map(function (p) { return p.trim(); })
+      .filter(Boolean);
+
+    var out = [];
+    existingParagraphs.forEach(function (para) {
+      var sentences = para
+        .replace(/\n+/g, " ")
+        .split(/(?<=[.!?])\s+(?=[A-ZĂÂÎȘȚ0-9])/)
+        .map(function (s) { return s.trim(); })
+        .filter(Boolean);
+
+      for (var i = 0; i < sentences.length; i += 1) {
+        out.push(sentences.slice(i, i + 1).join(" "));
+      }
+    });
+    return out.length ? out : [String(text)];
+  }
+
   function renderAnswer(answerEl, data) {
     if (data && data.generated_answer) {
       var sourcesHtml = (data.sources || [])
@@ -88,9 +112,12 @@
         .join("");
 
       answerEl.innerHTML =
-        '<article class="result-card"><p class="result-text">' +
-        escapeHtml(data.generated_answer) +
-        "</p>" +
+        '<article class="result-card">' +
+        paragraphize(data.generated_answer)
+          .map(function (para) {
+            return '<p class="result-text">' + escapeHtml(para) + "</p>";
+          })
+          .join("") +
         (sourcesHtml
           ? '<div class="sources"><span>Surse</span>' + sourcesHtml + "</div>"
           : "") +
