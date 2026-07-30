@@ -86,6 +86,7 @@
   text-transform: none;
 }
 .ask-answer {
+  display: block !important;
   margin-top: 18px;
   min-height: 48px;
   max-height: 340px;
@@ -108,9 +109,9 @@
   background: #ffd873;
 }
 .ask-answer:empty {
+  display: flex !important;
   border: 1px dashed rgba(255, 255, 255, 0.15);
   border-radius: 8px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
