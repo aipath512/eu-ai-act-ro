@@ -3,7 +3,81 @@
    Fixes: founder photo cropping, footer address wrapping,
    adds: ASK result styling, demo modal, form status messages. */
 
-/* ---- Role cards now link to persona pages ---- */
+/* ---- TOFU/MOFU/BOFU stage badges on homepage section tags ---- */
+.stage-badge {
+  font-family: var(--mono, monospace);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.stage-tofu { background: rgba(240, 193, 75, 0.15); color: #f0c14b; }
+.stage-mofu { background: rgba(79, 176, 232, 0.15); color: #4fb0e8; }
+.stage-bofu { background: rgba(232, 115, 79, 0.18); color: #e8734f; }
+
+/* ---- 4 piloni (Talk. Govern. Trust. Verify.) ---- */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.pillar-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 20px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.pillar-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold, #f0c14b);
+}
+.pillar-num {
+  font-family: var(--serif, serif);
+  font-size: 22px;
+  color: var(--gold, #f0c14b);
+  margin-bottom: 6px;
+}
+.pillar-card h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: var(--text, #fff);
+}
+.pillar-card p {
+  font-size: 12.5px;
+  color: var(--text-dim, #b8b3a4);
+  line-height: 1.5;
+}
+@media (max-width: 780px) {
+  .pillar-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .pillar-grid { grid-template-columns: 1fr; }
+}
+
+.module-row {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+a.module-row:hover {
+  background: rgba(240, 193, 75, 0.04);
+}
+.module-more {
+  font-family: var(--mono, monospace);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--gold, #f0c14b);
+  margin-left: 8px;
+  white-space: nowrap;
+}
 .role-card {
   text-decoration: none;
   color: inherit;
@@ -13,6 +87,31 @@
 }
 .role-card:hover {
   transform: translateY(-4px);
+}
+.persona {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.persona:hover {
+  transform: translateY(-4px);
+}
+.persona-label {
+  font-family: var(--mono, monospace);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--gold, #f0c14b);
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.lbl-sub {
+  font-size: 11.5px;
+  color: var(--text-faint, #a3a39a);
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
 /* ---- Compliance journey roadmap ---- */
