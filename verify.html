@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verificare acces — EU AI Act Ready™</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/css/main.css?v=3">
+<link rel="stylesheet" href="assets/css/additions.css?v=1">
+<style>
+  .verify-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a0a;
+    padding: 24px;
+  }
+  .verify-card {
+    max-width: 420px;
+    text-align: center;
+    color: #eee;
+    font-family: var(--sans, sans-serif);
+  }
+  .verify-card h1 {
+    font-family: var(--serif, serif);
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .verify-card p {
+    color: var(--text-dim, #b8b3a4);
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+  .verify-status {
+    margin-top: 18px;
+  }
+</style>
+</head>
+<body>
+  <div class="verify-wrap">
+    <div class="verify-card">
+      <h1>EU AI ACT <em style="color:var(--gold,#f0c14b);font-style:italic;">READY</em>™</h1>
+      <div id="verifyStatus">
+        <p><span class="spinner" aria-hidden="true"></span> Se verifică linkul de acces...</p>
+      </div>
+      <div class="verify-status">
+        <a href="/" class="btn btn-secondary" style="display:none;" id="verifyBackBtn">Înapoi la eu-ai-act.ro →</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Same origin as auth.js on the main site — keep in sync.
+  var AUTH_API = "https://magic-link-worker.aipath512.workers.dev";
+
+  var statusEl = document.getElementById("verifyStatus");
+  var backBtn = document.getElementById("verifyBackBtn");
+  var params = new URLSearchParams(window.location.search);
+  var token = params.get("token");
+
+  function showBack() {
+    backBtn.style.display = "inline-block";
+  }
+
+  if (!token) {
+    statusEl.innerHTML = "<p>Link invalid — lipsește token-ul.</p>";
+    showBack();
+    return;
+  }
+
+  fetch(AUTH_API + "/verify?token=" + encodeURIComponent(token))
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      if (data.ok && data.sessionToken) {
+        localStorage.setItem("euaiact_session", data.sessionToken);
+        localStorage.setItem("euaiact_email", data.email);
+        statusEl.innerHTML =
+          "<p>Ești logat ca <strong>" +
+          data.email.replace(/</g, "&lt;") +
+          "</strong>.</p>";
+        setTimeout(function () {
+          window.location.href = "/#free-pack";
+        }, 1200);
+      } else {
+        statusEl.innerHTML =
+          "<p>" + (data.error || "Linkul nu a putut fi verificat.") + "</p>";
+        showBack();
+      }
+    })
+    .catch(function () {
+      statusEl.innerHTML = "<p>Eroare de conexiune. Încearcă din nou.</p>";
+      showBack();
+    });
+})();
+</script>
+</body>
+</html>
