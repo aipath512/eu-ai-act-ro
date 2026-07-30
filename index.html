@@ -852,9 +852,9 @@ window.addEventListener("error", function (e) {
   <div class="demo-modal-panel" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
     <button type="button" class="demo-modal-close" data-demo-close aria-label="Închide">✕</button>
     <div class="demo-modal-head">
-      <span class="tag"><span class="dot">//</span>DEMO · MOSTRĂ CU DATE EXEMPLU</span>
-      <h3 id="demoModalTitle">Așa arată un Governance Pack generat</h3>
-      <p>Fără cont, fără card. Exemplele de mai jos sunt generate pentru o firmă fictivă ("Exemplu SRL") ca să vezi formatul real — datele firmei tale înlocuiesc automat cele de mai jos când generezi pachetul tău.</p>
+      <span class="tag"><span class="dot">//</span>DEMO · EXEMPLU REAL, NU FICTIV</span>
+      <h3 id="demoModalTitle">Așa arată Governance Pack-ul chiar al nostru</h3>
+      <p>Fără cont, fără card. Exemplele de mai jos folosesc datele reale ale AIVENTURE S.R.L. — firma din spatele acestui produs — generate cu propriul Governance Pack. Datele firmei tale înlocuiesc automat cele de mai jos când generezi pachetul tău.</p>
     </div>
     <div class="demo-tabs" role="tablist">
       <button type="button" class="demo-tab active" data-demo-tab="inventory" role="tab">01 · Inventar AI</button>
@@ -870,9 +870,9 @@ window.addEventListener("error", function (e) {
         <table class="demo-doc-table">
           <thead><tr><th>Sistem AI</th><th>Departament</th><th>Scop</th><th>Nivel de risc</th><th>Responsabil</th></tr></thead>
           <tbody>
-            <tr><td>ChatGPT (Plus)</td><td>Marketing</td><td>Generare conținut, copywriting</td><td>Minimal</td><td>M. Popescu</td></tr>
-            <tr><td>Microsoft Copilot</td><td>Operațional</td><td>Automatizare documente interne</td><td>Minimal</td><td>A. Ionescu</td></tr>
-            <tr><td>Chatbot suport clienți</td><td>Servicii Clienți</td><td>Interacțiune directă cu publicul</td><td>Transparență (Art. 50)</td><td>R. Dumitru</td></tr>
+            <tr><td>Claude (Anthropic)</td><td>Dezvoltare</td><td>Generare cod, arhitectură site, documentație</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>Cloudflare Workers AI</td><td>Produs</td><td>Motor conversațional din spatele ASK EU AI Act™</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>ASK EU AI Act™ (chatbot public)</td><td>Interacțiune publică</td><td>Interacțiune directă cu vizitatorii site-ului</td><td>Transparență (Art. 50)</td><td>Dan Ionescu</td></tr>
           </tbody>
         </table>
       </div>
@@ -881,23 +881,23 @@ window.addEventListener("error", function (e) {
           <span>DOD-003_AI_Literacy_Policy.md</span>
           <span class="demo-doc-status">v1.0 · generat automat</span>
         </div>
-        <p class="demo-doc-text">Exemplu SRL asigură ca toți angajații care interacționează cu sisteme de inteligență artificială să dețină un nivel adecvat de competențe AI ("AI literacy"), proporțional cu rolul și contextul de utilizare. Persoana responsabilă AI desemnată: <strong>R. Dumitru, Operations Manager</strong>. Instruirea inițială se realizează în primele 30 de zile de la angajare sau de la introducerea unui sistem AI nou.</p>
+        <p class="demo-doc-text">AIVENTURE S.R.L. asigură că persoana responsabilă de guvernanța AI deține competențe adecvate de utilizare responsabilă a sistemelor AI ("AI literacy"), proporțional cu rolul de fondator și arhitect al întregului ecosistem de produse. Persoana responsabilă AI desemnată: <strong>Dan Ionescu (Eli), Fondator</strong>. Instruirea inițială și revizuirea politicii se realizează la introducerea fiecărui sistem AI nou în activitatea firmei.</p>
       </div>
       <div class="demo-panel" data-demo-panel="evidence">
         <div class="demo-doc-head">
-          <span>proof.json</span>
-          <span class="demo-doc-status">dovadă digitală</span>
+          <span>ai-proof.json</span>
+          <span class="demo-doc-status">dovadă digitală, live</span>
         </div>
         <pre class="demo-doc-code">{
-  "document_id": "REG-001-EXEMPLU-SRL",
+  "document_id": "REG-001-AIVENTURE-SRL",
   "version": "1.0",
-  "generated_at": "2026-07-29T09:14:22Z",
-  "responsible": "R. Dumitru",
-  "hash": "8f2c1a9e4b7d0f3c...",
+  "generated_at": "2026-07-30T10:12:22Z",
+  "responsible": "Dan Ionescu (Eli)",
+  "hash": "9dcc079be08ae0cc7b161079a259c4bd3493aa51488033d5ebd81d8d351d3475",
   "status": "active",
-  "verifiable_at": "https://eu-ai-act.ro/verify/REG-001-EXEMPLU-SRL"
+  "verifiable_at": "https://eu-ai-act.ro/ai-proof.json"
 }</pre>
-        <p class="demo-doc-text">Fiecare document generat primește identificator unic, versiune, timestamp și hash criptografic — verificabile independent de un inspector sau auditor, fără acces la sistemele interne ale firmei.</p>
+        <p class="demo-doc-text">Fiecare document generat primește identificator unic, versiune, timestamp și hash criptografic — verificabile independent de un inspector sau auditor, fără acces la sistemele interne ale firmei. Hash-ul de mai sus e real, verificabil chiar acum la <a href="/ai-proof.json" style="color:var(--gold,#f0c14b);">/ai-proof.json</a>.</p>
       </div>
     </div>
     <div class="demo-modal-foot">

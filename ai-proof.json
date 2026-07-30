@@ -2,9 +2,9 @@
   "site": "https://eu-ai-act.ro/",
   "proofType": "content-fingerprint",
   "algorithm": "SHA-256",
-  "hash": "fae29f89e6657d30965ae19abcc284959f4a7252c960f620f3b13cc7e270113c",
-  "hashedFile": "index.html",
+  "hash": "9dcc079be08ae0cc7b161079a259c4bd3493aa51488033d5ebd81d8d351d3475",
+  "hashedFile": "entities.json",
   "generatedAt": "2026-07-30T10:12:22Z",
-  "note": "Amprentă criptografică a conținutului paginii principale la momentul generării. Nu include ancorare blockchain/OpenTimestamps — nu este implementată real pe acest site; orice afirmație în acest sens ar fi falsă.",
+  "note": "Amprentă criptografică a fișierului entities.json (graful de entități), ales special deoarece nu se auto-referențiază — un fișier care își conține propriul hash nu poate fi verificat corect. Nu include ancorare blockchain/OpenTimestamps — nu este implementată real pe acest site; orice afirmație în acest sens ar fi falsă.",
   "verifiable_at": "https://eu-ai-act.ro/ai-proof.json"
 }
