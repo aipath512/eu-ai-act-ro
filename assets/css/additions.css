@@ -87,6 +87,11 @@
 }
 .ask-answer {
   display: block !important;
+  background: transparent !important;
+  border-left: none !important;
+  color: #ffffff !important;
+  white-space: normal !important;
+  padding: 0 !important;
   margin-top: 0;
   min-height: 48px;
   max-height: 340px;
