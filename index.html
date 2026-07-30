@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="stylesheet" href="assets/css/main.css?v=3">
-<link rel="stylesheet" href="assets/css/additions.css?v=12">
+<link rel="stylesheet" href="assets/css/additions.css?v=14">
 <style>
 @media (max-width: 640px) {
   .hero.no-border {
@@ -149,7 +149,7 @@ window.addEventListener("error", function (e) {
 <div class="status-bar">
   <div class="wrap status-row">
     <div class="status-left">
-      <button id="loginToggle" class="login-link" type="button">Login</button>
+      <button id="loginToggle" class="login-link" type="button">Acces cu email</button>
       <span class="live">live · EU AI Act Readiness Engine</span>
     </div>
     <span>Răspundem &lt; 4h în ziua lucrătoare</span>
@@ -162,7 +162,7 @@ window.addEventListener("error", function (e) {
         <input type="email" required placeholder="nume@firma.ro">
       </div>
       <button type="submit" class="btn btn-primary btn-block">Trimite link de acces</button>
-      <p class="login-alt">Fără parolă — primești un link pe email, valabil 15 minute.</p>
+      <p class="login-alt">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, iar primul login îți creează automat contul.</p>
     </form>
   </div>
 
@@ -220,6 +220,44 @@ window.addEventListener("error", function (e) {
           <span class="btn-main">Întreabă AI</span>
           <span class="btn-sub">gratuit — necesită cont</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE JOURNEY — Governance is step 1, not the whole path -->
+  <section class="pad-sm">
+    <div class="wrap">
+      <div class="journey-head">
+        <span class="tag"><span class="dot">//</span>PARCURSUL TĂU</span>
+        <h2 class="h2-title" style="font-size:22px;">De la <em>Governance</em> la <em>conformitate completă</em>.</h2>
+      </div>
+      <div class="journey-track">
+        <div class="journey-step journey-active" style="--jc:#f0c14b;">
+          <div class="journey-here">EȘTI AICI</div>
+          <div class="journey-chevron"><span class="journey-icon">📋</span></div>
+          <div class="journey-label">GOVERNANCE</div>
+          <div class="journey-sub">70 documente generate</div>
+        </div>
+        <div class="journey-step" style="--jc:#4fb0e8;">
+          <div class="journey-chevron"><span class="journey-icon">🔐</span></div>
+          <div class="journey-label">EVIDENCE</div>
+          <div class="journey-sub">dovezi digitale criptografice</div>
+        </div>
+        <div class="journey-step" style="--jc:#6fce8f;">
+          <div class="journey-chevron"><span class="journey-icon">👁️</span></div>
+          <div class="journey-label">TRANSPARENCY</div>
+          <div class="journey-sub">Articolul 50</div>
+        </div>
+        <div class="journey-step" style="--jc:#c98fe8;">
+          <div class="journey-chevron"><span class="journey-icon">🔍</span></div>
+          <div class="journey-label">VERIFICATION</div>
+          <div class="journey-sub">RRVI — verificare la distanță</div>
+        </div>
+        <div class="journey-step" style="--jc:#e8734f;">
+          <div class="journey-chevron"><span class="journey-icon">✅</span></div>
+          <div class="journey-label">FULL COMPLIANCE</div>
+          <div class="journey-sub">conformitate completă</div>
+        </div>
       </div>
     </div>
   </section>
@@ -294,7 +332,7 @@ window.addEventListener("error", function (e) {
       <div id="freePackGate">
         <div class="form-card">
           <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Autentifică-te ca să generezi pachetul</h3>
-          <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Fără parolă — scrii emailul, primești un link de acces. Demo și ASK rămân libere, fără cont.</p>
+          <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, iar primul login îți creează automat contul. Demo și ASK rămân libere, fără cont.</p>
           <form id="gateForm">
             <div class="form-field" style="margin-bottom:16px;">
               <label>Email profesional</label>
@@ -773,6 +811,6 @@ window.addEventListener("error", function (e) {
 
 <script src="assets/js/script.js?v=3"></script>
 <script src="assets/js/ask-demo-lead.js?v=5"></script>
-<script src="assets/js/auth.js?v=1"></script>
+<script src="assets/js/auth.js?v=2"></script>
 </body>
 </html>
