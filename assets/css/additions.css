@@ -61,11 +61,51 @@
     transform: rotate(360deg);
   }
 }
+.ask-highlight {
+  justify-content: flex-start !important;
+}
+.ask-grid {
+  grid-template-columns: 1fr 1fr !important;
+}
+.ask-highlight-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.ask-highlight-head .badge {
+  margin-bottom: 0 !important;
+}
+.ask-highlight-label {
+  font-family: var(--serif, serif);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-transform: none;
+}
 .ask-answer {
   margin-top: 18px;
   min-height: 48px;
   max-height: 340px;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold, #f0c14b) rgba(255, 255, 255, 0.08);
+}
+.ask-answer::-webkit-scrollbar {
+  width: 8px;
+}
+.ask-answer::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+}
+.ask-answer::-webkit-scrollbar-thumb {
+  background: var(--gold, #f0c14b);
+  border-radius: 4px;
+}
+.ask-answer::-webkit-scrollbar-thumb:hover {
+  background: #ffd873;
 }
 .ask-answer:empty {
   border: 1px dashed rgba(255, 255, 255, 0.15);
