@@ -37,6 +37,9 @@
   }
 
   function startWaiting(answerEl) {
+    stopWaiting(); // always clear any previous timer first — prevents a
+    // leftover interval from overwriting a real answer with a stale
+    // "waiting" message after it renders.
     waitingStart = Date.now();
     var i = 0;
     function render() {
@@ -128,6 +131,8 @@
       .join("");
   }
 
+  var askInFlight = false;
+
   function ask(question) {
     var answerEl = document.getElementById("askAnswer");
     var submitBtn = document.getElementById("askSubmit");
@@ -136,6 +141,7 @@
       alert("Eroare tehnică: zona de răspuns (#askAnswer) nu a fost găsită pe pagină. Anunță dezvoltatorul.");
       return;
     }
+    if (askInFlight) return; // ignore clicks while a request is already running
 
     question = (question || "").trim();
     if (!question) {
@@ -143,6 +149,8 @@
         "<div class='no-result'>Scrie mai întâi o întrebare.</div>";
       return;
     }
+
+    askInFlight = true;
 
     if (submitBtn) submitBtn.disabled = true;
     startWaiting(answerEl);
@@ -163,6 +171,7 @@
           "). Încearcă din nou sau scrie-ne pe WhatsApp.</div>";
       })
       .finally(function () {
+        askInFlight = false;
         if (submitBtn) submitBtn.disabled = false;
       });
   }
