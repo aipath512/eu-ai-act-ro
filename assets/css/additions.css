@@ -66,15 +66,15 @@
 }
 .no-result {
   font-size: 14px;
-  color: var(--text-dim, #b8b3a4);
+  color: #5a5648;
   padding: 10px 0;
 }
 .no-result.waiting {
   opacity: 0.85;
 }
 .result-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f4f2ec;
+  border: 1px solid #ddd8c9;
   border-radius: 8px;
   padding: 16px 18px;
   margin-bottom: 12px;
@@ -83,13 +83,13 @@
   font-family: var(--mono, monospace);
   font-size: 11px;
   text-transform: uppercase;
-  color: var(--gold, #f0c14b);
+  color: #8a6200;
   margin-bottom: 6px;
 }
 .result-text {
   font-size: 14.5px;
   line-height: 1.6;
-  color: var(--text, #eee);
+  color: #141414;
 }
 .sources {
   margin-top: 10px;
@@ -100,13 +100,13 @@
   align-items: center;
 }
 .sources span:first-child {
-  color: var(--text-faint, #6a6558);
+  color: #8a8578;
   text-transform: uppercase;
   font-family: var(--mono, monospace);
   font-size: 10.5px;
 }
 .sources a {
-  color: var(--gold, #f0c14b);
+  color: #8a6200;
   text-decoration: none;
 }
 .sources a:hover {
@@ -119,12 +119,13 @@
   padding: 2px 8px;
   border-radius: 4px;
   font-size: 0.85em;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(10, 10, 10, 0.06);
+  color: #141414;
 }
 .rrvi-label {
   font-weight: 600;
   margin-right: 4px;
-  color: var(--gold, #f0c14b);
+  color: #8a6200;
 }
 
 /* ---- Form status (lead / contact) ---- */
