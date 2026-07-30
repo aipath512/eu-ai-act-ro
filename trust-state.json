@@ -1,0 +1,17 @@
+{
+  "site": "https://eu-ai-act.ro/",
+  "verified": true,
+  "verificationMethod": "SHA-256 content fingerprint (ai-proof.json) + Schema.org Organization + registru public (CUI 51415878)",
+  "lastUpdated": "2026-07-30",
+  "trustSignals": [
+    "Entitate legală verificabilă public (CUI 51415878, J2025016406000)",
+    "Fondator identificabil (Dan Ionescu / Eli, LinkedIn public)",
+    "Parteneriat confirmat (ECBTax Accounting & HR — Roxana Deak, FCCA/CPA/CCF)",
+    "Schema.org Organization + Service + FAQPage + BreadcrumbList + DefinedTerm graph",
+    "Membru al rețelei AiVenture / 5thElement.ai (ADI)"
+  ],
+  "network": {
+    "flagship": "https://5thelement.ai",
+    "role": "satellite node"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "organization": "AIVENTURE S.R.L.",
+  "aiResponsiblePerson": "Dan Ionescu (Eli)",
+  "governanceFramework": "Auto-evaluare conform EU AI Act — Regulamentul (UE) 2024/1689",
+  "aiSystemsUsed": [
+    {
+      "name": "ASK EU AI Act™",
+      "purpose": "Asistent conversațional pentru întrebări despre regulament",
+      "provider": "Cloudflare Workers AI",
+      "riskLevel": "Minimal — informare generală, fără decizie automată asupra unei persoane"
+    }
+  ],
+  "transparencyStatement": "Răspunsurile generate de ASK EU AI Act™ sunt identificate ca fiind generate AI și, unde e posibil, însoțite de surse din textul oficial al regulamentului.",
+  "evidenceModel": "RRVI™ — Remote Regulatory Verification Infrastructure (identificator unic, versiune, timestamp, hash criptografic)",
+  "humanOversight": "Conținutul site-ului și documentele generate sunt supervizate de fondatorul AIVENTURE S.R.L.",
+  "lastReviewed": "2026-07-30"
+}

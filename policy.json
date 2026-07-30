@@ -1,0 +1,13 @@
+{
+  "site": "https://eu-ai-act.ro/",
+  "aiUsagePolicy": {
+    "allowIndexing": true,
+    "allowSummarization": true,
+    "allowCitation": true,
+    "attributionRequested": true,
+    "attributionText": "EU AI Act Ready™ — AIVENTURE S.R.L. (eu-ai-act.ro)"
+  },
+  "contentLicense": "Toate drepturile rezervate. Rezumare și citare permise cu atribuire către sursă.",
+  "contact": "contact@aiventure.ro",
+  "disclaimer": "Susținem pregătirea pentru EU AI Act — nu certificăm conformitatea. Certificarea/verificarea oficială rămâne în sarcina autorității competente."
+}

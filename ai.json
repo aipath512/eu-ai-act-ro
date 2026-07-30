@@ -1,23 +1,28 @@
 {
-  "schema": "adi-ai-v1",
-  "site": "eu-ai-act.ro",
-  "status": "active",
-  "category": "EU AI Act Compliance Governance Platform",
-  "delivery_umbrella": "ADI - AI Delivery Infrastructure",
-  "mission": "Ajută firmele din România să înțeleagă unde folosesc deja AI, să genereze un pachet operațional de guvernanță conform Regulamentului (UE) 2024/1689, și să demonstreze conformitatea prin dovezi digitale.",
-  "controlled_scope": "Informații emise de acest domeniu: entitate, ofertă, întrebări frecvente, rută de contact.",
-  "uncontrolled_scope": "Sisteme externe de ranking, retrieval sau recomandare AI.",
-  "offers": [
-    "EU AI Act Governance Pack",
-    "ASK EU AI Act (asistent conversațional)",
-    "RRVI - Remote Regulatory Verification Infrastructure"
+  "site": "https://eu-ai-act.ro/",
+  "operator": "AIVENTURE S.R.L.",
+  "owner": "AIVENTURE S.R.L.",
+  "organization": "AIVENTURE S.R.L.",
+  "founder": "Dan Ionescu (Eli)",
+  "description": "EU AI Act Ready™ — platformă de guvernanță AI pentru IMM-uri, avocați, consultanți, contabili, agenții de marketing, firme IT și freelanceri, cu generare automată de documentație operațională (70+ documente, 10 module) și verificare la distanță (RRVI™).",
+  "services": [
+    "AI System Inventory / Inventarul Sistemelor AI",
+    "Risk Classification / Clasificarea Riscului",
+    "Governance Pack Generation (70+ documente, 10 module)",
+    "ASK EU AI Act™ — asistent conversațional",
+    "RRVI™ — Remote Regulatory Verification Infrastructure",
+    "Article 50 Transparency support"
   ],
-  "public_files": [
-    "/llms.txt",
-    "/organization.json",
-    "/intents.json",
-    "/adn.json",
-    "/sitemap.xml",
-    "/robots.txt"
-  ]
+  "offers": [
+    { "name": "Free Readiness Pack", "price": "0", "priceCurrency": "EUR" },
+    { "name": "EU AI Act Ready™ Governance Pack", "priceCurrency": "EUR" }
+  ],
+  "knowsAbout": ["EU AI Act", "Regulation (EU) 2024/1689", "AI Governance", "Article 50 Transparency", "AI Compliance"],
+  "keywords": ["EU AI Act", "AI governance", "AI compliance România", "Governance Pack", "RRVI", "AI Responsible Person"],
+  "audience": ["SME", "avocați", "consultanți", "contabili", "agenții de marketing", "firme IT", "freelanceri"],
+  "network": {
+    "role": "satellite node",
+    "flagship": "https://5thelement.ai",
+    "doctrine": "ADI — AI Delivery Infrastructure"
+  }
 }

@@ -1,0 +1,33 @@
+{
+  "legalName": "AIVENTURE S.R.L.",
+  "operator": "AIVENTURE S.R.L.",
+  "owner": "AIVENTURE S.R.L.",
+  "organization": "AIVENTURE S.R.L.",
+  "identifier": { "propertyID": "CUI", "value": "51415878" },
+  "vatID": "RO51415878",
+  "registrationNumber": "J2025016406000",
+  "euid": "ROONRC.J2025016406000",
+  "jurisdiction": "România / Uniunea Europeană",
+  "foundingDate": "2025-03-07",
+  "address": {
+    "streetAddress": "Drumul Pădurea Pustnicu, Nr. 141C, Corp A",
+    "addressLocality": "București",
+    "addressRegion": "Sector 1",
+    "addressCountry": "RO"
+  },
+  "founder": { "name": "Dan Ionescu", "alternateName": "Eli" },
+  "network": {
+    "flagship": "https://5thelement.ai",
+    "role": "satellite node — EU AI Act compliance vertical",
+    "siblingNodes": ["https://eu-ai-act-ready.eu", "https://aiventure.ro"],
+    "doctrine": "ADI — AI Delivery Infrastructure"
+  },
+  "sameAs": [
+    "https://eu-ai-act-ready.eu",
+    "https://5thelement.ai",
+    "https://aiventure.ro",
+    "https://www.linkedin.com/company/107338970",
+    "https://www.linkedin.com/in/dan-ionesco-a856082a0",
+    "https://www.crunchbase.com/organization/aiventure-s-r-l"
+  ]
+}

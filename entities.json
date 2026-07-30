@@ -1,0 +1,27 @@
+{
+  "site": "https://eu-ai-act.ro/",
+  "description": "Reprezentare machine-readable a entităților și relațiilor dintre ele, complementară JSON-LD-ului din pagină.",
+  "entities": [
+    { "id": "organization", "type": "Organization", "name": "AIVENTURE S.R.L." },
+    { "id": "governance-pack", "type": "Service", "name": "EU AI ACT READY™ Governance Pack" },
+    { "id": "euaiact", "type": "DefinedTerm", "name": "EU AI Act — Regulamentul (UE) 2024/1689" },
+    { "id": "article50", "type": "DefinedTerm", "name": "Articolul 50 — Obligații de Transparență" },
+    { "id": "ai-system", "type": "DefinedTerm", "name": "Sistem AI" },
+    { "id": "high-risk-ai", "type": "DefinedTerm", "name": "Sistem AI cu Risc Înalt" },
+    { "id": "ai-responsible-person", "type": "DefinedTerm", "name": "Persoană Responsabilă AI" },
+    { "id": "rrvi", "type": "Service", "name": "RRVI™ — Remote Regulatory Verification Infrastructure" },
+    { "id": "evidence-layer", "type": "CreativeWork", "name": "Evidence Layer" },
+    { "id": "ecbtax-partner", "type": "Organization", "name": "ECBTax Accounting & HR" }
+  ],
+  "relations": [
+    { "from": "article50", "relation": "isPartOf", "to": "euaiact" },
+    { "from": "ai-system", "relation": "isPartOf", "to": "euaiact" },
+    { "from": "high-risk-ai", "relation": "isPartOf", "to": "ai-system" },
+    { "from": "ai-responsible-person", "relation": "isPartOf", "to": "euaiact" },
+    { "from": "rrvi", "relation": "about", "to": "article50" },
+    { "from": "evidence-layer", "relation": "isBasedOn", "to": "rrvi" },
+    { "from": "governance-pack", "relation": "about", "to": "euaiact" },
+    { "from": "governance-pack", "relation": "provider", "to": "organization" },
+    { "from": "organization", "relation": "partner", "to": "ecbtax-partner" }
+  ]
+}
