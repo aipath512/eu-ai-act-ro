@@ -63,6 +63,21 @@
 }
 .ask-answer {
   margin-top: 18px;
+  min-height: 48px;
+}
+.ask-answer:empty {
+  border: 1px dashed #ddd8c9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ask-answer:empty::before {
+  content: "Răspunsul apare aici după ce apeși Întreabă.";
+  color: #8a8578;
+  font-size: 13px;
+  font-style: italic;
+  padding: 14px;
 }
 .no-result {
   font-size: 14px;
