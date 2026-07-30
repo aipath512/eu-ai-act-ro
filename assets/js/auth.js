@@ -186,7 +186,7 @@
         toggle.textContent = email + " · Logout";
         toggle.dataset.loggedIn = "1";
       } else {
-        toggle.textContent = "Login";
+        toggle.textContent = "Acces cu email";
         toggle.dataset.loggedIn = "0";
       }
     }
