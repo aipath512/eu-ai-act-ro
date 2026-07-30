@@ -183,7 +183,7 @@
 
     if (toggle) {
       if (loggedIn && email) {
-        toggle.textContent = email + " · Logout";
+        toggle.textContent = email + " · Deconectare";
         toggle.dataset.loggedIn = "1";
       } else {
         toggle.textContent = "Acces cu email";
