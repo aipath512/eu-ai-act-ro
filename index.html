@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="stylesheet" href="assets/css/main.css?v=3">
-<link rel="stylesheet" href="assets/css/additions.css?v=4">
+<link rel="stylesheet" href="assets/css/additions.css?v=8">
 <style>
 @media (max-width: 640px) {
   .hero.no-border {
@@ -118,7 +118,25 @@
   ]
 }
 </script>
-<link rel="describedby" href="/proof.json"><meta name="ai-signature" content="2395f0b7bd8c3d319a555c0c8638544e343f26d38d1bde28de84d15516990b5e"></head>
+<link rel="describedby" href="/proof.json"><meta name="ai-signature" content="2395f0b7bd8c3d319a555c0c8638544e343f26d38d1bde28de84d15516990b5e"><script>
+// Visible error banner — catches ANY JS error on this page and shows it
+// on screen, so problems are diagnosable without opening DevTools.
+window.addEventListener("error", function (e) {
+  var el = document.getElementById("jsErrorBanner");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "jsErrorBanner";
+    el.style.cssText =
+      "position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#b91c1c;color:#fff;" +
+      "font-family:monospace;font-size:12px;padding:10px 14px;max-height:30vh;overflow:auto;" +
+      "white-space:pre-wrap;";
+    document.body.appendChild(el);
+  }
+  el.textContent +=
+    "EROARE JS: " + e.message + " (" + (e.filename || "") + ":" + (e.lineno || "") + ")\n";
+});
+</script>
+</head>
 <body>
 
 <div class="top-alert">
@@ -358,13 +376,6 @@
       <div class="ask-grid">
         <div class="ask-panel">
           <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;">Întreabă EU AI Act™</h3>
-          <p style="color:var(--text-dim);font-size:14.5px;margin-top:6px;">Nu citi sute de pagini. Întreabă. Primește răspunsul. Descoperă următorul pas.</p>
-          <ul class="checklist">
-            <li>sintetizează regulamentul</li>
-            <li>explică obligațiile</li>
-            <li>identifică situația relevantă</li>
-            <li>recomandă acțiunea următoare</li>
-          </ul>
           <form id="askForm" class="ask-input-row">
             <input id="askInput" type="text" placeholder="Întreabă orice despre EU AI Act...">
             <button type="submit" class="btn btn-primary" id="askSubmit">Întreabă</button>
@@ -379,7 +390,9 @@
         </div>
 
         <div class="ask-highlight">
-          <span class="badge">100% GRATUIT</span>
+          <div class="ask-highlight-head">
+            <span class="ask-highlight-label">RĂSPUNS</span>
+          </div>
           <div id="askAnswer" class="ask-answer"></div>
         </div>
       </div>
@@ -762,7 +775,7 @@
 </div>
 
 <script src="assets/js/script.js?v=3"></script>
-<script src="assets/js/ask-demo-lead.js?v=1"></script>
+<script src="assets/js/ask-demo-lead.js?v=2"></script>
 <script src="assets/js/auth.js?v=1"></script>
 </body>
 </html>
