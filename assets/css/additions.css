@@ -3,6 +3,18 @@
    Fixes: founder photo cropping, footer address wrapping,
    adds: ASK result styling, demo modal, form status messages. */
 
+/* ---- Role cards now link to persona pages ---- */
+.role-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.role-card:hover {
+  transform: translateY(-4px);
+}
+
 /* ---- Compliance journey roadmap ---- */
 .journey-head {
   text-align: center;
@@ -21,6 +33,16 @@
   max-width: 190px;
   text-align: center;
   padding-top: 26px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.journey-step:hover {
+  transform: translateY(-4px);
+}
+.journey-active:hover {
+  transform: translateY(-14px) scale(1.06);
 }
 .journey-here {
   position: absolute;
