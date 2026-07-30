@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Test ASK — diagnostic</title>
+<style>
+  body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; background:#fff; color:#111; }
+  button { font-size: 16px; padding: 10px 20px; cursor: pointer; }
+  #out { margin-top: 20px; padding: 16px; border: 2px solid #ccc; border-radius: 8px; white-space: pre-wrap; font-family: monospace; font-size: 13px; min-height: 100px; }
+  .ok { border-color: #2a8f4a; background: #eafaf0; }
+  .err { border-color: #b91c1c; background: #fdeaea; color: #b91c1c; }
+</style>
+</head>
+<body>
+  <h1>Test direct — worker ASK</h1>
+  <p>Fără nimic altceva pe pagină. Doar apeși butonul.</p>
+  <button id="btn">Testează acum</button>
+  <div id="out">(apasă butonul)</div>
+
+  <script>
+    var API = "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=";
+    document.getElementById("btn").addEventListener("click", function () {
+      var out = document.getElementById("out");
+      out.className = "";
+      out.textContent = "Se trimite cererea...";
+      var startTime = Date.now();
+
+      fetch(API + encodeURIComponent("Ce este Articolul 50?"))
+        .then(function (res) {
+          out.textContent += "\n\nStatus HTTP: " + res.status;
+          return res.text();
+        })
+        .then(function (text) {
+          var elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          out.className = "ok";
+          out.textContent += "\n\nDurată: " + elapsed + "s\n\nRăspuns brut:\n" + text;
+        })
+        .catch(function (err) {
+          var elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          out.className = "err";
+          out.textContent += "\n\nDurată: " + elapsed + "s\n\nEROARE: " + err.message + "\n\nTip eroare: " + err.name;
+        });
+    });
+  </script>
+</body>
+</html>
