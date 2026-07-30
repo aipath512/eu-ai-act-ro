@@ -131,7 +131,11 @@
   function ask(question) {
     var answerEl = document.getElementById("askAnswer");
     var submitBtn = document.getElementById("askSubmit");
-    if (!answerEl) return;
+    if (!answerEl) {
+      // eslint-disable-next-line no-alert
+      alert("Eroare tehnică: zona de răspuns (#askAnswer) nu a fost găsită pe pagină. Anunță dezvoltatorul.");
+      return;
+    }
 
     question = (question || "").trim();
     if (!question) {
