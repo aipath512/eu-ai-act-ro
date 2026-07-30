@@ -28,7 +28,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="stylesheet" href="assets/css/main.css?v=3">
-<link rel="stylesheet" href="assets/css/additions.css?v=14">
+<link rel="stylesheet" href="assets/css/additions.css?v=16">
 <style>
 @media (max-width: 640px) {
   .hero.no-border {
@@ -185,6 +185,7 @@ window.addEventListener("error", function (e) {
       <a href="#demo" class="demo-trigger">demo</a>
       <a href="#roles">parteneri</a>
       <a href="#evidence">inspector view</a>
+      <a href="why-us.html">why us?</a>
       <a href="#faq">resurse.md</a>
       <a href="#contact">contact.ts</a>
     </nav>
@@ -224,6 +225,21 @@ window.addEventListener("error", function (e) {
     </div>
   </section>
 
+  <!-- PENTRU CINE ESTE (right after hero — answers "is this for me" before the journey) -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>PENTRU CINE ESTE</span>
+      <h2 class="h2-title">Cinci profiluri, <em>un singur</em> punct de plecare.</h2>
+      <div class="persona-grid">
+        <div class="persona"><div class="icon">🏢</div><p>„Vreau să știu dacă firma mea este pregătită.”</p></div>
+        <div class="persona"><div class="icon">⚖️</div><p>„Vreau să ajut clienții cu EU AI Act.”</p></div>
+        <div class="persona"><div class="icon">📊</div><p>„Vreau să creez un serviciu nou.”</p></div>
+        <div class="persona"><div class="icon">👤</div><p>„Vreau să folosesc AI responsabil.”</p></div>
+        <div class="persona"><div class="icon">🔍</div><p>„Vreau dovezi verificabile.”</p></div>
+      </div>
+    </div>
+  </section>
+
   <!-- COMPLIANCE JOURNEY — Governance is step 1, not the whole path -->
   <section class="pad-sm">
     <div class="wrap">
@@ -232,32 +248,32 @@ window.addEventListener("error", function (e) {
         <h2 class="h2-title" style="font-size:22px;">De la <em>Governance</em> la <em>conformitate completă</em>.</h2>
       </div>
       <div class="journey-track">
-        <div class="journey-step journey-active" style="--jc:#f0c14b;">
+        <a href="#governance" class="journey-step journey-active" style="--jc:#f0c14b;">
           <div class="journey-here">EȘTI AICI</div>
           <div class="journey-chevron"><span class="journey-icon">📋</span></div>
           <div class="journey-label">GOVERNANCE</div>
           <div class="journey-sub">70 documente generate</div>
-        </div>
-        <div class="journey-step" style="--jc:#4fb0e8;">
+        </a>
+        <a href="#evidence" class="journey-step" style="--jc:#4fb0e8;">
           <div class="journey-chevron"><span class="journey-icon">🔐</span></div>
           <div class="journey-label">EVIDENCE</div>
           <div class="journey-sub">dovezi digitale criptografice</div>
-        </div>
-        <div class="journey-step" style="--jc:#6fce8f;">
+        </a>
+        <a href="#transparency" class="journey-step" style="--jc:#6fce8f;">
           <div class="journey-chevron"><span class="journey-icon">👁️</span></div>
           <div class="journey-label">TRANSPARENCY</div>
           <div class="journey-sub">Articolul 50</div>
-        </div>
-        <div class="journey-step" style="--jc:#c98fe8;">
+        </a>
+        <a href="#rrvi" class="journey-step" style="--jc:#c98fe8;">
           <div class="journey-chevron"><span class="journey-icon">🔍</span></div>
           <div class="journey-label">VERIFICATION</div>
           <div class="journey-sub">RRVI — verificare la distanță</div>
-        </div>
-        <div class="journey-step" style="--jc:#e8734f;">
+        </a>
+        <a href="#free-pack" class="journey-step" style="--jc:#e8734f;">
           <div class="journey-chevron"><span class="journey-icon">✅</span></div>
           <div class="journey-label">FULL COMPLIANCE</div>
           <div class="journey-sub">conformitate completă</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -276,21 +292,6 @@ window.addEventListener("error", function (e) {
           <div class="term-cell"><div class="big">10</div><div class="lbl">module operaționale</div></div>
           <div class="term-cell"><div class="big">15 min</div><div class="lbl">de la zero la pachet</div></div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PENTRU CINE ESTE (moved up — answers "is this for me" in the first seconds) -->
-  <section class="pad">
-    <div class="wrap">
-      <span class="tag"><span class="dot">//</span>PENTRU CINE ESTE</span>
-      <h2 class="h2-title">Cinci profiluri, <em>un singur</em> punct de plecare.</h2>
-      <div class="persona-grid">
-        <div class="persona"><div class="icon">🏢</div><p>„Vreau să știu dacă firma mea este pregătită.”</p></div>
-        <div class="persona"><div class="icon">⚖️</div><p>„Vreau să ajut clienții cu EU AI Act.”</p></div>
-        <div class="persona"><div class="icon">📊</div><p>„Vreau să creez un serviciu nou.”</p></div>
-        <div class="persona"><div class="icon">👤</div><p>„Vreau să folosesc AI responsabil.”</p></div>
-        <div class="persona"><div class="icon">🔍</div><p>„Vreau dovezi verificabile.”</p></div>
       </div>
     </div>
   </section>
@@ -464,32 +465,47 @@ window.addEventListener("error", function (e) {
       <span class="tag"><span class="dot">//</span>TRASEE DUPĂ ROL</span>
       <h2 class="h2-title">Fiecare rol, <em>un traseu diferit</em>.</h2>
       <div class="role-grid">
-        <div class="role-card">
+        <a href="personas/imm.html" class="role-card">
           <div class="role-q">„Ce trebuie să fac?”</div>
           <h4>Proprietar IMM</h4>
           <div class="role-path">FREE CHECK → DEMO → FIRMA TA → IMPLEMENTARE</div>
-        </div>
-        <div class="role-card">
+        </a>
+        <a href="personas/avocati.html" class="role-card">
           <div class="role-q">„Cum ajut clienții?”</div>
           <h4>Avocat</h4>
           <div class="role-path">PARTENER → DEMO → SERVICIU NOU</div>
-        </div>
-        <div class="role-card">
+        </a>
+        <a href="personas/consultanti.html" class="role-card">
           <div class="role-q">„Cum creez ofertă nouă?”</div>
           <h4>Consultant</h4>
           <div class="role-path">PARTENER → IMPLEMENTARE</div>
-        </div>
-        <div class="role-card">
+        </a>
+        <a href="personas/freelanceri.html" class="role-card">
           <div class="role-q">„Sunt responsabil dacă folosesc AI?”</div>
           <h4>Freelancer</h4>
           <div class="role-path">ASK → CHECK</div>
-        </div>
-        <div class="role-card">
+        </a>
+        <a href="#evidence" class="role-card">
           <div class="role-q">„Cum verific?”</div>
           <h4>Auditor</h4>
           <div class="role-path">INSPECTOR VIEW → RRVI</div>
-        </div>
+        </a>
+        <a href="personas/marketing-digital.html" class="role-card">
+          <div class="role-q">„Ce declar despre conținutul AI?”</div>
+          <h4>Digital Marketing</h4>
+          <div class="role-path">ARTICOL 50 → TRANSPARENȚĂ</div>
+        </a>
       </div>
+    </div>
+  </section>
+
+  <!-- DE CE AIVENTURE (compania, nu produsul) — teaser, detalii pe why-us.html -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>DE CE AIVENTURE</span>
+      <h2 class="h2-title">Nu un produs izolat. <em>O infrastructură</em>.</h2>
+      <p class="sub-lede">EU AI ACT READY™ e un singur produs dintr-un ecosistem mai larg de infrastructură AI, construit de AIVENTURE S.R.L. — nu un instrument izolat, cârpit peste un no-code tool. Fondator cu background enterprise real (IBM, Capgemini, Société Générale, Crédit Agricole), arhitectură proprie pe Cloudflare, un singur om responsabil direct.</p>
+      <p style="margin-top:20px;"><a href="why-us.html" class="btn btn-secondary">Vezi comparația completă cu piața (Why Us?) →</a></p>
     </div>
   </section>
 
@@ -536,7 +552,7 @@ window.addEventListener("error", function (e) {
   </section>
 
   <!-- ARTICLE 50 -->
-  <section class="pad">
+  <section id="transparency" class="pad">
     <div class="wrap">
       <div class="banner">-30% reducere pentru firmele care finalizează Governance Layer</div>
       <span class="tag" style="display:block;"><span class="dot">//</span>NIVELUL URMĂTOR</span>
@@ -557,7 +573,7 @@ window.addEventListener("error", function (e) {
   </section>
 
   <!-- RRVI (standalone — separated from Article 50) -->
-  <section class="pad">
+  <section id="rrvi" class="pad">
     <div class="wrap">
       <div class="term-card">
         <div class="term-head"><span>RRVI™ — Remote Regulatory Verification Infrastructure™</span><span>inspector-ready</span></div>
@@ -568,11 +584,11 @@ window.addEventListener("error", function (e) {
     </div>
   </section>
 
-  <!-- DE CE AIVENTURE — 5 diferențiatori, ordine ascendentă 1→5 -->
+  <!-- DE CE EU AI ACT READY™ — 5 diferențiatori de produs, ordine ascendentă 1→5 -->
   <section class="pad">
     <div class="wrap">
-      <span class="tag"><span class="dot">//</span>DE CE AIVENTURE</span>
-      <h2 class="h2-title">Cinci motive, <em>o singură</em> platformă.</h2>
+      <span class="tag"><span class="dot">//</span>DE CE EU AI ACT READY™</span>
+      <h2 class="h2-title">Cinci motive, <em>un singur</em> pachet.</h2>
       <div class="module-grid">
         <div class="module-row"><div class="module-num">1</div><div><h4>70 documente complete, în sub 15 min</h4><p>Când ANCOM bate la ușă, arăți instant actele complete și persoana responsabilă AI desemnată — zile de muncă de avocați, evitate.</p></div></div>
         <div class="module-row"><div class="module-num">2</div><div><h4>Auditorul verifică la distanță (RRVI)</h4><p>Fără deplasare la firmă — dovezi digitale criptografice, cu timestamp.</p></div></div>
