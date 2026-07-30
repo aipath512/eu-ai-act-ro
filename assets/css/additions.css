@@ -87,7 +87,7 @@
 }
 .ask-answer {
   display: block !important;
-  margin-top: 18px;
+  margin-top: 0;
   min-height: 48px;
   max-height: 340px;
   overflow-y: auto;
@@ -124,18 +124,19 @@
 }
 .no-result {
   font-size: 14px;
-  color: var(--text-dim, #b8b3a4);
+  color: #ffffff;
   padding: 10px 0;
 }
 .no-result.waiting {
   opacity: 0.85;
 }
 .result-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  padding: 16px 18px;
-  margin-bottom: 12px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 0;
+  padding: 0 0 16px 0;
+  margin-bottom: 16px;
 }
 .result-label {
   font-family: var(--mono, monospace);
@@ -146,8 +147,8 @@
 }
 .result-text {
   font-size: 14.5px;
-  line-height: 1.6;
-  color: var(--text, #fff);
+  line-height: 1.7;
+  color: #ffffff;
 }
 .sources {
   margin-top: 10px;
