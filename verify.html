@@ -6,7 +6,7 @@
 <title>Verificare acces — EU AI Act Ready™</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/css/main.css?v=3">
-<link rel="stylesheet" href="assets/css/additions.css?v=1">
+<link rel="stylesheet" href="assets/css/additions.css?v=12">
 <style>
   .verify-wrap {
     min-height: 100vh;
@@ -35,6 +35,9 @@
   .verify-status {
     margin-top: 18px;
   }
+  #confirmBtn {
+    margin-top: 6px;
+  }
 </style>
 </head>
 <body>
@@ -42,10 +45,11 @@
     <div class="verify-card">
       <h1>EU AI ACT <em style="color:var(--gold,#f0c14b);font-style:italic;">READY</em>™</h1>
       <div id="verifyStatus">
-        <p><span class="spinner" aria-hidden="true"></span> Se verifică linkul de acces...</p>
+        <p>Apasă butonul de mai jos ca să finalizezi autentificarea.</p>
       </div>
       <div class="verify-status">
-        <a href="/" class="btn btn-secondary" style="display:none;" id="verifyBackBtn">Înapoi la eu-ai-act.ro →</a>
+        <button type="button" class="btn btn-primary" id="confirmBtn">Confirmă login →</button>
+        <a href="/" class="btn btn-secondary" style="display:none;margin-top:12px;" id="verifyBackBtn">Înapoi la eu-ai-act.ro →</a>
       </div>
     </div>
   </div>
@@ -59,6 +63,7 @@
 
   var statusEl = document.getElementById("verifyStatus");
   var backBtn = document.getElementById("verifyBackBtn");
+  var confirmBtn = document.getElementById("confirmBtn");
   var params = new URLSearchParams(window.location.search);
   var token = params.get("token");
 
@@ -68,35 +73,51 @@
 
   if (!token) {
     statusEl.innerHTML = "<p>Link invalid — lipsește token-ul.</p>";
+    confirmBtn.style.display = "none";
     showBack();
     return;
   }
 
-  fetch(AUTH_API + "/verify?token=" + encodeURIComponent(token))
-    .then(function (res) {
-      return res.json();
-    })
-    .then(function (data) {
-      if (data.ok && data.sessionToken) {
-        localStorage.setItem("euaiact_session", data.sessionToken);
-        localStorage.setItem("euaiact_email", data.email);
-        statusEl.innerHTML =
-          "<p>Ești logat ca <strong>" +
-          data.email.replace(/</g, "&lt;") +
-          "</strong>.</p>";
-        setTimeout(function () {
-          window.location.href = "/#free-pack";
-        }, 1200);
-      } else {
-        statusEl.innerHTML =
-          "<p>" + (data.error || "Linkul nu a putut fi verificat.") + "</p>";
-        showBack();
-      }
-    })
-    .catch(function () {
-      statusEl.innerHTML = "<p>Eroare de conexiune. Încearcă din nou.</p>";
-      showBack();
-    });
+  // IMPORTANT: the actual /verify call only fires on a real click —
+  // not automatically on page load. Email security scanners (Gmail,
+  // Outlook Safe Links, corporate gateways) often prefetch every link
+  // in an email to scan it, but they don't execute JavaScript or click
+  // buttons. This keeps the one-time token from being silently burned
+  // by such a scanner before the person actually clicks it themselves.
+  confirmBtn.addEventListener("click", function () {
+    confirmBtn.disabled = true;
+    confirmBtn.textContent = "Se verifică...";
+    statusEl.innerHTML = '<p><span class="spinner" aria-hidden="true"></span> Se verifică linkul de acces...</p>';
+
+    fetch(AUTH_API + "/verify?token=" + encodeURIComponent(token))
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        if (data.ok && data.sessionToken) {
+          localStorage.setItem("euaiact_session", data.sessionToken);
+          localStorage.setItem("euaiact_email", data.email);
+          confirmBtn.style.display = "none";
+          statusEl.innerHTML =
+            "<p>Ești logat ca <strong>" +
+            data.email.replace(/</g, "&lt;") +
+            "</strong>.</p>";
+          setTimeout(function () {
+            window.location.href = "/#free-pack";
+          }, 1200);
+        } else {
+          confirmBtn.style.display = "none";
+          statusEl.innerHTML =
+            "<p>" + (data.error || "Linkul nu a putut fi verificat.") + "</p>";
+          showBack();
+        }
+      })
+      .catch(function () {
+        confirmBtn.disabled = false;
+        confirmBtn.textContent = "Confirmă login →";
+        statusEl.innerHTML = "<p>Eroare de conexiune. Încearcă din nou.</p>";
+      });
+  });
 })();
 </script>
 </body>
