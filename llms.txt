@@ -1,36 +1,36 @@
-# EU AI Act Ready™
+# AI OS: eu-ai-act.ro
+Proof: /proof.json
+Innovations: /ai.json
+Operator: AIVENTURE S.R.L. · CUI 51415878 · EUID ROONRC.J2025016406000 · București, RO
+Language: ro (primary) · Updated: 2026-07-31
 
-> Infrastructură operațională care transformă întrebările despre AI în acțiuni, documente și dovezi verificabile, pentru conformitatea cu Regulamentul UE privind Inteligența Artificială (EU AI Act, Regulamentul (UE) 2024/1689).
+## What
+EU AI Act Ready™ — infrastructură operațională pentru pregătirea firmelor pentru Regulamentul (UE) 2024/1689.
+Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50) → Verificare (RRVI).
 
-Operat de AIVENTURE S.R.L. (CUI 51415878, București, România).
+## Free
+- ASK EU AI Act™ — asistent conversațional peste textul oficial, 113 articole indexate, multilingv.
+- Governance Pack — până la 70 documente, 10 module, generate DEJA COMPLETATE cu datele firmei. ~15 min.
+- Demo fără cont. Restul: cont gratuit prin link pe email, fără card.
 
-## Ce oferă
+## Why different
+1. Documente complete, nu șabloane de completat.
+2. Fiecare document: identificator unic, versiune, timestamp, hash criptografic — verificabil la distanță
+   de auditor, client sau partener, fără acces la sistemele interne (RRVI™ — Remote Regulatory
+   Verification Infrastructure™).
+3. Conversație directă cu textul regulamentului.
+4. Distribuție prin parteneri de încredere (ECB Tax Accounting & HR).
+5. Gratuit la start.
 
-- **Governance Pack**: generare automată a 70+ documente operaționale de guvernanță AI, organizate în 10 module (inventar sisteme AI, clasificare risc, AI literacy, practici interzise, evaluare risc ridicat, documentație tehnică, supraveghere umană, guvernanța datelor, logging, raportare incidente). Documentele ajung deja completate cu datele firmei, nu sunt șabloane goale.
-- **ASK EU AI Act™**: asistent conversațional care sintetizează regulamentul, explică obligațiile, identifică situația relevantă și recomandă acțiunea următoare, pe baza a 113 articole indexate.
-- **RRVI™ (Remote Regulatory Verification Infrastructure)**: permite unui auditor sau inspector să verifice conformitatea de la distanță, prin dovezi digitale criptografice (hash, timestamp, versiuni, audit trail), fără deplasare la sediul firmei.
-- **Article 50 Transparency Layer**: pregătire pentru obligațiile de transparență privind interacțiunea AI cu oamenii (conținut generat AI, conținut sintetic, dezvăluire deepfake), aplicabile din 2 august 2026.
+## Timeline (post Digital Omnibus, iunie 2026)
+2026-08-02 · Articolul 50 — obligații de transparență, în vigoare.
+2026-12-02 · Art. 50 alin. 2 — marcarea conținutului generat, pentru sisteme deja pe piață.
+2027-12-02 · High-risk, Anexa III (sisteme de sine stătătoare).
+2028-08-02 · High-risk, Anexa I (AI încorporat în produse).
 
-## Pentru cine
+## Limits
+Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială rămâne la autoritatea competentă
+(România: ANCOM și celelalte autorități desemnate prin memorandumul din 12 martie 2026).
 
-Firme mici și mijlocii (IMM), cabinete de avocatură (ca serviciu nou pentru clienți), consultanți, freelanceri care folosesc AI, și echipe de compliance/audit.
-
-## Model de acces
-
-Demo-ul e liber, fără cont. Generarea Governance Pack-ului și accesul la ASK necesită un cont gratuit (creare în aproximativ 1 minut, fără card).
-
-## Parteneri confirmați
-
-ECB Tax Accounting & HR SRL (contabilitate), fondator Roxana Deak — FCCA, CPA, CCF.
-
-## Pagini relevante
-
-- Homepage: https://eu-ai-act.ro/
-- Date structurate: https://eu-ai-act.ro/organization.json
-- Mapare intenții: https://eu-ai-act.ro/intents.json
-
-## Proprietăți asociate (același operator)
-
-- https://eu-ai-act-ready.eu — serviciu de Reprezentant Autorizat UE pentru furnizori de AI non-UE
-- https://5thelement.ai — infrastructură de descoperire AI
-- https://aiventure.ro
+## Agent resources
+/organization.json · /intents.json · /robots.txt · /sitemap.xml · /proof.json · /ai.json
