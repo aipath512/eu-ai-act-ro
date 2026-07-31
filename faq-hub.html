@@ -1406,6 +1406,14 @@
   .faqhub-card:hover { transform:translateY(-4px); border-color:var(--gold); }
   .faqhub-card h3 { font-family:var(--serif); font-size:17px; margin:10px 0 6px; color:var(--text); }
   .faqhub-card p { font-size:12.5px; color:var(--gold); }
+  .faqhub-toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 30px; }
+  .faqhub-toc a { font-family:var(--mono,monospace); font-size:11.5px; text-decoration:none; color:var(--gold); border:1px solid rgba(240,193,75,0.28); border-radius:99px; padding:6px 12px; transition:background .2s ease; }
+  .faqhub-toc a:hover { background:rgba(240,193,75,0.12); }
+  .faqhub-block { margin:34px 0 0; padding-top:22px; border-top:1px solid rgba(255,255,255,0.09); scroll-margin-top:80px; }
+  .faqhub-block-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; margin-bottom:14px; }
+  .faqhub-block-title { font-family:var(--serif); font-size:19px; margin:6px 0; color:var(--text); flex:1 1 auto; }
+  .faqhub-block-link { font-size:12px; color:var(--gold); text-decoration:none; white-space:nowrap; }
+  .faqhub-block-link:hover { text-decoration:underline; }
   @media (max-width:780px) { .faqhub-grid { grid-template-columns:1fr 1fr; } }
   @media (max-width:480px) { .faqhub-grid { grid-template-columns:1fr; } }
 </style>
@@ -1518,6 +1526,605 @@
           <p>10 întrebări →</p>
         </a>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOATE CELE 120 DE ÎNTREBĂRI, VIZIBILE ===== -->
+  <section class="pad" id="toate-intrebarile">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>BAZA COMPLETĂ DE CUNOAȘTERE</span>
+      <h2 class="h2-title">Toate cele <em>120 de întrebări</em>, pe această pagină.</h2>
+      <p class="sub-lede" style="margin-bottom:8px;">Douăsprezece categorii, zece întrebări fiecare. Clic pe o întrebare ca să vezi răspunsul.</p>
+      <div class="faqhub-toc">
+        <a href="#cat-1">01. EU AI Act — Generalități</a>
+        <a href="#cat-2">02. IMM &amp; Organizații</a>
+        <a href="#cat-3">03. AI Governance</a>
+        <a href="#cat-4">04. Governance Pack</a>
+        <a href="#cat-5">05. ASK EU AI Act™ Assistant</a>
+        <a href="#cat-6">06. Evidence &amp; Audit</a>
+        <a href="#cat-7">07. Article 50 — Transparență</a>
+        <a href="#cat-8">08. RRVI™ — Verificare la Distanță</a>
+        <a href="#cat-9">09. Industrii &amp; Cazuri de Utilizare</a>
+        <a href="#cat-10">10. Securitate &amp; Confidențialitate</a>
+        <a href="#cat-11">11. Comercial — Preț, Demo, Implementare</a>
+        <a href="#cat-12">12. Despre AIVENTURE / Încredere</a>
+      </div>
+
+      <div class="faqhub-block" id="cat-1">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>TOFU · EDUCARE</span>
+          <h3 class="faqhub-block-title">01 · EU AI Act — Generalități</h3>
+          <a class="faqhub-block-link" href="/faq-general.html">pagina dedicată →</a>
+        </div>
+        <section id="c1q1" class="faq-item">
+          <div class="faq-q">Ce este EU AI Act? <span class="plus">+</span></div>
+          <div class="faq-a">Regulamentul (UE) 2024/1689 — primul cadru legal european care reglementează sistemele de inteligență artificială, stabilind obligații în funcție de nivelul de risc.</div>
+        </section>
+        <section id="c1q2" class="faq-item">
+          <div class="faq-q">Cui se aplică EU AI Act? <span class="plus">+</span></div>
+          <div class="faq-a">Oricărei organizații care dezvoltă, furnizează sau folosește sisteme AI în Uniunea Europeană — indiferent de mărime sau domeniu.</div>
+        </section>
+        <section id="c1q3" class="faq-item">
+          <div class="faq-q">Când intră în aplicare obligațiile de transparență? <span class="plus">+</span></div>
+          <div class="faq-a">Obligațiile de transparență din Articolul 50 devin aplicabile din 2 august 2026.</div>
+        </section>
+        <section id="c1q4" class="faq-item">
+          <div class="faq-q">Este obligatoriu pentru toate firmele? <span class="plus">+</span></div>
+          <div class="faq-a">Nivelul de obligații variază — nu toate firmele au aceleași cerințe, dar majoritatea firmelor care folosesc AI au cel puțin obligații de transparență.</div>
+        </section>
+        <section id="c1q5" class="faq-item">
+          <div class="faq-q">Se aplică și IMM-urilor? <span class="plus">+</span></div>
+          <div class="faq-a">Da. Obligațiile depind de modul de utilizare a AI, nu de mărimea firmei.</div>
+        </section>
+        <section id="c1q6" class="faq-item">
+          <div class="faq-q">Ce se întâmplă dacă o firmă nu face nimic? <span class="plus">+</span></div>
+          <div class="faq-a">Expunere la sancțiuni și, mai concret pe termen scurt, lipsa dovezilor pregătite în cazul unui control sau al unei cereri din partea unui client sau partener.</div>
+        </section>
+        <section id="c1q7" class="faq-item">
+          <div class="faq-q">Care sunt principalele obligații? <span class="plus">+</span></div>
+          <div class="faq-a">Inventarierea sistemelor AI, clasificarea riscului, documentație tehnică, supraveghere umană, guvernanța datelor și — unde e cazul — transparență privind conținutul generat AI.</div>
+        </section>
+        <section id="c1q8" class="faq-item">
+          <div class="faq-q">De unde știu dacă mă privește? <span class="plus">+</span></div>
+          <div class="faq-a">Cel mai simplu: întrebi direct în ASK EU AI Act™, gratuit, fără cont — primești un răspuns concret la situația ta.</div>
+        </section>
+        <section id="c1q9" class="faq-item">
+          <div class="faq-q">Regulamentul se aplică diferit în funcție de țară? <span class="plus">+</span></div>
+          <div class="faq-a">Regulamentul e direct aplicabil în toate statele membre UE, dar autoritățile naționale de supraveghere diferă (în România, relevant e ANCOM).</div>
+        </section>
+        <section id="c1q10" class="faq-item">
+          <div class="faq-q">Ce diferență e între Provider și Deployer? <span class="plus">+</span></div>
+          <div class="faq-a">Provider e cine dezvoltă sau introduce pe piață un sistem AI; Deployer e cine doar îl folosește. O firmă poate fi ambele, pentru sisteme diferite.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-2">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>TOFU · APLICABILITATE</span>
+          <h3 class="faqhub-block-title">02 · IMM &amp; Organizații</h3>
+          <a class="faqhub-block-link" href="/faq-imm.html">pagina dedicată →</a>
+        </div>
+        <section id="c2q1" class="faq-item">
+          <div class="faq-q">Folosesc ChatGPT în firmă. Sunt afectat? <span class="plus">+</span></div>
+          <div class="faq-a">Foarte probabil da — obligațiile de transparență se aplică oricărei firme care folosește AI în interacțiunea cu publicul, indiferent de mărime.</div>
+        </section>
+        <section id="c2q2" class="faq-item">
+          <div class="faq-q">Angajații folosesc AI fără aprobare — ce fac? <span class="plus">+</span></div>
+          <div class="faq-a">Primul pas e un inventar care include și Shadow AI — instrumentele introduse informal de angajați, fără cunoștința managementului.</div>
+        </section>
+        <section id="c2q3" class="faq-item">
+          <div class="faq-q">Trebuie să inventariez toate sistemele AI din firmă? <span class="plus">+</span></div>
+          <div class="faq-a">Da — inventarul e primul modul din Governance Pack și baza pentru tot restul obligațiilor.</div>
+        </section>
+        <section id="c2q4" class="faq-item">
+          <div class="faq-q">Cum verific unde există AI în companie, concret? <span class="plus">+</span></div>
+          <div class="faq-a">Începi cu Free Readiness Pack — evaluarea inițială gratuită identifică exact unde folosești deja AI.</div>
+        </section>
+        <section id="c2q5" class="faq-item">
+          <div class="faq-q">Ce trebuie să pregătesc înainte de 2 august 2026? <span class="plus">+</span></div>
+          <div class="faq-a">Cel puțin inventarul sistemelor AI și, dacă interacționezi cu publicul prin AI, măsurile de transparență din Articolul 50.</div>
+        </section>
+        <section id="c2q6" class="faq-item">
+          <div class="faq-q">Am nevoie de un departament IT dedicat? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — platforma automatizează inventarul și clasificarea; nu ai nevoie de cunoștințe tehnice de AI.</div>
+        </section>
+        <section id="c2q7" class="faq-item">
+          <div class="faq-q">Cine trebuie desemnat responsabil AI în firmă? <span class="plus">+</span></div>
+          <div class="faq-a">Orice persoană din organizație care preia responsabilitatea operațională — nu trebuie să fie specialist tehnic.</div>
+        </section>
+        <section id="c2q8" class="faq-item">
+          <div class="faq-q">Ce risc real am dacă ignor subiectul? <span class="plus">+</span></div>
+          <div class="faq-a">Sancțiuni posibile, plus lipsa dovezilor pregătite dacă un client sau autoritate cere clarificări.</div>
+        </section>
+        <section id="c2q9" class="faq-item">
+          <div class="faq-q">Cât timp durează să înțeleg situația firmei mele? <span class="plus">+</span></div>
+          <div class="faq-a">Aproximativ 15 minute pentru primul nivel de pregătire, prin Free Readiness Pack.</div>
+        </section>
+        <section id="c2q10" class="faq-item">
+          <div class="faq-q">Există vreun cost pentru evaluarea inițială? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — Demo și Free Readiness Pack sunt gratuite, fără card.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-3">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · CADRU</span>
+          <h3 class="faqhub-block-title">03 · AI Governance</h3>
+          <a class="faqhub-block-link" href="/faq-governance.html">pagina dedicată →</a>
+        </div>
+        <section id="c3q1" class="faq-item">
+          <div class="faq-q">Ce este AI Governance? <span class="plus">+</span></div>
+          <div class="faq-a">Ansamblul de procese, documente și responsabilități prin care o organizație gestionează și demonstrează utilizarea responsabilă a sistemelor AI.</div>
+        </section>
+        <section id="c3q2" class="faq-item">
+          <div class="faq-q">Ce documente sunt necesare? <span class="plus">+</span></div>
+          <div class="faq-a">Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventar până la raportarea incidentelor.</div>
+        </section>
+        <section id="c3q3" class="faq-item">
+          <div class="faq-q">Ce este un AI Inventory? <span class="plus">+</span></div>
+          <div class="faq-a">Registrul complet al sistemelor AI folosite, dezvoltate sau integrate de organizație, cu scop, furnizor și nivel de risc pentru fiecare.</div>
+        </section>
+        <section id="c3q4" class="faq-item">
+          <div class="faq-q">Ce este clasificarea riscului AI? <span class="plus">+</span></div>
+          <div class="faq-a">Al doilea modul din Governance Pack — evaluează fiecare sistem AI identificat și îi atribuie o categorie de risc conform regulamentului.</div>
+        </section>
+        <section id="c3q5" class="faq-item">
+          <div class="faq-q">Ce politici AI trebuie create? <span class="plus">+</span></div>
+          <div class="faq-a">Cel puțin o politică de competențe AI (AI Literacy) și, dacă e cazul, politici specifice pe module — guvernanța datelor, supraveghere umană etc.</div>
+        </section>
+        <section id="c3q6" class="faq-item">
+          <div class="faq-q">Cine este responsabil pentru AI în companie? <span class="plus">+</span></div>
+          <div class="faq-a">Persoana Responsabilă AI desemnată — numele ei e populat automat în toate documentele generate.</div>
+        </section>
+        <section id="c3q7" class="faq-item">
+          <div class="faq-q">Guvernanța AI e un proiect unic sau continuu? <span class="plus">+</span></div>
+          <div class="faq-a">Continuu — inventarul și documentația trebuie actualizate la fiecare sistem AI nou introdus sau retras.</div>
+        </section>
+        <section id="c3q8" class="faq-item">
+          <div class="faq-q">Ce diferență e față de guvernanța IT clasică? <span class="plus">+</span></div>
+          <div class="faq-a">AI Governance adaugă cerințe specifice regulamentului — clasificare de risc, transparență, dovezi verificabile — peste practicile IT existente.</div>
+        </section>
+        <section id="c3q9" class="faq-item">
+          <div class="faq-q">Am nevoie de consultanță externă pentru asta? <span class="plus">+</span></div>
+          <div class="faq-a">Nu neapărat — platforma generează documentația automat; consultanța (juridică sau de business) rămâne opțională pentru interpretare specifică.</div>
+        </section>
+        <section id="c3q10" class="faq-item">
+          <div class="faq-q">Guvernanța AI se aplică și furnizorilor externi de AI? <span class="plus">+</span></div>
+          <div class="faq-a">Da — inventarul include și sistemele AI furnizate de terți (ex: ChatGPT, Copilot), cu rolul de Deployer pentru firma ta.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-4">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · PRODUS</span>
+          <h3 class="faqhub-block-title">04 · Governance Pack</h3>
+          <a class="faqhub-block-link" href="/faq-governance-pack.html">pagina dedicată →</a>
+        </div>
+        <section id="c4q1" class="faq-item">
+          <div class="faq-q">Ce conține Governance Pack-ul? <span class="plus">+</span></div>
+          <div class="faq-a">10 module operaționale și până la 70 de documente — checklist-uri, declarații, politici, dovezi, proceduri, registre și instrucțiuni de lucru.</div>
+        </section>
+        <section id="c4q2" class="faq-item">
+          <div class="faq-q">Câte documente generează, exact? <span class="plus">+</span></div>
+          <div class="faq-a">70 de documente — 7 tipuri × 10 module.</div>
+        </section>
+        <section id="c4q3" class="faq-item">
+          <div class="faq-q">Documentele sunt personalizate sau generice? <span class="plus">+</span></div>
+          <div class="faq-a">Sunt generate cu numele firmei și al persoanei responsabile AI completate automat, pe o structură profesională standard.</div>
+        </section>
+        <section id="c4q4" class="faq-item">
+          <div class="faq-q">În cât timp se generează pachetul complet? <span class="plus">+</span></div>
+          <div class="faq-a">Aproximativ 15 minute — sau sub un minut pentru generarea propriu-zisă, odată completate datele firmei.</div>
+        </section>
+        <section id="c4q5" class="faq-item">
+          <div class="faq-q">Documentele ajung goale sau completate? <span class="plus">+</span></div>
+          <div class="faq-a">Ajung deja completate cu datele introduse — nu trebuie să le redactezi de la zero.</div>
+        </section>
+        <section id="c4q6" class="faq-item">
+          <div class="faq-q">Pot vedea un exemplu înainte să generez? <span class="plus">+</span></div>
+          <div class="faq-a">Da — modalul Demo arată formatul real (inventar, politică, dovadă digitală), fără cont, cu date exemplu.</div>
+        </section>
+        <section id="c4q7" class="faq-item">
+          <div class="faq-q">Documentele sunt disponibile în ce format? <span class="plus">+</span></div>
+          <div class="faq-a">Markdown (.md) sau Word (.docx), la alegere înainte de generare.</div>
+        </section>
+        <section id="c4q8" class="faq-item">
+          <div class="faq-q">Pot regenera pachetul dacă se schimbă datele firmei? <span class="plus">+</span></div>
+          <div class="faq-a">Da — pachetele plătite pot fi regenerate; nivelul gratuit are o limită de 2 generări per email.</div>
+        </section>
+        <section id="c4q9" class="faq-item">
+          <div class="faq-q">Ce se întâmplă după 2 generări gratuite? <span class="plus">+</span></div>
+          <div class="faq-a">A treia încercare de pe același email te redirecționează spre pagina de parteneriat, pentru firme care au nevoie de mai mult.</div>
+        </section>
+        <section id="c4q10" class="faq-item">
+          <div class="faq-q">Pot vizualiza documentele individual, nu doar în pachet? <span class="plus">+</span></div>
+          <div class="faq-a">Da — fiecare din cele 70 de documente poate fi vizualizat sau descărcat separat, odată completate firma și responsabilul.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-5">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · INSTRUMENT</span>
+          <h3 class="faqhub-block-title">05 · ASK EU AI Act™ Assistant</h3>
+          <a class="faqhub-block-link" href="/faq-ask.html">pagina dedicată →</a>
+        </div>
+        <section id="c5q1" class="faq-item">
+          <div class="faq-q">Cum funcționează asistentul ASK? <span class="plus">+</span></div>
+          <div class="faq-a">E un asistent conversațional bazat pe 113 articole indexate din regulament, care răspunde direct la întrebări în limbaj natural.</div>
+        </section>
+        <section id="c5q2" class="faq-item">
+          <div class="faq-q">Ce surse folosește pentru răspunsuri? <span class="plus">+</span></div>
+          <div class="faq-a">Textul oficial al Regulamentului (UE) 2024/1689, indexat și căutabil semantic.</div>
+        </section>
+        <section id="c5q3" class="faq-item">
+          <div class="faq-q">Poate răspunde despre articole specifice? <span class="plus">+</span></div>
+          <div class="faq-a">Da — poți întreba direct despre un articol anume (ex: „Ce este Articolul 50?”) și primești răspuns cu sursele relevante.</div>
+        </section>
+        <section id="c5q4" class="faq-item">
+          <div class="faq-q">Este disponibil în mai multe limbi? <span class="plus">+</span></div>
+          <div class="faq-a">Interfața ASK e disponibilă acum în română; suport pentru alte limbi e în dezvoltare.</div>
+        </section>
+        <section id="c5q5" class="faq-item">
+          <div class="faq-q">Pot întreba despre situația specifică a firmei mele? <span class="plus">+</span></div>
+          <div class="faq-a">Da — poți formula întrebarea concret (ex: „Folosim ChatGPT și Canva, ce trebuie să facem?”) și primești un răspuns adaptat.</div>
+        </section>
+        <section id="c5q6" class="faq-item">
+          <div class="faq-q">ASK necesită cont? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — e complet gratuit, fără cont, permanent, nu doar o versiune de test.</div>
+        </section>
+        <section id="c5q7" class="faq-item">
+          <div class="faq-q">Cât durează un răspuns? <span class="plus">+</span></div>
+          <div class="faq-a">De obicei sub 3 secunde, uneori până la un minut pentru întrebări mai complexe.</div>
+        </section>
+        <section id="c5q8" class="faq-item">
+          <div class="faq-q">Răspunsurile sunt garantat corecte legal? <span class="plus">+</span></div>
+          <div class="faq-a">ASK oferă informare bazată pe textul regulamentului, nu consultanță juridică formală — pentru decizii critice, recomandăm și un avocat specializat.</div>
+        </section>
+        <section id="c5q9" class="faq-item">
+          <div class="faq-q">Pot cita răspunsul ASK într-un document oficial? <span class="plus">+</span></div>
+          <div class="faq-a">Răspunsul ASK e orientativ; pentru documentație oficială, folosește Governance Pack-ul generat, care conține structura formală necesară.</div>
+        </section>
+        <section id="c5q10" class="faq-item">
+          <div class="faq-q">ASK e conectat la datele mele din Governance Pack? <span class="plus">+</span></div>
+          <div class="faq-a">Nu încă — momentan ASK răspunde independent de datele firmei; generarea documentelor e un flux separat.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-6">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · DOVEZI</span>
+          <h3 class="faqhub-block-title">06 · Evidence &amp; Audit</h3>
+          <a class="faqhub-block-link" href="/faq-evidence.html">pagina dedicată →</a>
+        </div>
+        <section id="c6q1" class="faq-item">
+          <div class="faq-q">Ce înseamnă Evidence Ready? <span class="plus">+</span></div>
+          <div class="faq-a">Capacitatea de a demonstra conformitatea prin dovezi digitale verificabile, nu doar prin documente declarative.</div>
+        </section>
+        <section id="c6q2" class="faq-item">
+          <div class="faq-q">Ce sunt dovezile digitale, concret? <span class="plus">+</span></div>
+          <div class="faq-a">Identificator unic, versiune, timestamp și hash criptografic pentru fiecare document generat.</div>
+        </section>
+        <section id="c6q3" class="faq-item">
+          <div class="faq-q">Cum demonstrez conformitatea unui inspector? <span class="plus">+</span></div>
+          <div class="faq-a">Arăți documentele generate plus dovada digitală asociată (ex: `ai-proof.json`), verificabilă independent.</div>
+        </section>
+        <section id="c6q4" class="faq-item">
+          <div class="faq-q">Cum verific versiunea unui document? <span class="plus">+</span></div>
+          <div class="faq-a">Fiecare document are un câmp de versiune explicit, plus istoric de modificări în Evidence Layer.</div>
+        </section>
+        <section id="c6q5" class="faq-item">
+          <div class="faq-q">Ce este timestamp-ul, în acest context? <span class="plus">+</span></div>
+          <div class="faq-a">Data și ora exactă la care documentul a fost generat sau modificat, parte din dovada digitală.</div>
+        </section>
+        <section id="c6q6" class="faq-item">
+          <div class="faq-q">Ce este integritatea criptografică? <span class="plus">+</span></div>
+          <div class="faq-a">Un hash (amprentă) SHA-256 care confirmă că documentul nu a fost modificat după generare.</div>
+        </section>
+        <section id="c6q7" class="faq-item">
+          <div class="faq-q">Dovezile pot fi verificate fără acces la sistemele firmei? <span class="plus">+</span></div>
+          <div class="faq-a">Da — exact rolul RRVI™: verificare la distanță, fără acces intern, doar cu identificatorul și hash-ul public.</div>
+        </section>
+        <section id="c6q8" class="faq-item">
+          <div class="faq-q">Ce se întâmplă dacă un document e modificat manual? <span class="plus">+</span></div>
+          <div class="faq-a">Hash-ul nu mai corespunde cu cel original, semnalând clar orice modificare neautorizată.</div>
+        </section>
+        <section id="c6q9" class="faq-item">
+          <div class="faq-q">Evidence Layer se aplică și conținutului de marketing generat AI? <span class="plus">+</span></div>
+          <div class="faq-a">Da — poate documenta orice conținut generat AI, nu doar documentele de guvernanță.</div>
+        </section>
+        <section id="c6q10" class="faq-item">
+          <div class="faq-q">Există o dovadă live pe care o pot verifica chiar acum? <span class="plus">+</span></div>
+          <div class="faq-a">Da — `ai-proof.json`, cu hash SHA-256 real, verificabil public la eu-ai-act.ro/ai-proof.json.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-7">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · OBLIGAȚIE</span>
+          <h3 class="faqhub-block-title">07 · Article 50 — Transparență</h3>
+          <a class="faqhub-block-link" href="/faq-article50.html">pagina dedicată →</a>
+        </div>
+        <section id="c7q1" class="faq-item">
+          <div class="faq-q">Ce este Articolul 50? <span class="plus">+</span></div>
+          <div class="faq-a">Articolul din regulament care reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic, dezvăluire deepfake.</div>
+        </section>
+        <section id="c7q2" class="faq-item">
+          <div class="faq-q">Când se aplică obligațiile de transparență? <span class="plus">+</span></div>
+          <div class="faq-a">Din 2 august 2026.</div>
+        </section>
+        <section id="c7q3" class="faq-item">
+          <div class="faq-q">Trebuie să informez utilizatorii că interacționează cu AI? <span class="plus">+</span></div>
+          <div class="faq-a">Da, în general — mai ales pentru chatboți sau sisteme care interacționează direct cu publicul.</div>
+        </section>
+        <section id="c7q4" class="faq-item">
+          <div class="faq-q">Ce este conținutul generat artificial, în acest context? <span class="plus">+</span></div>
+          <div class="faq-a">Text, imagini, audio sau video produse integral sau parțial de un sistem AI, fără intervenție umană directă asupra rezultatului final.</div>
+        </section>
+        <section id="c7q5" class="faq-item">
+          <div class="faq-q">Ce este un Transparency Event? <span class="plus">+</span></div>
+          <div class="faq-a">O interacțiune AI-Om care necesită dezvăluire explicită conform Articolului 50 — de exemplu, un răspuns generat de chatbot.</div>
+        </section>
+        <section id="c7q6" class="faq-item">
+          <div class="faq-q">Se aplică și imaginilor generate cu Midjourney sau similare? <span class="plus">+</span></div>
+          <div class="faq-a">Da, dacă imaginea e prezentată publicului fără a fi clar marcată ca generată AI.</div>
+        </section>
+        <section id="c7q7" class="faq-item">
+          <div class="faq-q">Ce risc am dacă nu respect Articolul 50? <span class="plus">+</span></div>
+          <div class="faq-a">Expunere la sancțiuni și, practic, imposibilitatea de a demonstra transparență în cazul unei plângeri sau al unui control.</div>
+        </section>
+        <section id="c7q8" class="faq-item">
+          <div class="faq-q">Cum documentez conformitatea cu Articolul 50? <span class="plus">+</span></div>
+          <div class="faq-a">Prin dovezi digitale (Evidence Layer) asociate fiecărei piese de conținut generat AI relevante.</div>
+        </section>
+        <section id="c7q9" class="faq-item">
+          <div class="faq-q">Articolul 50 se aplică diferit pentru presă/media? <span class="plus">+</span></div>
+          <div class="faq-a">Cerințele de bază sunt aceleași, dar contextul (dezvăluire deepfake, conținut sintetic) e adesea mai vizibil pentru organizațiile media.</div>
+        </section>
+        <section id="c7q10" class="faq-item">
+          <div class="faq-q">Ce fac dacă folosesc AI doar intern, fără public? <span class="plus">+</span></div>
+          <div class="faq-a">Obligațiile de transparență din Articolul 50 vizează în principal interacțiunea cu publicul; uz intern poate avea alte obligații (ex: AI Literacy).</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-8">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>BOFU · VERIFICARE</span>
+          <h3 class="faqhub-block-title">08 · RRVI™ — Verificare la Distanță</h3>
+          <a class="faqhub-block-link" href="/faq-rrvi.html">pagina dedicată →</a>
+        </div>
+        <section id="c8q1" class="faq-item">
+          <div class="faq-q">Ce este RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Remote Regulatory Verification Infrastructure™ — infrastructura care permite verificarea documentelor de guvernanță AI de la distanță.</div>
+        </section>
+        <section id="c8q2" class="faq-item">
+          <div class="faq-q">Cum poate verifica un auditor de la distanță? <span class="plus">+</span></div>
+          <div class="faq-a">Prin identificatorul unic, versiunea și hash-ul criptografic ale fiecărui document, fără deplasare fizică la firmă.</div>
+        </section>
+        <section id="c8q3" class="faq-item">
+          <div class="faq-q">Ce dovezi sunt disponibile prin RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Identificator, versiune, timestamp, hash criptografic și istoric de modificări pentru fiecare document.</div>
+        </section>
+        <section id="c8q4" class="faq-item">
+          <div class="faq-q">Cum se păstrează trasabilitatea? <span class="plus">+</span></div>
+          <div class="faq-a">Fiecare modificare a unui document generează o nouă versiune cu propriul timestamp și hash, păstrând istoricul complet.</div>
+        </section>
+        <section id="c8q5" class="faq-item">
+          <div class="faq-q">Cine are acces la verificarea RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Oricine primește identificatorul documentului poate verifica public autenticitatea, fără a avea acces la sistemele interne ale firmei.</div>
+        </section>
+        <section id="c8q6" class="faq-item">
+          <div class="faq-q">RRVI înlocuiește un audit fizic complet? <span class="plus">+</span></div>
+          <div class="faq-a">Nu neapărat — completează auditul clasic cu o componentă de verificare digitală rapidă, la distanță.</div>
+        </section>
+        <section id="c8q7" class="faq-item">
+          <div class="faq-q">Ce se întâmplă dacă un document nu are dovadă RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Rămâne doar o declarație, fără posibilitate de verificare independentă — recomandăm generarea prin platformă pentru toate documentele oficiale.</div>
+        </section>
+        <section id="c8q8" class="faq-item">
+          <div class="faq-q">RRVI e specific EU AI Act sau mai general? <span class="plus">+</span></div>
+          <div class="faq-a">Infrastructura e construită pentru guvernanța AI, dar principiul (hash + timestamp + identificator) e aplicabil oricărui document care necesită verificare.</div>
+        </section>
+        <section id="c8q9" class="faq-item">
+          <div class="faq-q">Costă separat verificarea prin RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — e inclusă automat în fiecare document generat prin Governance Pack.</div>
+        </section>
+        <section id="c8q10" class="faq-item">
+          <div class="faq-q">Cum arată practic o verificare RRVI? <span class="plus">+</span></div>
+          <div class="faq-a">Accesezi identificatorul documentului (ex: `ai-proof.json`) și confirmi că hash-ul corespunde conținutului primit.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-9">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>MOFU · CONTEXT</span>
+          <h3 class="faqhub-block-title">09 · Industrii &amp; Cazuri de Utilizare</h3>
+          <a class="faqhub-block-link" href="/faq-industrii.html">pagina dedicată →</a>
+        </div>
+        <section id="c9q1" class="faq-item">
+          <div class="faq-q">Cum ajută EU AI Act Ready™ o firmă de avocatură? <span class="plus">+</span></div>
+          <div class="faq-a">Oferă un serviciu nou, fără cost tehnic — cabinetul distribuie guvernanța AI ca extensie a serviciilor juridice existente.</div>
+        </section>
+        <section id="c9q2" class="faq-item">
+          <div class="faq-q">Cum folosesc firmele de contabilitate acest instrument? <span class="plus">+</span></div>
+          <div class="faq-a">Ca serviciu adăugat pentru clienți existenți, similar parteneriatului real cu ECBTax Accounting &amp; HR.</div>
+        </section>
+        <section id="c9q3" class="faq-item">
+          <div class="faq-q">Cum se aplică transparența AI pentru conținut media? <span class="plus">+</span></div>
+          <div class="faq-a">Organizațiile media trebuie să dezvăluie conținutul generat sau sintetic AI, inclusiv deepfake, conform Articolului 50.</div>
+        </section>
+        <section id="c9q4" class="faq-item">
+          <div class="faq-q">Ce obligații apar pentru agențiile de marketing? <span class="plus">+</span></div>
+          <div class="faq-a">Transparență pentru conținut generat AI în campanii, plus posibile obligații pentru chatboți de customer service.</div>
+        </section>
+        <section id="c9q5" class="faq-item">
+          <div class="faq-q">Cum clasifică o firmă de software un sistem AI propriu? <span class="plus">+</span></div>
+          <div class="faq-a">Prin modulul de Clasificare a Riscului, ținând cont dacă firma e Provider, Deployer, sau ambele pentru sisteme diferite.</div>
+        </section>
+        <section id="c9q6" class="faq-item">
+          <div class="faq-q">Există un traseu specific pentru freelanceri? <span class="plus">+</span></div>
+          <div class="faq-a">Da — nivelul de obligații e proporțional cu activitatea; ASK ajută la identificarea exactă a ce se aplică.</div>
+        </section>
+        <section id="c9q7" class="faq-item">
+          <div class="faq-q">Consultanții pot revinde acest serviciu? <span class="plus">+</span></div>
+          <div class="faq-a">Da — prin parteneriat de distribuție, similar modelului folosit deja cu avocați și contabili.</div>
+        </section>
+        <section id="c9q8" class="faq-item">
+          <div class="faq-q">Există exemple pentru instituții publice? <span class="plus">+</span></div>
+          <div class="faq-a">Da — aceleași module se aplică, obligațiile de transparență fiind relevante mai ales în interacțiunea cu cetățenii.</div>
+        </section>
+        <section id="c9q9" class="faq-item">
+          <div class="faq-q">Firmele IT care integrează modele externe (OpenAI, etc.) au obligații suplimentare? <span class="plus">+</span></div>
+          <div class="faq-a">Da — devin Provider pentru produsul final chiar dacă modelul de bază vine de la altcineva.</div>
+        </section>
+        <section id="c9q10" class="faq-item">
+          <div class="faq-q">Există un traseu pentru echipe HR? <span class="plus">+</span></div>
+          <div class="faq-a">Da — inclus în modulul de Competențe AI (AI Literacy), pentru politici interne și instruirea angajaților.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-10">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>BOFU · ÎNCREDERE</span>
+          <h3 class="faqhub-block-title">10 · Securitate &amp; Confidențialitate</h3>
+          <a class="faqhub-block-link" href="/faq-securitate.html">pagina dedicată →</a>
+        </div>
+        <section id="c10q1" class="faq-item">
+          <div class="faq-q">Unde sunt stocate datele introduse? <span class="plus">+</span></div>
+          <div class="faq-a">Datele de bază (email, firmă, responsabil) sunt stocate prin infrastructura Cloudflare a platformei.</div>
+        </section>
+        <section id="c10q2" class="faq-item">
+          <div class="faq-q">Sunt protejate informațiile companiei mele? <span class="plus">+</span></div>
+          <div class="faq-a">Datele introduse sunt folosite exclusiv pentru generarea documentelor și urmărirea limitei gratuite, nu sunt revândute către terți.</div>
+        </section>
+        <section id="c10q3" class="faq-item">
+          <div class="faq-q">Cine vede documentele generate? <span class="plus">+</span></div>
+          <div class="faq-a">Doar tu, prin descărcare directă — documentele nu sunt publicate sau partajate automat.</div>
+        </section>
+        <section id="c10q4" class="faq-item">
+          <div class="faq-q">Cum e tratată confidențialitatea datelor firmei? <span class="plus">+</span></div>
+          <div class="faq-a">Conform practicilor standard de protecție a datelor; pentru detalii complete, vezi Politica de Confidențialitate.</div>
+        </section>
+        <section id="c10q5" class="faq-item">
+          <div class="faq-q">Autentificarea prin email (magic-link) e sigură? <span class="plus">+</span></div>
+          <div class="faq-a">Da — linkul e valabil 15 minute, poate fi folosit o singură dată, fără parolă stocată.</div>
+        </section>
+        <section id="c10q6" class="faq-item">
+          <div class="faq-q">Ce se întâmplă dacă pierd accesul la email? <span class="plus">+</span></div>
+          <div class="faq-a">Poți cere oricând un nou link de acces, cont fiind legat de adresa de email, nu de un cont separat cu parolă.</div>
+        </section>
+        <section id="c10q7" class="faq-item">
+          <div class="faq-q">Datele sunt transferate în afara UE? <span class="plus">+</span></div>
+          <div class="faq-a">Infrastructura folosită (Cloudflare) operează global, cu opțiuni de rezidență a datelor conforme practicilor standard din industrie.</div>
+        </section>
+        <section id="c10q8" class="faq-item">
+          <div class="faq-q">Există criptare pentru documentele generate? <span class="plus">+</span></div>
+          <div class="faq-a">Documentele beneficiază de hash criptografic (SHA-256) pentru verificarea integrității, nu de criptare end-to-end a conținutului propriu-zis.</div>
+        </section>
+        <section id="c10q9" class="faq-item">
+          <div class="faq-q">Pot cere ștergerea datelor mele? <span class="plus">+</span></div>
+          <div class="faq-a">Da — contactează echipa direct pentru solicitări legate de datele personale introduse.</div>
+        </section>
+        <section id="c10q10" class="faq-item">
+          <div class="faq-q">Platforma stochează conversațiile din ASK? <span class="plus">+</span></div>
+          <div class="faq-a">Întrebările pot fi procesate pentru generarea răspunsului, fără a fi asociate public cu identitatea ta.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-11">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>BOFU · DECIZIE</span>
+          <h3 class="faqhub-block-title">11 · Comercial — Preț, Demo, Implementare</h3>
+          <a class="faqhub-block-link" href="/faq-comercial.html">pagina dedicată →</a>
+        </div>
+        <section id="c11q1" class="faq-item">
+          <div class="faq-q">Cât costă platforma? <span class="plus">+</span></div>
+          <div class="faq-a">Free Readiness Pack, Demo și ASK sunt gratuite, permanent; pachetul complet plătit se discută direct, în funcție de nevoi.</div>
+        </section>
+        <section id="c11q2" class="faq-item">
+          <div class="faq-q">Ce primesc gratuit? <span class="plus">+</span></div>
+          <div class="faq-a">Demo complet, ASK nelimitat, plus 2 generări gratuite ale pachetului de 70 de documente per adresă de email.</div>
+        </section>
+        <section id="c11q3" class="faq-item">
+          <div class="faq-q">Cum încep? <span class="plus">+</span></div>
+          <div class="faq-a">Scrii un email în „Firma Ta”, primești un link de acces, completezi firma și responsabilul, apoi generezi.</div>
+        </section>
+        <section id="c11q4" class="faq-item">
+          <div class="faq-q">Există demo fără cont? <span class="plus">+</span></div>
+          <div class="faq-a">Da — modalul Demo arată formatul real al documentelor, fără cont, fără card.</div>
+        </section>
+        <section id="c11q5" class="faq-item">
+          <div class="faq-q">Pot lucra cu un consultant sau avocat pe acest instrument? <span class="plus">+</span></div>
+          <div class="faq-a">Da — parteneriatul cu avocați, consultanți și contabili e parte din modelul de distribuție al platformei.</div>
+        </section>
+        <section id="c11q6" class="faq-item">
+          <div class="faq-q">Există program pentru parteneri/reseller? <span class="plus">+</span></div>
+          <div class="faq-a">Da — după limita gratuită, ești redirecționat spre pagina de parteneriat pentru discuții de volum.</div>
+        </section>
+        <section id="c11q7" class="faq-item">
+          <div class="faq-q">Prețul diferă pentru IMM vs. firme mari? <span class="plus">+</span></div>
+          <div class="faq-a">Modelul comercial e discutat individual, în funcție de volumul de generări și nevoile specifice.</div>
+        </section>
+        <section id="c11q8" class="faq-item">
+          <div class="faq-q">Pot testa toate funcționalitățile înainte să plătesc ceva? <span class="plus">+</span></div>
+          <div class="faq-a">Da — Demo, ASK și primele 2 generări ale pachetului complet sunt toate gratuite.</div>
+        </section>
+        <section id="c11q9" class="faq-item">
+          <div class="faq-q">Cum contactez echipa pentru o discuție comercială? <span class="plus">+</span></div>
+          <div class="faq-a">Prin formularul de contact de pe site, sau direct prin WhatsApp, link disponibil pe fiecare pagină.</div>
+        </section>
+        <section id="c11q10" class="faq-item">
+          <div class="faq-q">Există factură/contract pentru varianta plătită? <span class="plus">+</span></div>
+          <div class="faq-a">Da — detaliile comerciale (factură, contract) se stabilesc direct cu echipa, la trecerea de la gratuit la plătit.</div>
+        </section>
+      </div>
+
+      <div class="faqhub-block" id="cat-12">
+        <div class="faqhub-block-head">
+          <span class="tag"><span class="dot">//</span>BOFU · VERIFICARE ENTITATE</span>
+          <h3 class="faqhub-block-title">12 · Despre AIVENTURE / Încredere</h3>
+          <a class="faqhub-block-link" href="/faq-despre.html">pagina dedicată →</a>
+        </div>
+        <section id="c12q1" class="faq-item">
+          <div class="faq-q">Cine dezvoltă EU AI ACT READY™? <span class="plus">+</span></div>
+          <div class="faq-a">AIVENTURE S.R.L., firmă românească de arhitectură de sisteme AI, cu sediul în București.</div>
+        </section>
+        <section id="c12q2" class="faq-item">
+          <div class="faq-q">Ce este AIVENTURE S.R.L.? <span class="plus">+</span></div>
+          <div class="faq-a">Compania din spatele întregului ecosistem de produse AI Discovery Infrastructure, inclusiv EU AI Act Ready™ și 5thElement.ai.</div>
+        </section>
+        <section id="c12q3" class="faq-item">
+          <div class="faq-q">Care este experiența fondatorului? <span class="plus">+</span></div>
+          <div class="faq-a">Dan Ionescu (Eli), cu background enterprise anterior (IBM, Capgemini, Société Générale, Crédit Agricole).</div>
+        </section>
+        <section id="c12q4" class="faq-item">
+          <div class="faq-q">Există parteneri confirmați? <span class="plus">+</span></div>
+          <div class="faq-a">Da — ECBTax Accounting &amp; HR (Roxana Deak, FCCA/CPA/CCF), parteneriat real, verificabil public.</div>
+        </section>
+        <section id="c12q5" class="faq-item">
+          <div class="faq-q">Cum verific datele legale ale firmei? <span class="plus">+</span></div>
+          <div class="faq-a">CUI 51415878, Nr. Registrul Comerțului J2025016406000, EUID ROONRC.J2025016406000 — toate verificabile public.</div>
+        </section>
+        <section id="c12q6" class="faq-item">
+          <div class="faq-q">EU AI Act Ready™ e singurul produs AIVENTURE? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — face parte dintr-un ecosistem mai larg, alături de 5thElement.ai și alte proiecte AiVenture.</div>
+        </section>
+        <section id="c12q7" class="faq-item">
+          <div class="faq-q">Compania certifică oficial conformitatea? <span class="plus">+</span></div>
+          <div class="faq-a">Nu — platforma susține pregătirea, dar certificarea oficială rămâne în sarcina autorității competente.</div>
+        </section>
+        <section id="c12q8" class="faq-item">
+          <div class="faq-q">Există profiluri publice de verificat? <span class="plus">+</span></div>
+          <div class="faq-a">Da — LinkedIn (fondator și companie), Crunchbase, și alte profile listate în footer-ul site-ului.</div>
+        </section>
+        <section id="c12q9" class="faq-item">
+          <div class="faq-q">De când există compania? <span class="plus">+</span></div>
+          <div class="faq-a">AIVENTURE S.R.L. a fost fondată pe 7 martie 2025.</div>
+        </section>
+        <section id="c12q10" class="faq-item">
+          <div class="faq-q">Cum contactez direct fondatorul sau echipa? <span class="plus">+</span></div>
+          <div class="faq-a">Prin formularul de contact de pe site, WhatsApp, sau prin profilurile LinkedIn publice.</div>
+        </section>
       </div>
     </div>
   </section>
