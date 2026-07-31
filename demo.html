@@ -1,0 +1,871 @@
+<!DOCTYPE html><html lang="ro"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+:root { --bg: #0a0a0a; --panel: #141414; --border: #2a2a2a; --text: #ffffff; --muted: #9a9a9a; --red: #f0c14b; --red-dim: #8a6c22; }
+
+body.light-mode { --bg: #f7f7f7; --panel: #ffffff; --border: #ddd; --text: #0a0a0a; --muted: #555; }
+
+body.light-mode * { color: rgb(10, 10, 10) !important; }
+
+* { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+body { background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, sans-serif; min-height: 100vh; }
+
+#theme-toggle { position: fixed; top: 68px; left: 16px; z-index: 999; width: 34px; height: 34px; border-radius: 8px; background: var(--panel); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 16px; cursor: pointer; color: var(--text); }
+
+.breadcrumb { padding: 14px 16px 0; font-size: 13px; color: var(--muted); }
+
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+
+.breadcrumb a:hover { color: var(--red); }
+
+.breadcrumb .sep { margin: 0 6px; }
+
+.breadcrumb .current { color: var(--text); }
+
+#to-top { position: fixed; right: 16px; bottom: 100px; z-index: 900; width: 44px; height: 44px; border-radius: 50%; background: var(--red); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; display: flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 16px; opacity: 0; pointer-events: none; transform: translateY(10px); transition: opacity 0.25s, transform 0.25s; }
+
+#to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0px); }
+
+header { padding: 130px 20px 24px; text-align: center; border-bottom: 1px solid var(--border); }
+
+header h1 { font-family: Georgia, serif; font-weight: 900; font-size: clamp(32px, 10vw, 56px); letter-spacing: -1px; text-transform: uppercase; }
+
+.ticker-wrap { margin-top: 16px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--panel); overflow: hidden; white-space: nowrap; }
+
+.ticker-track { display: inline-block; padding: 9px 0px; animation: 22s linear 0s infinite normal none running ticker-scroll; font-size: 13px; font-weight: 600; letter-spacing: 0.2px; }
+
+.ticker-track b { color: var(--red); }
+
+.ticker-track .sep { color: var(--muted); margin: 0px 10px; }
+
+@keyframes ticker-scroll { 
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(-50%); }
+}
+
+.stats { display: flex; justify-content: center; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+
+.stat { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; font-size: 13px; }
+
+.stat b { color: var(--red); }
+
+.cta-top { margin-top: 18px; display: inline-block; background: var(--red); padding: 10px 22px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 14px; color: #0a0a0a !important; }
+
+.lang-toggle-wrap { position: relative; display: flex; justify-content: center; margin: 18px auto 0px; }
+
+.lang-current { display: flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 700; cursor: pointer; background: var(--panel); color: var(--text) !important; }
+
+.lang-current .chev { font-size: 10px; color: var(--muted); }
+
+.lang-dropdown { display: none; position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 6px; z-index: 600; min-width: 160px; box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 24px; }
+
+.lang-dropdown.open { display: block; }
+
+.lang-option { display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--text) !important; }
+
+.lang-option:hover, .lang-option.active { background: var(--red); color: #0a0a0a !important; }
+
+.ask-wrap { max-width: 640px; margin: 22px auto 0px; padding: 0px 16px; }
+
+.ask-banner { background: var(--red); color: rgb(255, 255, 255); font-weight: 900; text-transform: uppercase; padding: 10px 16px; border-radius: 8px; text-align: center; font-size: 15px; letter-spacing: 0.5px; margin-bottom: 14px; }
+
+.ask-box { display: flex; gap: 8px; border: 1px solid var(--border); border-radius: 999px; padding: 6px 6px 6px 16px; background: var(--panel); align-items: center; }
+
+.ask-box .loupe { font-size: 16px; color: var(--muted); }
+
+.ask-box input { flex: 1 1 0%; background: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; outline: none; color: var(--text); font-size: 15px; padding: 8px 0px; }
+
+.ask-box input::placeholder { color: var(--muted); }
+
+.ask-btn { background: var(--red); color: rgb(255, 255, 255); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 999px; padding: 10px 20px; font-weight: 700; font-size: 14px; cursor: pointer; white-space: nowrap; }
+
+.ask-status { font-size: 13px; color: var(--muted); text-align: center; margin-top: 10px; min-height: 18px; }
+
+.ask-answer { margin-top: 14px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; font-size: 14px; line-height: 1.55; display: none; }
+
+.ask-answer.show { display: block; }
+
+.ask-sources { margin-top: 10px; font-size: 12px; color: var(--muted); }
+
+.ask-sources a { color: var(--red) !important; }
+
+#sticky-ask { position: sticky; top: 0px; z-index: 500; background: var(--bg); border-bottom: 1px solid var(--border); padding: 14px 16px; box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 16px; }
+
+body.light-mode #sticky-ask { box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px; }
+
+#sticky-ask .lang-toggle-wrap { margin: 0px; }
+
+#ask-wrap-bottom { position: fixed; left: 0px; right: 0px; bottom: 0px; z-index: 800; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: linear-gradient(to top, var(--bg) 65%, transparent); }
+
+#ask-wrap-bottom .ask-box { max-width: 680px; margin: 0px auto; background: var(--panel); border: 1px solid var(--red); border-radius: 999px; padding: 8px 8px 8px 18px; box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 30px; }
+
+body.light-mode #ask-wrap-bottom .ask-box { box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px; }
+
+#ask-wrap-bottom .ask-btn { border-radius: 999px; padding: 10px 20px; font-size: 14px; width: auto; height: auto; }
+
+main { padding-bottom: 110px; }
+
+#ask-fullscreen { display: none; position: fixed; inset: 0px; z-index: 2000; background: var(--bg); flex-direction: column; }
+
+#ask-fullscreen.show { display: flex; }
+
+.af-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; border-bottom: 1px solid var(--border); background: var(--panel); }
+
+.af-title { font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; color: var(--red); font-size: 15px; }
+
+.af-close { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px; color: var(--text); }
+
+.af-body { flex: 1 1 0%; overflow-y: auto; max-width: 680px; width: 100%; margin: 0px auto; padding: 24px 16px; }
+
+.af-question { font-size: 15px; font-weight: 700; margin-bottom: 16px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+
+.af-return { text-align: center; padding: 16px; border-top: 1px solid var(--border); color: var(--red); font-weight: 700; font-size: 14px; cursor: pointer; background: var(--panel); }
+
+main { max-width: 900px; margin: 0px auto; padding: 24px 16px 80px; }
+
+.module { margin-bottom: 26px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--panel); }
+
+.module-head { padding: 14px 16px; background: linear-gradient(90deg, var(--red-dim), transparent); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+
+.module-head h2 { font-size: 16px; letter-spacing: 0.3px; }
+
+.module-head span { font-size: 12px; color: var(--muted); }
+
+.doc-list { display: flex; flex-direction: column; }
+
+.doc { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-top: 1px solid var(--border); font-size: 14px; }
+
+.doc:first-child { border-top-width: medium; border-top-style: none; border-top-color: currentcolor; }
+
+.doc-name { display: flex; align-items: center; gap: 10px; }
+
+.doc-type { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); border: 1px solid var(--border); border-radius: 4px; padding: 2px 6px; }
+
+.badge-open { color: rgb(61, 220, 132); font-size: 12px; font-weight: 600; }
+
+.badge-locked { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 4px; }
+
+a.open-link { text-decoration: none; color: var(--text) !important; }
+
+a.open-link:hover { color: var(--red) !important; }
+
+.locked-row { opacity: 0.55; cursor: pointer; }
+
+.locked-row:hover { opacity: 0.8; }
+
+footer.cta { max-width: 640px; margin: 40px auto 0px; text-align: center; padding: 28px 20px; border: 1px solid var(--border); border-radius: 14px; background: var(--panel); }
+
+footer.cta h3 { font-size: 20px; margin-bottom: 8px; }
+
+footer.cta p { color: var(--muted); font-size: 14px; margin-bottom: 16px; }
+
+footer.cta a { background: var(--red); padding: 12px 26px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; color: #0a0a0a !important; }
+
+#lock-modal { display: none; position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.7); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+
+#lock-modal .box { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; max-width: 380px; padding: 26px; text-align: center; }
+
+#lock-modal h4 { font-size: 18px; margin-bottom: 10px; }
+
+#lock-modal p { color: var(--muted); font-size: 14px; margin-bottom: 18px; }
+
+#lock-modal a { background: var(--red); padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; display: inline-block; margin-bottom: 10px; color: #0a0a0a !important; }
+
+#lock-modal .close { display: block; color: var(--muted); font-size: 13px; cursor: pointer; margin-top: 6px; }</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo — biblioteca completă de 70 de documente RRVI | EU AI Act Ready™</title>
+
+<meta name="description" content="Vezi pachetul complet de 70 de documente de conformitate EU AI Act — checklist-uri, politici, registre, dovezi, pe 10 module. Previzualizare gratuită, set complet deblocat cu datele firmei tale (129 EUR).">
+<link rel="canonical" href="https://eu-ai-act.ro/demo.html">
+
+<meta property="og:title" content="Demo — Full RRVI Document Library | EU AI Act Ready™">
+<meta property="og:description" content="Preview EU AI Act Ready's 70-document RRVI compliance pack — checklists, policies, registers across 10 modules.">
+<meta property="og:image" content="https://eu-ai-act.ro/assets/logo/og-image.webp">
+<meta property="og:url" content="https://eu-ai-act.ro/demo.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EU AI Act Ready™">
+<meta property="og:locale" content="en_EU">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Demo — Full RRVI Document Library | EU AI Act Ready™">
+<meta name="twitter:description" content="Preview EU AI Act Ready's 70-document RRVI compliance pack — checklists, policies, registers across 10 modules.">
+<meta name="twitter:image" content="https://eu-ai-act.ro/assets/logo/og-image.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://eu-ai-act.ro/#website",
+      "url": "https://eu-ai-act.ro/",
+      "name": "EU AI Act Ready",
+      "inLanguage": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "ro",
+        "pl"
+      ],
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://eu-ai-act.ro/#organization",
+      "name": "EU AI Act Ready™",
+      "legalName": "AiVenture S.R.L.",
+      "url": "https://eu-ai-act.ro/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://eu-ai-act.ro/assets/logo.png"
+      },
+      "founder": {
+        "@id": "https://eu-ai-act.ro/#founder"
+      },
+      "contactPoint": {
+        "@id": "https://eu-ai-act.ro/#contact"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://eu-ai-act.ro/#founder",
+      "name": "Dan Ionescu",
+      "jobTitle": "Founder",
+      "worksFor": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      }
+    },
+    {
+      "@type": "ContactPoint",
+      "@id": "https://eu-ai-act.ro/#contact",
+      "contactType": "customer support",
+      "email": "support@eu-ai-act.ro",
+      "availableLanguage": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "ro",
+        "pl"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-ai-act.ro/demo#page",
+      "url": "https://eu-ai-act.ro/demo",
+      "name": "Demo — Full RRVI Document Library",
+      "description": "Preview EU AI Act Ready's compliance pack across 10 compliance modules.",
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#website"
+      },
+      "about": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "inLanguage": "en",
+      "breadcrumb": {
+        "@id": "https://eu-ai-act.ro/demo#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://eu-ai-act.ro/demo#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eu-ai-act.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Demo",
+          "item": "https://eu-ai-act.ro/demo"
+        }
+      ]
+    },
+    {
+      "@type": "Offer",
+      "@id": "https://eu-ai-act.ro/#offer-readiness",
+      "name": "AI Act Readiness Assessment",
+      "url": "https://eu-ai-act.ro/demo",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "description": "Instant Risk Exposure Score generated from your AI System Inventory and Risk Classification modules."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://eu-ai-act.ro/demo#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ce pot vedea în Demo fără să introduc datele firmei mele?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un pachet complet de pregătire EU AI Act, pe date de exemplu: inventar AI, evaluare de risc, politici, registre și dovezi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Trebuie să îmi fac cont ca să văd Demo-ul?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu — Demo-ul se vede fără cont, cu datele unei firme fictive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cu ce diferă Demo-ul de Generator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demo-ul arată un exemplu deja completat. Generatorul produce același set de documente, personalizat cu denumirea firmei tale și persoana responsabilă AI desemnată."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pot descărca documentele din Demo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Demo-ul e făcut ca să vezi structura și formatul. Pentru pachetul tău personalizat și descărcabil, folosești Generatorul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce tipuri de documente apar în Demo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registre, jurnale de dovezi, instrucțiuni de lucru, politici, checklist-uri, declarații și proceduri, pe toate cele 10 module RRVI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Datele din Demo sunt reale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu — sunt date de exemplu, ca să vezi structura și conținutul înainte să generezi pachetul tău."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Câte documente are biblioteca completă din Demo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "70 de documente — 10 module × 7 tipuri de documente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pot folosi Demo-ul ca să evaluez calitatea documentelor înainte să cumpăr?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da — exact ăsta e scopul: să citești structura și limbajul real al documentelor înainte de a plăti cei 129 EUR pentru setul complet."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Demo-ul acoperă toate cele 10 module?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da — Inventar sisteme AI, Clasificare risc, Alfabetizare AI, Practici interzise, Evaluare risc ridicat, Documentație tehnică, Supraveghere umană, Guvernanța datelor, Logging și monitorizare, Raportare incidente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cum trec de la Demo la generarea pachetului meu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mergi la Generator și introduci denumirea legală a firmei, persoana responsabilă și emailul. Aceeași structură de 70 de documente din Demo se personalizează cu datele tale."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="https://eu-ai-act.ro/">Acasă</a>
+  <span class="sep">›</span>
+  <span class="current">Demo</span>
+</nav>
+
+<div id="theme-toggle">☾</div>
+<button id="to-top" aria-label="Return to top">↑</button>
+
+<header>
+  <h1 id="t-title">Demo</h1>
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <b>70</b> <span class="t-docscount">compliance documents</span> <span class="sep">•</span> <b>10</b> <span class="t-modulescount">modules</span> <span class="sep">•</span> <b>49</b> <span class="t-openpreview">open for preview</span> <span class="sep">•</span> <b>21</b> <span class="t-unlockedfirm">unlocked with your firm</span> <span class="sep">•</span> <span class="t-generatedby">generated by AiVenture's RRVI engine</span> <span class="sep">•</span>
+      <b>70</b> <span class="t-docscount">compliance documents</span> <span class="sep">•</span> <b>10</b> <span class="t-modulescount">modules</span> <span class="sep">•</span> <b>49</b> <span class="t-openpreview">open for preview</span> <span class="sep">•</span> <b>21</b> <span class="t-unlockedfirm">unlocked with your firm</span> <span class="sep">•</span> <span class="t-generatedby">generated by AiVenture's RRVI engine</span> <span class="sep">•</span>
+    </div>
+  </div>
+  <a class="cta-top" id="t-ctatop" href="/#free-pack">Generate My Full Set →</a>
+</header>
+
+<div id="sticky-ask">
+  <div class="lang-toggle-wrap">
+    <div class="lang-current" id="lang-current">
+      <span id="lang-current-label">🇷🇴 RO</span>
+      <span class="chev">▾</span>
+    </div>
+    <div class="lang-dropdown" id="lang-dropdown">
+      <div class="lang-option active" data-lang="en" data-label="🇷🇴 RO">🇬🇧 English</div>
+      <div class="lang-option" data-lang="fr" data-label="🇫🇷 FR">🇫🇷 Français</div>
+      <div class="lang-option" data-lang="de" data-label="🇩🇪 DE">🇩🇪 Deutsch</div>
+      <div class="lang-option" data-lang="es" data-label="🇪🇸 ES">🇪🇸 Español</div>
+      <div class="lang-option" data-lang="it" data-label="🇮🇹 IT">🇮🇹 Italiano</div>
+      <div class="lang-option" data-lang="ro" data-label="🇷🇴 RO">🇷🇴 Română</div>
+      <div class="lang-option" data-lang="pl" data-label="🇵🇱 PL">🇵🇱 Polski</div>
+    </div>
+  </div>
+</div>
+
+<main id="doc-root"></main>
+
+<div class="ask-wrap" id="ask-wrap-bottom">
+  <div class="ask-box">
+    <span class="loupe">🔍</span>
+    <input id="ask-input" type="text" placeholder="Ask anything about these 70 documents...">
+    <button class="ask-btn" id="ask-btn">ASK ⚡</button>
+  </div>
+</div>
+
+<footer class="cta">
+  <h3 id="t-footertitle">Unlock the remaining 30%</h3>
+  <p id="t-footertext">Registers, Evidence logs, and Work Instructions are generated with your firm's actual details. Enter your firm once to unlock every document, fully parameterized.</p>
+  <a id="t-footerbtn" href="/#free-pack">Unlock Full Set</a>
+</footer>
+
+<div id="lock-modal">
+  <div class="box">
+    <h4 id="t-modaltitle">🔒 This document is part of the full set</h4>
+    <p id="t-modaltext">Registers, Evidence, and Work Instructions are generated with your firm's name and responsible person filled in automatically. Enter your details once to unlock all 70 documents.</p>
+    <a id="t-modalbtn" href="/#free-pack">Unlock with Generator</a>
+    <span class="close" id="t-modalclose">Close</span>
+  </div>
+</div>
+
+<div id="ask-fullscreen">
+  <div class="af-header">
+    <span class="af-title">Ask &amp; Generator™</span>
+    <span class="af-close">✕</span>
+  </div>
+  <div class="af-body">
+    <div class="af-question" id="af-question"></div>
+    <div class="ask-status" id="ask-status"></div>
+    <div class="ask-answer" id="ask-answer"></div>
+  </div>
+  <div class="af-return" id="t-askreturn">← Return to documents</div>
+</div>
+
+<script>
+const MODULES = [
+  {id:"01", name:"AI System Inventory",     folder:"01-ai-system-inventory",     fileBase:"AI_System_Inventory"},
+  {id:"02", name:"Risk Classification",     folder:"02-risk-classification",     fileBase:"Risk_Classification"},
+  {id:"03", name:"AI Literacy",             folder:"03-ai-literacy",             fileBase:"AI_Literacy"},
+  {id:"04", name:"Prohibited Practices",    folder:"04-prohibited-practices",    fileBase:"Prohibited_Practices"},
+  {id:"05", name:"High-Risk Assessment",    folder:"05-high-risk-assessment",    fileBase:"High_Risk_Assessment"},
+  {id:"06", name:"Technical Documentation", folder:"06-technical-documentation", fileBase:"Technical_Documentation"},
+  {id:"07", name:"Human Oversight",         folder:"07-human-oversight",         fileBase:"Human_Oversight"},
+  {id:"08", name:"Data Governance",         folder:"08-data-governance",         fileBase:"Data_Governance"},
+  {id:"09", name:"Logging & Monitoring",    folder:"09-logging-monitoring",      fileBase:"Logging_Monitoring"},
+  {id:"10", name:"Incident Reporting",      folder:"10-incident-reporting",      fileBase:"Incident_Reporting"},
+];
+
+const DOC_TYPES = ["Checklist","Declaration","Policy","Evidence","Procedure","Register","Work Instruction"];
+
+// Real filename prefixes used in the repo (confirmed from actual files)
+const TYPE_PREFIX = {
+  "Checklist":"CHK", "Declaration":"DEC", "Policy":"DOD", "Evidence":"EVID",
+  "Procedure":"PROC", "Register":"REG", "Work Instruction":"WI"
+};
+
+// Modules 01-03 (index 0-2): fully open.
+// Modules 04-10 (index 3-9): Evidence, Register, Work Instruction are locked.
+const LOCKED_TYPES = ["Evidence","Register","Work Instruction"];
+const OPEN_MODULE_COUNT = 3; // first 3 modules fully open
+
+/* ===== Translations =====
+   Only UI labels + module/document names are translated.
+   The document CONTENT (the .md files themselves) stays English —
+   that is a separate, much larger job (490 files). */
+const DEMO_I18N = {
+  en: {
+    title:"Demo", docsCount:"compliance documents", modulesCount:"modules",
+    openPreview:"open for preview", unlockedFirm:"unlocked with your firm",
+    generatedBy:"generated by AiVenture's RRVI engine", ctaTop:"Generate My Full Set →",
+    askPlaceholder:"Ask anything about these 70 documents...", askBtn:"ASK ⚡",
+    documentsLabel:"documents", openLabel:"✓ Open", lockedLabel:"🔒 Locked",
+    footerTitle:"Unlock the remaining 30%",
+    footerText:"Registers, Evidence logs, and Work Instructions are generated with your firm's actual details. Enter your firm once to unlock every document, fully parameterized.",
+    footerBtn:"Unlock Full Set",
+    modalTitle:"🔒 This document is part of the full set",
+    modalText:"Registers, Evidence, and Work Instructions are generated with your firm's name and responsible person filled in automatically. Enter your details once to unlock all 70 documents.",
+    modalBtn:"Unlock with Your Firm", modalClose:"Close", askReturn:"← Return to documents",
+    moduleNames:{"01":"AI System Inventory","02":"Risk Classification","03":"AI Literacy","04":"Prohibited Practices","05":"High-Risk Assessment","06":"Technical Documentation","07":"Human Oversight","08":"Data Governance","09":"Logging & Monitoring","10":"Incident Reporting"},
+    docTypes:{"Checklist":"Checklist","Declaration":"Declaration","Policy":"Policy","Evidence":"Evidence","Procedure":"Procedure","Register":"Register","Work Instruction":"Work Instruction"}
+  },
+  fr: {
+    title:"Démo", docsCount:"documents de conformité", modulesCount:"modules",
+    openPreview:"en aperçu libre", unlockedFirm:"débloqués avec votre entreprise",
+    generatedBy:"générés par le moteur RRVI d'AiVenture", ctaTop:"Générer mon set complet →",
+    askPlaceholder:"Posez une question sur ces 70 documents...", askBtn:"DEMANDER ⚡",
+    documentsLabel:"documents", openLabel:"✓ Ouvrir", lockedLabel:"🔒 Verrouillé",
+    footerTitle:"Débloquez les 30% restants",
+    footerText:"Les registres, journaux de preuves et instructions de travail sont générés avec les données réelles de votre entreprise. Entrez vos informations une fois pour débloquer tous les documents, entièrement paramétrés.",
+    footerBtn:"Débloquer le set complet",
+    modalTitle:"🔒 Ce document fait partie du set complet",
+    modalText:"Les registres, preuves et instructions de travail sont générés avec le nom de votre entreprise et la personne responsable remplis automatiquement. Entrez vos informations une fois pour débloquer les 70 documents.",
+    modalBtn:"Débloquer avec mon entreprise", modalClose:"Fermer", askReturn:"← Retour aux documents",
+    moduleNames:{"01":"Inventaire des systèmes d'IA","02":"Classification des risques","03":"Culture de l'IA","04":"Pratiques interdites","05":"Évaluation des risques élevés","06":"Documentation technique","07":"Contrôle humain","08":"Gouvernance des données","09":"Journalisation et surveillance","10":"Signalement des incidents"},
+    docTypes:{"Checklist":"Liste de contrôle","Declaration":"Déclaration","Policy":"Politique","Evidence":"Preuves","Procedure":"Procédure","Register":"Registre","Work Instruction":"Instruction de travail"}
+  },
+  de: {
+    title:"Demo", docsCount:"Compliance-Dokumente", modulesCount:"Module",
+    openPreview:"frei zur Vorschau", unlockedFirm:"mit Ihrem Unternehmen freigeschaltet",
+    generatedBy:"erstellt von AiVentures RRVI-Engine", ctaTop:"Meinen vollständigen Satz erstellen →",
+    askPlaceholder:"Stellen Sie eine Frage zu diesen 70 Dokumenten...", askBtn:"FRAGEN ⚡",
+    documentsLabel:"Dokumente", openLabel:"✓ Öffnen", lockedLabel:"🔒 Gesperrt",
+    footerTitle:"Die restlichen 30% freischalten",
+    footerText:"Register, Nachweisprotokolle und Arbeitsanweisungen werden mit den tatsächlichen Daten Ihres Unternehmens erstellt. Geben Sie Ihre Firmendaten einmal ein, um alle Dokumente vollständig parametrisiert freizuschalten.",
+    footerBtn:"Vollständigen Satz freischalten",
+    modalTitle:"🔒 Dieses Dokument gehört zum vollständigen Satz",
+    modalText:"Register, Nachweise und Arbeitsanweisungen werden automatisch mit dem Namen Ihres Unternehmens und der verantwortlichen Person erstellt. Geben Sie Ihre Daten einmal ein, um alle 70 Dokumente freizuschalten.",
+    modalBtn:"Mit meinem Unternehmen freischalten", modalClose:"Schließen", askReturn:"← Zurück zu den Dokumenten",
+    moduleNames:{"01":"KI-Systeminventar","02":"Risikoklassifizierung","03":"KI-Kompetenz","04":"Verbotene Praktiken","05":"Hochrisikobewertung","06":"Technische Dokumentation","07":"Menschliche Aufsicht","08":"Datenverwaltung","09":"Protokollierung und Überwachung","10":"Vorfallmeldung"},
+    docTypes:{"Checklist":"Checkliste","Declaration":"Erklärung","Policy":"Richtlinie","Evidence":"Nachweis","Procedure":"Verfahren","Register":"Register","Work Instruction":"Arbeitsanweisung"}
+  },
+  es: {
+    title:"Demo", docsCount:"documentos de cumplimiento", modulesCount:"módulos",
+    openPreview:"en vista previa abierta", unlockedFirm:"desbloqueados con su empresa",
+    generatedBy:"generado por el motor RRVI de AiVenture", ctaTop:"Generar mi conjunto completo →",
+    askPlaceholder:"Pregunta lo que quieras sobre estos 70 documentos...", askBtn:"PREGUNTAR ⚡",
+    documentsLabel:"documentos", openLabel:"✓ Abrir", lockedLabel:"🔒 Bloqueado",
+    footerTitle:"Desbloquea el 30% restante",
+    footerText:"Los registros, evidencias e instrucciones de trabajo se generan con los datos reales de su empresa. Introduzca los datos de su empresa una vez para desbloquear todos los documentos, totalmente parametrizados.",
+    footerBtn:"Desbloquear conjunto completo",
+    modalTitle:"🔒 Este documento forma parte del conjunto completo",
+    modalText:"Los registros, evidencias e instrucciones de trabajo se generan automáticamente con el nombre de su empresa y la persona responsable. Introduzca sus datos una vez para desbloquear los 70 documentos.",
+    modalBtn:"Desbloquear con mi empresa", modalClose:"Cerrar", askReturn:"← Volver a los documentos",
+    moduleNames:{"01":"Inventario de sistemas de IA","02":"Clasificación de riesgos","03":"Alfabetización en IA","04":"Prácticas prohibidas","05":"Evaluación de alto riesgo","06":"Documentación técnica","07":"Supervisión humana","08":"Gobernanza de datos","09":"Registro y supervisión","10":"Notificación de incidentes"},
+    docTypes:{"Checklist":"Lista de verificación","Declaration":"Declaración","Policy":"Política","Evidence":"Evidencia","Procedure":"Procedimiento","Register":"Registro","Work Instruction":"Instrucción de trabajo"}
+  },
+  it: {
+    title:"Demo", docsCount:"documenti di conformità", modulesCount:"moduli",
+    openPreview:"in anteprima libera", unlockedFirm:"sbloccati con la tua azienda",
+    generatedBy:"generato dal motore RRVI di AiVenture", ctaTop:"Genera il mio set completo →",
+    askPlaceholder:"Fai una domanda su questi 70 documenti...", askBtn:"CHIEDI ⚡",
+    documentsLabel:"documenti", openLabel:"✓ Apri", lockedLabel:"🔒 Bloccato",
+    footerTitle:"Sblocca il restante 30%",
+    footerText:"Registri, evidenze e istruzioni di lavoro vengono generati con i dati reali della tua azienda. Inserisci i dati della tua azienda una volta per sbloccare tutti i documenti, completamente parametrizzati.",
+    footerBtn:"Sblocca set completo",
+    modalTitle:"🔒 Questo documento fa parte del set completo",
+    modalText:"Registri, evidenze e istruzioni di lavoro vengono generati automaticamente con il nome della tua azienda e la persona responsabile. Inserisci i tuoi dati una volta per sbloccare tutti i 70 documenti.",
+    modalBtn:"Sblocca con la tua azienda", modalClose:"Chiudi", askReturn:"← Torna ai documenti",
+    moduleNames:{"01":"Inventario dei sistemi IA","02":"Classificazione del rischio","03":"Alfabetizzazione IA","04":"Pratiche vietate","05":"Valutazione ad alto rischio","06":"Documentazione tecnica","07":"Supervisione umana","08":"Governance dei dati","09":"Registrazione e monitoraggio","10":"Segnalazione degli incidenti"},
+    docTypes:{"Checklist":"Lista di controllo","Declaration":"Dichiarazione","Policy":"Politica","Evidence":"Evidenza","Procedure":"Procedura","Register":"Registro","Work Instruction":"Istruzione di lavoro"}
+  },
+  ro: {
+    title:"Demo", docsCount:"documente de conformitate", modulesCount:"module",
+    openPreview:"deschise pentru previzualizare", unlockedFirm:"deblocate cu firma dvs.",
+    generatedBy:"generate de motorul RRVI al AiVenture", ctaTop:"Generează setul meu complet →",
+    askPlaceholder:"Întreabă orice despre aceste 70 de documente...", askBtn:"ÎNTREABĂ ⚡",
+    documentsLabel:"documente", openLabel:"✓ Deschide", lockedLabel:"🔒 Blocat",
+    footerTitle:"Deblochează restul de 30%",
+    footerText:"Registrele, jurnalele de dovezi și instrucțiunile de lucru sunt generate cu datele reale ale firmei dvs. Introduceți datele firmei o singură dată pentru a debloca toate documentele, complet parametrizate.",
+    footerBtn:"Deblochează setul complet",
+    modalTitle:"🔒 Acest document face parte din setul complet",
+    modalText:"Registrele, dovezile și instrucțiunile de lucru sunt generate automat cu numele firmei dvs. și persoana responsabilă. Introduceți datele o singură dată pentru a debloca toate cele 70 de documente.",
+    modalBtn:"Deblochează cu firma mea", modalClose:"Închide", askReturn:"← Înapoi la documente",
+    moduleNames:{"01":"Inventarul sistemelor de IA","02":"Clasificarea riscurilor","03":"Alfabetizare în domeniul IA","04":"Practici interzise","05":"Evaluarea riscului ridicat","06":"Documentație tehnică","07":"Supraveghere umană","08":"Guvernanța datelor","09":"Jurnalizare și monitorizare","10":"Raportarea incidentelor"},
+    docTypes:{"Checklist":"Listă de verificare","Declaration":"Declarație","Policy":"Politică","Evidence":"Dovezi","Procedure":"Procedură","Register":"Registru","Work Instruction":"Instrucțiune de lucru"}
+  },
+  pl: {
+    title:"Demo", docsCount:"dokumentów zgodności", modulesCount:"moduły",
+    openPreview:"dostępnych w podglądzie", unlockedFirm:"odblokowanych z danymi Twojej firmy",
+    generatedBy:"wygenerowane przez silnik RRVI firmy AiVenture", ctaTop:"Wygeneruj mój pełny zestaw →",
+    askPlaceholder:"Zapytaj o cokolwiek dotyczące tych 70 dokumentów...", askBtn:"ZAPYTAJ ⚡",
+    documentsLabel:"dokumentów", openLabel:"✓ Otwórz", lockedLabel:"🔒 Zablokowane",
+    footerTitle:"Odblokuj pozostałe 30%",
+    footerText:"Rejestry, dzienniki dowodów i instrukcje pracy są generowane z rzeczywistymi danymi Twojej firmy. Wprowadź dane swojej firmy raz, aby odblokować wszystkie dokumenty, w pełni sparametryzowane.",
+    footerBtn:"Odblokuj pełny zestaw",
+    modalTitle:"🔒 Ten dokument jest częścią pełnego zestawu",
+    modalText:"Rejestry, dowody i instrukcje pracy są generowane automatycznie z nazwą Twojej firmy i osobą odpowiedzialną. Wprowadź swoje dane raz, aby odblokować wszystkie 70 dokumentów.",
+    modalBtn:"Odblokuj z danymi mojej firmy", modalClose:"Zamknij", askReturn:"← Powrót do dokumentów",
+    moduleNames:{"01":"Inwentaryzacja systemów AI","02":"Klasyfikacja ryzyka","03":"Kompetencje w zakresie AI","04":"Zakazane praktyki","05":"Ocena wysokiego ryzyka","06":"Dokumentacja techniczna","07":"Nadzór ludzki","08":"Zarządzanie danymi","09":"Rejestrowanie i monitorowanie","10":"Zgłaszanie incydentów"},
+    docTypes:{"Checklist":"Lista kontrolna","Declaration":"Deklaracja","Policy":"Polityka","Evidence":"Dowody","Procedure":"Procedura","Register":"Rejestr","Work Instruction":"Instrukcja pracy"}
+  }
+};
+
+const root = document.getElementById("doc-root");
+
+function renderDocs(lang){
+  const t = DEMO_I18N[lang] || DEMO_I18N.en;
+  root.innerHTML = "";
+  MODULES.forEach((mod, mIdx) => {
+    const section = document.createElement("div");
+    section.className = "module";
+
+    const modName = t.moduleNames[mod.id] || mod.name;
+
+    const head = document.createElement("div");
+    head.className = "module-head";
+    head.innerHTML = `<h2>${mod.id} — ${modName}</h2><span>7 ${t.documentsLabel}</span>`;
+    section.appendChild(head);
+
+    const list = document.createElement("div");
+    list.className = "doc-list";
+
+    DOC_TYPES.forEach(type => {
+      const isLocked = mIdx >= OPEN_MODULE_COUNT && LOCKED_TYPES.includes(type);
+      const row = document.createElement("div");
+      row.className = "doc" + (isLocked ? " locked-row" : "");
+      const fileName = `${TYPE_PREFIX[type]}-0${mod.id}_${mod.fileBase}_${type.replace(/\s+/g,'_')}.md`;
+      const mdPath = `/${mod.folder}/${fileName}`;
+      const typeName = t.docTypes[type] || type;
+
+      if (isLocked) {
+        row.innerHTML = `
+          <div class="doc-name">
+            <span>${modName} ${typeName}</span>
+            <span class="doc-type">${typeName}</span>
+          </div>
+          <span class="badge-locked">${t.lockedLabel}</span>`;
+        row.onclick = () => openModal();
+      } else {
+        const url = `/viewer.html?src=${encodeURIComponent(mdPath)}`;
+        row.innerHTML = `
+          <a class="row-link" href="${url}" target="_blank" style="display:flex;justify-content:space-between;align-items:center;width:100%;text-decoration:none;color:inherit;">
+            <div class="doc-name">
+              <span class="open-link">${modName} ${typeName}</span>
+              <span class="doc-type">${typeName}</span>
+            </div>
+            <span class="badge-open">${t.openLabel}</span>
+          </a>`;
+      }
+      list.appendChild(row);
+    });
+
+    section.appendChild(list);
+    root.appendChild(section);
+  });
+}
+
+function applyLang(lang){
+  const t = DEMO_I18N[lang] || DEMO_I18N.en;
+  document.getElementById("t-title").textContent = t.title;
+  document.querySelectorAll(".t-docscount").forEach(el => el.textContent = t.docsCount);
+  document.querySelectorAll(".t-modulescount").forEach(el => el.textContent = t.modulesCount);
+  document.querySelectorAll(".t-openpreview").forEach(el => el.textContent = t.openPreview);
+  document.querySelectorAll(".t-unlockedfirm").forEach(el => el.textContent = t.unlockedFirm);
+  document.querySelectorAll(".t-generatedby").forEach(el => el.textContent = t.generatedBy);
+  document.getElementById("t-ctatop").textContent = t.ctaTop;
+  document.getElementById("ask-input").placeholder = t.askPlaceholder;
+  document.getElementById("ask-btn").textContent = t.askBtn;
+  document.getElementById("t-footertitle").textContent = t.footerTitle;
+  document.getElementById("t-footertext").textContent = t.footerText;
+  document.getElementById("t-footerbtn").textContent = t.footerBtn;
+  document.getElementById("t-modaltitle").textContent = t.modalTitle;
+  document.getElementById("t-modaltext").textContent = t.modalText;
+  document.getElementById("t-modalbtn").textContent = t.modalBtn;
+  document.getElementById("t-modalclose").textContent = t.modalClose;
+  document.getElementById("t-askreturn").textContent = t.askReturn;
+  renderDocs(lang);
+}
+
+renderDocs("en");
+
+function openModal(){ document.getElementById("lock-modal").style.display = "flex"; }
+function closeModal(){ document.getElementById("lock-modal").style.display = "none"; }
+
+function toggleTheme(){
+  document.body.classList.toggle("light-mode");
+  const btn = document.getElementById("theme-toggle");
+  btn.innerText = document.body.classList.contains("light-mode") ? "☀" : "☾";
+}
+
+/* ===== Return to top ===== */
+function scrollToTop(){
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("to-top");
+  if (window.scrollY > 400) btn.classList.add("show");
+  else btn.classList.remove("show");
+});
+
+/* ===== Language selector — compact single-line toggle with dropdown ===== */
+let currentLang = "ro";
+function toggleLangDropdown(){
+  document.getElementById("lang-dropdown").classList.toggle("open");
+}
+document.querySelectorAll(".lang-option").forEach(opt => {
+  opt.addEventListener("click", () => {
+    document.querySelectorAll(".lang-option").forEach(o => o.classList.remove("active"));
+    opt.classList.add("active");
+    currentLang = opt.dataset.lang;
+    document.getElementById("lang-current-label").innerText = opt.dataset.label;
+    document.getElementById("lang-dropdown").classList.remove("open");
+    applyLang(currentLang);
+  });
+});
+document.addEventListener("click", (e) => {
+  const wrap = document.querySelector(".lang-toggle-wrap");
+  if (wrap && !wrap.contains(e.target)) {
+    document.getElementById("lang-dropdown").classList.remove("open");
+  }
+});
+
+/* ===== Ask & Generator — same principle as homepage Ask box =====
+   NOTE: this points at the same conversational Worker the homepage
+   Ask box was patched to call on Jul 17 (eu-ai-act-conversation-worker-test).
+   If your live index.html now points at a different URL (e.g. after
+   the Groq swap), update API_BASE below to match it exactly. */
+const API_BASE = "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=";
+
+let askStartTime = null;
+let askTimerId = null;
+
+async function runAsk(){
+  const input = document.getElementById("ask-input");
+  const q = input.value.trim();
+  if(!q) return;
+
+  const statusEl = document.getElementById("ask-status");
+  const answerEl = document.getElementById("ask-answer");
+  const questionEl = document.getElementById("af-question");
+  const btn = document.getElementById("ask-btn");
+
+  questionEl.innerText = q;
+  answerEl.classList.remove("show");
+  answerEl.innerHTML = "";
+  btn.disabled = true;
+
+  openAsk();
+
+  askStartTime = Date.now();
+  const messages = ["Citesc documentele…", "Verific modulele…", "Fundamentez răspunsul…", "Aproape gata…"];
+  let msgIdx = 0;
+  statusEl.innerText = messages[0] + " 0s";
+  askTimerId = setInterval(() => {
+    const elapsed = Math.round((Date.now() - askStartTime)/1000);
+    msgIdx = Math.min(msgIdx + (elapsed % 4 === 0 ? 1 : 0), messages.length - 1);
+    statusEl.innerText = messages[msgIdx] + " " + elapsed + "s";
+  }, 1000);
+
+  try{
+    const url = API_BASE + encodeURIComponent(q) + "&lang=" + currentLang;
+    const res = await fetch(url);
+    const data = await res.json();
+
+    clearInterval(askTimerId);
+    statusEl.innerText = "";
+
+    const answerText = data.generated_answer || data.answer || "Nu am găsit un răspuns fundamentat în setul de documente pentru această întrebare.";
+    let html = `<div>${answerText}</div>`;
+
+    if (Array.isArray(data.sources) && data.sources.length){
+      html += `<div class="ask-sources">Surse: ` +
+        data.sources.map(s => `<a href="${s.url || '#'}" target="_blank">${s.title || s.name || 'source'}</a>`).join(", ") +
+        `</div>`;
+    }
+    answerEl.innerHTML = html;
+    answerEl.classList.add("show");
+  }catch(err){
+    clearInterval(askTimerId);
+    statusEl.innerText = "";
+    answerEl.innerHTML = "Couldn't reach the Ask engine right now — please try again in a moment.";
+    answerEl.classList.add("show");
+  }finally{
+    btn.disabled = false;
+  }
+}
+
+function openAsk(){
+  document.getElementById("ask-fullscreen").classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+function closeAsk(){
+  document.getElementById("ask-fullscreen").classList.remove("show");
+  document.body.style.overflow = "";
+  if (askTimerId) clearInterval(askTimerId);
+}
+
+document.getElementById("ask-input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") runAsk();
+});
+</script>
+
+<script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;fc10dcfbe72446578ab9c9d37e9ca6ba&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+<style>
+.raa-footer { max-width: 760px; margin: 50px auto 0; border-top: 1px solid #2a2a2a; padding: 28px 16px 40px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+.raa-footer .cols { display: flex; flex-wrap: wrap; gap: 28px; margin-bottom: 22px; }
+.raa-footer .col h3 { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 10px; }
+.raa-footer .col a { display: block; color: #ccc; text-decoration: none; font-size: 13.5px; padding: 4px 0; }
+.raa-footer .col a:hover { color: #e02424; }
+.raa-footer .legal { font-size: 12px; color: #888; }
+.raa-footer .legal a { color: #888; text-decoration: underline; }
+.raa-visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.raa-faq { max-width: 760px; margin: 40px auto 0; padding: 0 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+.raa-faq h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 16px; }
+.raa-faq details { border: 1px solid #2a2a2a; border-radius: 10px; margin-bottom: 10px; overflow: hidden; background: rgb(13,13,13); }
+.raa-faq summary { list-style: none; cursor: pointer; padding: 14px 16px; font-size: 14.5px; font-weight: 700; color: #f5f5f5; display:flex; justify-content:space-between; gap:10px; }
+.raa-faq summary::-webkit-details-marker { display: none; }
+.raa-faq summary::after { content: "+"; color: #e02424; font-size: 18px; flex: 0 0 auto; }
+.raa-faq details[open] summary::after { content: "\2212"; }
+.raa-faq .a { padding: 0 16px 16px; font-size: 13.5px; color: rgb(200,200,200); line-height: 1.55; }
+</style>
+<div class="raa-faq"><h2>Întrebări frecvente</h2>
+<details><summary>Ce pot vedea în Demo fără să introduc datele firmei mele?</summary><div class="a">Un pachet complet de pregătire EU AI Act, pe date de exemplu: inventar AI, evaluare de risc, politici, registre și dovezi.</div></details>
+<details><summary>Trebuie să îmi fac cont ca să văd Demo-ul?</summary><div class="a">Nu — Demo-ul se vede fără cont, cu datele unei firme fictive.</div></details>
+<details><summary>Cu ce diferă Demo-ul de Generator?</summary><div class="a">Demo-ul arată un exemplu deja completat. Generatorul produce același set de documente, personalizat cu denumirea firmei tale și persoana responsabilă AI desemnată.</div></details>
+<details><summary>Pot descărca documentele din Demo?</summary><div class="a">Demo-ul e făcut ca să vezi structura și formatul. Pentru pachetul tău personalizat și descărcabil, folosești Generatorul.</div></details>
+<details><summary>Ce tipuri de documente apar în Demo?</summary><div class="a">Registre, jurnale de dovezi, instrucțiuni de lucru, politici, checklist-uri, declarații și proceduri, pe toate cele 10 module RRVI.</div></details>
+<details><summary>Datele din Demo sunt reale?</summary><div class="a">Nu — sunt date de exemplu, ca să vezi structura și conținutul înainte să generezi pachetul tău.</div></details>
+<details><summary>Câte documente are biblioteca completă din Demo?</summary><div class="a">70 de documente — 10 module × 7 tipuri de documente.</div></details>
+<details><summary>Pot folosi Demo-ul ca să evaluez calitatea documentelor înainte să cumpăr?</summary><div class="a">Da — exact ăsta e scopul: să citești structura și limbajul real al documentelor înainte de a plăti cei 129 EUR pentru setul complet.</div></details>
+<details><summary>Demo-ul acoperă toate cele 10 module?</summary><div class="a">Da — Inventar sisteme AI, Clasificare risc, Alfabetizare AI, Practici interzise, Evaluare risc ridicat, Documentație tehnică, Supraveghere umană, Guvernanța datelor, Logging și monitorizare, Raportare incidente.</div></details>
+<details><summary>Cum trec de la Demo la generarea pachetului meu?</summary><div class="a">Mergi la Generator și introduci denumirea legală a firmei, persoana responsabilă și emailul. Aceeași structură de 70 de documente din Demo se personalizează cu datele tale.</div></details>
+</div>
+<footer class="raa-footer">
+  <div class="cols">
+    <div class="col"><h3>Quick links</h3><a href="https://eu-ai-act.ro/">Acasă</a>
+<a href="/#free-pack">Firma ta</a>
+<a href="/faq-hub.html">Întrebări frecvente</a>
+<a href="/why-us.html">De ce noi?</a></div>
+    <div class="col"><h3>Machine Readable</h3>
+      <a href="/robots.txt">robots.txt</a>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/ai.json">ai.json</a>
+      <a href="/intents.json">intents.json</a>
+      <a href="/sitemap.xml">sitemap.xml</a>
+    </div>
+    <div class="col"><h3>Support</h3><a href="/#ask">Ask EU AI Act</a>
+<a href="/#contact">Contact</a>
+<a href="mailto:contact@aiventure.ro">contact@aiventure.ro</a></div>
+  </div>
+  <div class="legal">&copy; 2026 AiVenture S.R.L. &mdash; EU AI Act Ready&trade;. <a href="https://eu-ai-act.ro/">eu-ai-act.ro</a></div>
+
+  <div style="font-size:11.5px; color:#777; margin-top:10px;">Last updated: 26 July 2026</div>
+</footer>
+<nav class="raa-visually-hidden" aria-hidden="false"><a href="https://eu-ai-act.ro/">Acasă</a>
+<a href="/#free-pack">Firma ta</a>
+<a href="/faq-hub.html">Întrebări frecvente</a>
+<a href="/why-us.html">De ce noi?</a>
+<a href="/#ask">Ask EU AI Act</a>
+<a href="/#contact">Contact</a>
+<a href="mailto:contact@aiventure.ro">contact@aiventure.ro</a></nav>
+
+</body></html>
