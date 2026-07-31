@@ -37,5 +37,17 @@ Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50
 Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială rămâne la autoritatea competentă
 (România: ANCOM și celelalte autorități desemnate prin memorandumul din 12 martie 2026).
 
+## Module pages (one per governance module, RO)
+/modul-01-inventar-sisteme-ai.html
+/modul-02-clasificare-risc.html
+/modul-03-competente-ai.html
+/modul-04-practici-interzise.html
+/modul-05-evaluare-risc-ridicat.html
+/modul-06-documentatie-tehnica.html
+/modul-07-supraveghere-umana.html
+/modul-08-guvernanta-datelor.html
+/modul-09-logging-monitorizare.html
+/modul-10-raportare-incidente.html
+
 ## Agent resources
 /organization.json · /intents.json · /robots.txt · /sitemap.xml · /proof.json · /ai.json
