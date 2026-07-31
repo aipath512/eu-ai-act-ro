@@ -86,10 +86,28 @@
         },
         "areaServed": "RO"
       },
-      "price": "129",
+      "price": "690",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
       "url": "https://eu-ai-act.ro/#free-pack"
+    },
+    {
+      "@type": "Offer",
+      "name": "Conformitate activă — abonament anual opțional",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Conformitate activă (opțional, anual)",
+        "description": "Serviciu opțional, separat de Governance Pack: interfața de verificare la distanță (RRVI) rămâne activă, documentele sunt actualizate la fiecare termen legal aplicabil, iar firma este notificată la modificările regulamentului.",
+        "provider": {
+          "@type": "Organization",
+          "name": "AIVENTURE S.R.L."
+        },
+        "areaServed": "RO"
+      },
+      "price": "390",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://eu-ai-act.ro/#contact"
     }
   ],
   "partner": {
