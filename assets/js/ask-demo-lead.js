@@ -337,7 +337,7 @@
           status.innerHTML =
             "Nu am putut trimite automat (" +
             escapeHtml(err.message) +
-            '). Scrie-ne direct: <a href="mailto:contact@aiventure.ro">contact@aiventure.ro</a> sau ' +
+            '). Scrie-ne direct: <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a> sau ' +
             '<a href="https://api.whatsapp.com/send/?phone=40737123540" target="_blank" rel="noopener">WhatsApp</a>.';
           status.className = "form-status error";
         })
