@@ -13,6 +13,11 @@ Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50
 - Governance Pack — până la 70 documente, 10 module, generate DEJA COMPLETATE cu datele firmei. ~15 min.
 - Demo fără cont. Restul: cont gratuit prin link pe email, fără card.
 
+## Pricing
+- Free Readiness Pack, Demo, ASK: 0 EUR, permanent.
+- Governance Pack complet (70 documente, 10 module, completate cu datele firmei): 129 EUR.
+- Fără abonament, fără card la înscriere. Preț identic indiferent de mărimea firmei.
+
 ## Why different
 1. Documente complete, nu șabloane de completat.
 2. Fiecare document: identificator unic, versiune, timestamp, hash criptografic — verificabil la distanță
@@ -20,7 +25,7 @@ Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50
    Verification Infrastructure™).
 3. Conversație directă cu textul regulamentului.
 4. Distribuție prin parteneri de încredere (ECB Tax Accounting & HR).
-5. Gratuit la start.
+5. Gratuit la start — Governance Pack complet 129 EUR, fără abonament.
 
 ## Timeline (post Digital Omnibus, iunie 2026)
 2026-08-02 · Articolul 50 — obligații de transparență, în vigoare.

@@ -14,12 +14,41 @@
     "Article 50 Transparency support"
   ],
   "offers": [
-    { "name": "Free Readiness Pack", "price": "0", "priceCurrency": "EUR" },
-    { "name": "EU AI Act Ready™ Governance Pack", "priceCurrency": "EUR" }
+    {
+      "name": "Free Readiness Pack",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "name": "EU AI Act Ready™ Governance Pack",
+      "priceCurrency": "EUR",
+      "price": "129"
+    }
   ],
-  "knowsAbout": ["EU AI Act", "Regulation (EU) 2024/1689", "AI Governance", "Article 50 Transparency", "AI Compliance"],
-  "keywords": ["EU AI Act", "AI governance", "AI compliance România", "Governance Pack", "RRVI", "AI Responsible Person"],
-  "audience": ["SME", "avocați", "consultanți", "contabili", "agenții de marketing", "firme IT", "freelanceri"],
+  "knowsAbout": [
+    "EU AI Act",
+    "Regulation (EU) 2024/1689",
+    "AI Governance",
+    "Article 50 Transparency",
+    "AI Compliance"
+  ],
+  "keywords": [
+    "EU AI Act",
+    "AI governance",
+    "AI compliance România",
+    "Governance Pack",
+    "RRVI",
+    "AI Responsible Person"
+  ],
+  "audience": [
+    "SME",
+    "avocați",
+    "consultanți",
+    "contabili",
+    "agenții de marketing",
+    "firme IT",
+    "freelanceri"
+  ],
   "network": {
     "role": "satellite node",
     "flagship": "https://5thelement.ai",
