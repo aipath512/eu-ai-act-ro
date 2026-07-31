@@ -415,16 +415,16 @@ footer.cta a { background: var(--red); padding: 12px 26px; border-radius: 8px; t
 <div id="sticky-ask">
   <div class="lang-toggle-wrap">
     <div class="lang-current" id="lang-current">
-      <span id="lang-current-label">🇷🇴 RO</span>
+      <span id="lang-current-label">🇷🇴 Română</span>
       <span class="chev">▾</span>
     </div>
     <div class="lang-dropdown" id="lang-dropdown">
-      <div class="lang-option active" data-lang="en" data-label="🇷🇴 RO">🇬🇧 English</div>
+      <div class="lang-option" data-lang="en" data-label="🇷🇴 RO">🇬🇧 English</div>
       <div class="lang-option" data-lang="fr" data-label="🇫🇷 FR">🇫🇷 Français</div>
       <div class="lang-option" data-lang="de" data-label="🇩🇪 DE">🇩🇪 Deutsch</div>
       <div class="lang-option" data-lang="es" data-label="🇪🇸 ES">🇪🇸 Español</div>
       <div class="lang-option" data-lang="it" data-label="🇮🇹 IT">🇮🇹 Italiano</div>
-      <div class="lang-option" data-lang="ro" data-label="🇷🇴 RO">🇷🇴 Română</div>
+      <div class="lang-option active" data-lang="ro" data-label="🇷🇴 Română">🇷🇴 Română</div>
       <div class="lang-option" data-lang="pl" data-label="🇵🇱 PL">🇵🇱 Polski</div>
     </div>
   </div>
@@ -683,7 +683,8 @@ function applyLang(lang){
   renderDocs(lang);
 }
 
-renderDocs("en");
+renderDocs(currentLang);
+applyLang(currentLang);
 
 function openModal(){ document.getElementById("lock-modal").style.display = "flex"; }
 function closeModal(){ document.getElementById("lock-modal").style.display = "none"; }
