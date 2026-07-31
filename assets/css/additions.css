@@ -735,3 +735,39 @@ nav.main-links.open-mobile a:hover { color: var(--gold); background: rgba(240,19
 @media (max-width: 640px) {
   nav.main-links.open-mobile { left: 0; right: 0; min-width: 0; }
 }
+
+/* ================================================================
+   BANDA DE STARE — sub header
+   Data ultimei actualizari a site-ului (deploy) + data si ora curenta.
+   Elementul e creat din script.js, deci apare pe toate paginile
+   care au <header class="site-header">, fara editarea fiecarui HTML.
+   ================================================================ */
+.deploy-strip {
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,.012);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text-faint);
+  letter-spacing: .03em;
+}
+.deploy-strip .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 22px;
+  padding: 9px 0;
+}
+.deploy-strip .ds-item { display: flex; align-items: center; gap: 7px; }
+.deploy-strip .ds-lbl { text-transform: uppercase; font-size: 10px; opacity: .75; }
+.deploy-strip .ds-val { color: var(--text-dim); }
+.deploy-strip .ds-now .ds-val { color: var(--gold); font-variant-numeric: tabular-nums; }
+.deploy-strip .ds-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #4ade80; box-shadow: 0 0 6px rgba(74,222,128,.7);
+  animation: ds-pulse 2s ease-in-out infinite;
+}
+@keyframes ds-pulse { 0%,100%{opacity:1;} 50%{opacity:.35;} }
+@media (max-width: 640px) {
+  .deploy-strip { font-size: 10.5px; }
+  .deploy-strip .wrap { gap: 6px 14px; padding: 8px 0; }
+}
