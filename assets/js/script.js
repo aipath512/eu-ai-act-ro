@@ -13,24 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // (added by Cloudflare-level infrastructure, not present in this file)
   // out of the hero and down into the footer, where it belongs as a
   // trust/verification badge rather than a hero-blocking element.
-  const slot = document.getElementById('trust-badge-slot');
-  if (slot) {
-    const candidates = document.querySelectorAll('div');
-    for (const el of candidates) {
-      if (el.id === 'trust-badge-slot') continue;
-      if (slot.contains(el)) continue;
-      const text = el.textContent || '';
-      // Only match the actual small banner element, not any large ancestor
-      // container whose aggregated textContent happens to include this
-      // string because the banner sits somewhere inside it.
-      if (text.includes('AI-FIRST PROTOCOL') && text.trim().length < 200) {
-        el.removeAttribute('style');
-        el.classList.add('trust-badge');
-        slot.appendChild(el);
-        break;
-      }
-    }
-  }
+  // Bannerul de protocol e injectat direct în #trust-badge-slot de worker-ul
+  // os-orchestrator-5th-element — nu mai e nevoie să fie mutat din DOM.
+
 
   // Login panel open/close toggle (the panel itself — actual submit
   // logic for #loginForm is wired in auth.js).
