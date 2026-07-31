@@ -42,6 +42,8 @@
 }
 </style>
 <style>
+  .privacy-note { font-size: 11.5px; line-height: 1.6; color: #7a7568; margin-top: 12px; }
+  .privacy-note a { color: var(--gold, #f0c14b); text-decoration: underline; }
   .trust-badge-wrap { margin-top: 30px; }
   .trust-badge-wrap:empty { display: none; }
   .trust-badge-wrap > div {
@@ -363,6 +365,7 @@ window.addEventListener("error", function (e) {
         <input type="email" required placeholder="nume@firma.ro">
       </div>
       <button type="submit" class="btn btn-primary btn-block">Trimite link de acces</button>
+            <p class="privacy-note">Îți folosim adresa de email doar ca să îți trimitem linkul de acces și să îți menținem contul. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
       <p class="login-alt">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, iar primul login îți creează automat contul.</p>
     </form>
   </div>
@@ -576,6 +579,7 @@ window.addEventListener("error", function (e) {
               <input id="gateEmail" type="email" required placeholder="nume@firma.ro">
             </div>
             <button type="submit" class="btn btn-primary btn-block">trimite link de acces →</button>
+            <p class="privacy-note">Îți folosim adresa de email ca să îți trimitem linkul de acces și informații despre pachetul solicitat. Poți cere ștergerea oricând. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
             <div id="gateStatus" class="form-status" aria-live="polite"></div>
           </form>
         </div>
@@ -618,6 +622,7 @@ window.addEventListener("error", function (e) {
             </div>
           </div>
           <button type="submit" class="btn btn-primary btn-block" id="genSubmit">⚡ Generează toate cele 70 de documente</button>
+            <p class="privacy-note">Denumirea firmei și numele persoanei responsabile AI sunt inserate în documentele generate pentru tine. Nu le folosim în alt scop. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
           <div id="genStatus" class="form-status" aria-live="polite"></div>
         </form>
 
@@ -685,6 +690,7 @@ window.addEventListener("error", function (e) {
             <input id="askInput" type="text" placeholder="Întreabă orice despre EU AI Act...">
             <button type="submit" class="btn btn-primary" id="askSubmit">Întreabă</button>
           </form>
+          <p class="privacy-note">Întrebarea ta este transmisă către furnizorul de model lingvistic (Anthropic, SUA) pentru generarea răspunsului. Te rugăm să nu introduci date personale sau informații confidențiale. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
           <p style="font-family:var(--mono);font-size:11px;color:#5a5648;text-transform:uppercase;margin-top:20px;">Căutări populare</p>
           <div class="ask-examples">
             <button type="button" class="ask-example">Folosim ChatGPT în firmă. Ce trebuie să facem?</button>
@@ -1069,6 +1075,7 @@ window.addEventListener("error", function (e) {
           <input type="text" placeholder="Spune-ne pe scurt situația ta">
         </div>
         <button type="submit" class="btn btn-primary btn-block">trimite →</button>
+            <p class="privacy-note">Folosim datele din formular doar ca să îți răspundem. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
         <div id="contactStatus" class="form-status" aria-live="polite"></div>
       </form>
     </div>
