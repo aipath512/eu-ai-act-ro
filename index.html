@@ -41,6 +41,23 @@
   }
 }
 </style>
+<style>
+  .trust-badge-wrap { margin-top: 30px; }
+  .trust-badge-wrap:empty { display: none; }
+  .trust-badge-wrap > div {
+    border: 1px solid rgba(240,193,75,0.32) !important;
+    background: rgba(240,193,75,0.06) !important;
+    border-radius: 10px !important;
+    padding: 14px 16px !important;
+    margin: 0 !important;
+    font-family: var(--mono, monospace) !important;
+    font-size: 11.5px !important;
+    line-height: 1.7 !important;
+    color: #8a8578 !important;
+  }
+  .trust-badge-wrap > div a { color: var(--gold, #f0c14b) !important; text-decoration: none; }
+  .trust-badge-wrap > div a:hover { text-decoration: underline; }
+</style>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -780,6 +797,7 @@ window.addEventListener("error", function (e) {
           <p>Un contabil sau avocat care are deja încrederea unui client poate adăuga guvernanța AI ca serviciu nou, fără să construiască nimic de la zero.</p>
         </div>
       </div>
+      <div id="trust-badge-slot" class="trust-badge-wrap"></div>
     </div>
   </section>
 
@@ -1118,8 +1136,6 @@ window.addEventListener("error", function (e) {
     <span class="lbl">// pentru AI agents</span>
     <span><a href="/organization.json">Schema.org</a> · <a href="/llms.txt">llms.txt</a> · <a href="/robots.txt">robots.txt</a> · <a href="/intents.json">intents.json</a> · <a href="/ai.json">ai.json</a> · <a href="/authority.json">authority.json</a> · <a href="/policy.json">policy.json</a> · <a href="/governance.json">governance.json</a> · <a href="/entities.json">entities.json</a> · <a href="/ai-proof.json">ai-proof.json</a> · <a href="/trust-state.json">trust-state.json</a> · <a href="#ask">API endpoints</a></span>
   </div>
-
-  <div id="trust-badge-slot" class="wrap"></div>
 
   <div class="wrap legal-strip">
     <span>© 2026 AIVENTURE S.R.L. · toate drepturile rezervate</span>
