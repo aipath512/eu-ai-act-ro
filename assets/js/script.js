@@ -65,6 +65,69 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+
+  /* ---------------------------------------------------------------- *
+   * BANDA DE STARE — data ultimei actualizari (deploy) + ceas live.
+   * Se insereaza automat sub <header class="site-header">, deci nu
+   * trebuie editat fiecare fisier HTML.
+   * Data de deploy vine din document.lastModified (antetul Last-Modified
+   * trimis de Cloudflare Pages pentru fisierul HTML). Daca serverul nu
+   * il trimite, browserul returneaza momentul incarcarii — in cazul
+   * asta afisam doar ceasul, nu o data gresita.
+   * ---------------------------------------------------------------- */
+  (function initDeployStrip() {
+    var header = document.querySelector('header.site-header');
+    if (!header || document.querySelector('.deploy-strip')) return;
+
+    var TZ = 'Europe/Bucharest';
+    var fmtDeploy = new Intl.DateTimeFormat('ro-RO', {
+      timeZone: TZ, day: '2-digit', month: '2-digit', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+    var fmtDay = new Intl.DateTimeFormat('ro-RO', {
+      timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+    });
+    var fmtClock = new Intl.DateTimeFormat('ro-RO', {
+      timeZone: TZ, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+    });
+
+    var strip = document.createElement('div');
+    strip.className = 'deploy-strip';
+    var wrap = document.createElement('div');
+    wrap.className = 'wrap';
+    strip.appendChild(wrap);
+
+    // ultima actualizare a paginii (deploy)
+    var lm = new Date(document.lastModified);
+    var fresh = (Date.now() - lm.getTime()) < 60000; // sub 1 min => probabil fara Last-Modified
+    if (!isNaN(lm.getTime()) && !fresh) {
+      var d = document.createElement('span');
+      d.className = 'ds-item ds-deploy';
+      d.innerHTML = '<span class="ds-lbl">ultima actualizare</span>' +
+                    '<span class="ds-val">' + fmtDeploy.format(lm) + '</span>';
+      wrap.appendChild(d);
+    }
+
+    // data si ora curenta (ceas live)
+    var n = document.createElement('span');
+    n.className = 'ds-item ds-now';
+    n.innerHTML = '<span class="ds-dot" aria-hidden="true"></span>' +
+                  '<span class="ds-lbl">acum</span>' +
+                  '<span class="ds-val"><time id="dsClock"></time></span>';
+    wrap.appendChild(n);
+
+    header.insertAdjacentElement('afterend', strip);
+
+    var clock = document.getElementById('dsClock');
+    function tick() {
+      var now = new Date();
+      clock.setAttribute('datetime', now.toISOString());
+      clock.textContent = fmtDay.format(now) + ' · ' + fmtClock.format(now) + ' (București)';
+    }
+    tick();
+    setInterval(tick, 1000);
+  })();
+
   // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(item => {
     const q = item.querySelector('.faq-q');
