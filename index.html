@@ -346,6 +346,19 @@ window.addEventListener("error", function (e) {
     "EROARE JS: " + e.message + " (" + (e.filename || "") + ":" + (e.lineno || "") + ")\n";
 });
 </script>
+<style>
+  .of-home-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+  @media (max-width:900px){ .of-home-grid{ grid-template-columns:1fr; } }
+  .of-home-card { border:1px solid rgba(255,255,255,.10); border-radius:4px; padding:24px 20px; background:rgba(255,255,255,.015); display:flex; flex-direction:column; }
+  .of-home-card.featured { border-color:var(--gold); background:rgba(240,193,75,.05); box-shadow:0 0 34px rgba(240,193,75,.09); }
+  .of-home-eyebrow { font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); }
+  .of-home-card.featured .of-home-eyebrow { color:var(--gold); }
+  .of-home-name { font-family:var(--serif); font-size:21px; color:var(--text); margin:10px 0 2px; }
+  .of-home-price { font-family:var(--serif); font-size:38px; line-height:1.05; color:var(--gold); margin:10px 0 14px; }
+  .of-home-price small { font-family:var(--mono); font-size:12px; color:var(--text-faint); letter-spacing:.04em; }
+  .of-home-desc { font-size:14px; line-height:1.6; color:var(--text-dim); margin:0 0 20px; }
+  .of-home-card .btn { margin-top:auto; align-self:flex-start; }
+</style>
 </head>
 <body>
 
@@ -394,6 +407,7 @@ window.addEventListener("error", function (e) {
       <a href="#ask">Întreabă</a>
       <a href="#free-pack">firma ta</a>
       <a href="/demo.html">demo</a>
+      <a href="#oferta">ofertă</a>
       <a href="#roles">parteneri</a>
       <a href="#construit-cu-ai">Construit cu AI</a>
       <a href="#evidence">Pentru inspectori</a>
@@ -739,6 +753,39 @@ window.addEventListener("error", function (e) {
   </section>
 
   <!-- ROLE JOURNEYS -->
+  <!-- OFERTA -->
+  <section id="oferta" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>OFERTĂ · PREȚURI</span>
+      <h2 class="h2-title">Începi gratuit. <em>Plătești doar când vezi rezultatul</em>.</h2>
+      <p class="sub-lede">Trei niveluri, un singur produs. Testezi tot ce contează fără card.</p>
+      <div class="of-home-grid">
+        <div class="of-home-card">
+          <span class="of-home-eyebrow">Nivelul 1 · start</span>
+          <div class="of-home-name">Gratuit, permanent</div>
+          <div class="of-home-price">0 <small>EUR</small></div>
+          <p class="of-home-desc">Free Readiness Pack (previzualizare până la 40%), Demo complet cu toate cele 70 de documente și ASK — asistentul pe documentația EU AI Act.</p>
+          <a href="#free-pack" class="btn btn-secondary">Începe gratuit →</a>
+        </div>
+        <div class="of-home-card featured">
+          <span class="of-home-eyebrow">Nivelul 2 · pachetul complet</span>
+          <div class="of-home-name">Governance Pack</div>
+          <div class="of-home-price">690 <small>EUR</small></div>
+          <p class="of-home-desc">70 de documente completate cu datele firmei, 10 module, dovezi digitale și RRVI™ inclus. Plată unică, fără abonament, fără preț pe utilizator.</p>
+          <a href="/oferta.html" class="btn btn-primary">Vezi ce conține →</a>
+        </div>
+        <div class="of-home-card">
+          <span class="of-home-eyebrow">Nivelul 3 · opțional</span>
+          <div class="of-home-name">Conformitate activă</div>
+          <div class="of-home-price">390 <small>EUR / an</small></div>
+          <p class="of-home-desc">RRVI activ permanent, documentele actualizate la fiecare termen legal (2 dec 2026 → 2 aug 2028) și alertă la modificări. Serviciu separat, opțional.</p>
+          <a href="/oferta.html" class="btn btn-dark">Detalii →</a>
+        </div>
+      </div>
+      <p class="sub-lede" style="margin-top:24px;">Comparație cu alternativele din piață, calendarul complet al termenelor și limitele ofertei — pe <a href="/oferta.html" style="color:var(--gold);">pagina de ofertă</a>.</p>
+    </div>
+  </section>
+
   <section id="roles" class="pad">
     <div class="wrap">
       <span class="tag"><span class="dot">//</span>TRASEE DUPĂ ROL</span><span class="stage-badge stage-mofu">MOFU</span>
