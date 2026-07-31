@@ -41,8 +41,7 @@
   }
 }
 </style>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -52,7 +51,11 @@
       "legalName": "AIVENTURE S.R.L.",
       "url": "https://eu-ai-act.ro/",
       "logo": "https://eu-ai-act.ro/assets/images/og-image.webp",
-      "identifier": { "@type": "PropertyValue", "propertyID": "CUI", "value": "51415878" },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "CUI",
+        "value": "51415878"
+      },
       "vatID": "RO51415878",
       "address": {
         "@type": "PostalAddress",
@@ -74,14 +77,24 @@
         "https://www.youtube.com/@AIVenture-q8u",
         "https://medium.com/@aipath512"
       ],
-      "areaServed": ["RO", "EU"],
-      "knowsAbout": ["EU AI Act", "AI Compliance", "AI Governance", "Article 50 Transparency"],
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "knowsAbout": [
+        "EU AI Act",
+        "AI Compliance",
+        "AI Governance",
+        "Article 50 Transparency"
+      ],
       "founder": {
         "@type": "Person",
         "name": "Dan Ionescu",
         "alternateName": "Eli",
         "image": "https://eu-ai-act.ro/assets/images/dan-founder.jpg",
-        "sameAs": ["https://www.linkedin.com/in/dan-ionesco-a856082a0"]
+        "sameAs": [
+          "https://www.linkedin.com/in/dan-ionesco-a856082a0"
+        ]
       }
     },
     {
@@ -90,43 +103,134 @@
       "url": "https://eu-ai-act.ro/",
       "name": "EU AI ACT READY™",
       "inLanguage": "ro",
-      "publisher": { "@id": "https://eu-ai-act.ro/#organization" }
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://eu-ai-act.ro/#governance-pack",
       "name": "EU AI ACT READY™ Governance Pack",
-      "provider": { "@id": "https://eu-ai-act.ro/#organization" },
-      "areaServed": ["RO", "EU"],
-      "audience": { "@type": "Audience", "audienceType": "SME, cabinete de avocatură, consultanți, freelanceri" },
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "SME, cabinete de avocatură, consultanți, freelanceri"
+      },
       "description": "Generare automată a 70+ documente operaționale de guvernanță AI, organizate în 10 module, plus asistent conversațional ASK EU AI Act și infrastructură RRVI de verificare la distanță.",
       "serviceType": "EU AI Act Compliance Governance",
-      "about": { "@id": "https://eu-ai-act.ro/#euaiact" },
+      "about": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      },
       "mentions": [
-        { "@id": "https://eu-ai-act.ro/#article50" },
-        { "@id": "https://eu-ai-act.ro/#ai-system" },
-        { "@id": "https://eu-ai-act.ro/#high-risk-ai" },
-        { "@id": "https://eu-ai-act.ro/#ai-responsible-person" },
-        { "@id": "https://eu-ai-act.ro/#rrvi" },
-        { "@id": "https://eu-ai-act.ro/#evidence-layer" }
+        {
+          "@id": "https://eu-ai-act.ro/#article50"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#ai-system"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#high-risk-ai"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#ai-responsible-person"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#rrvi"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#evidence-layer"
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free Readiness Pack",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Governance Pack complet — 70 documente",
+          "price": "129",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eu-ai-act.ro/" },
-        { "@type": "ListItem", "position": 2, "name": "EU AI Act Ready", "item": "https://eu-ai-act.ro/" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eu-ai-act.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "EU AI Act Ready",
+          "item": "https://eu-ai-act.ro/"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "S-a amânat EU AI Act?", "acceptedAnswer": { "@type": "Answer", "text": "Parțial. Prin pachetul Digital Omnibus, obligațiile pentru sistemele high-risk din Anexa III s-au mutat la 2 decembrie 2027, iar cele din Anexa I la 2 august 2028. Articolul 50, transparența interacțiunilor AI și a conținutului generat, rămâne aplicabil din 2 august 2026. Marcarea automată a conținutului generat (Articolul 50 alineatul 2) pentru sistemele deja pe piață se aplică din 2 decembrie 2026." } },
-        { "@type": "Question", "name": "Folosim ChatGPT în firmă. Ce trebuie să facem?", "acceptedAnswer": { "@type": "Answer", "text": "Primul pas este un inventar al sistemelor AI folosite — inclusiv cele introduse informal de angajați (Shadow AI). Pornește de la ASK sau de la Free Readiness Pack pentru o imagine inițială." } },
-        { "@type": "Question", "name": "EU AI Act se aplică IMM-ului meu?", "acceptedAnswer": { "@type": "Answer", "text": "Obligațiile depind de modul în care este folosit AI-ul, nu doar de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul." } },
-        { "@type": "Question", "name": "Ce documente trebuie să pregătesc?", "acceptedAnswer": { "@type": "Answer", "text": "Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Nu trebuie să le completezi tu: ajung deja generate și completate cu datele firmei tale, gata de folosit." } },
-        { "@type": "Question", "name": "Cum demonstrez conformitatea?", "acceptedAnswer": { "@type": "Answer", "text": "Prin dovezi digitale verificabile — identificator unic, versiune, timestamp, hash criptografic și audit trail — nu doar prin documente declarative." } },
-        { "@type": "Question", "name": "Ce este Articolul 50?", "acceptedAnswer": { "@type": "Answer", "text": "Articolul 50 reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic și dezvăluirea deepfake — aplicabile din 2 august 2026." } }
+        {
+          "@type": "Question",
+          "name": "S-a amânat EU AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parțial. Prin pachetul Digital Omnibus, obligațiile pentru sistemele high-risk din Anexa III s-au mutat la 2 decembrie 2027, iar cele din Anexa I la 2 august 2028. Articolul 50, transparența interacțiunilor AI și a conținutului generat, rămâne aplicabil din 2 august 2026. Marcarea automată a conținutului generat (Articolul 50 alineatul 2) pentru sistemele deja pe piață se aplică din 2 decembrie 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Folosim ChatGPT în firmă. Ce trebuie să facem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Primul pas este un inventar al sistemelor AI folosite — inclusiv cele introduse informal de angajați (Shadow AI). Pornește de la ASK sau de la Free Readiness Pack pentru o imagine inițială."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EU AI Act se aplică IMM-ului meu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Obligațiile depind de modul în care este folosit AI-ul, nu doar de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce documente trebuie să pregătesc?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Nu trebuie să le completezi tu: ajung deja generate și completate cu datele firmei tale, gata de folosit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cum demonstrez conformitatea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prin dovezi digitale verificabile — identificator unic, versiune, timestamp, hash criptografic și audit trail — nu doar prin documente declarative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce este Articolul 50?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Articolul 50 reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic și dezvăluirea deepfake — aplicabile din 2 august 2026."
+          }
+        }
       ]
     },
     {
@@ -141,48 +245,63 @@
       "@id": "https://eu-ai-act.ro/#article50",
       "name": "Articolul 50 — Obligații de Transparență",
       "description": "Obligații de transparență privind interacțiunea AI cu oamenii, conținut generat AI, conținut sintetic și dezvăluirea deepfake, aplicabile din 2 august 2026.",
-      "isPartOf": { "@id": "https://eu-ai-act.ro/#euaiact" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
     },
     {
       "@type": "DefinedTerm",
       "@id": "https://eu-ai-act.ro/#ai-system",
       "name": "Sistem AI",
       "description": "Orice instrument sau aplicație cu funcții de inteligență artificială folosit de o organizație — inclusiv ChatGPT, Microsoft Copilot, Google Gemini, Claude sau automatizări AI de marketing.",
-      "isPartOf": { "@id": "https://eu-ai-act.ro/#euaiact" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
     },
     {
       "@type": "DefinedTerm",
       "@id": "https://eu-ai-act.ro/#high-risk-ai",
       "name": "Sistem AI cu Risc Înalt",
       "description": "Categorie de clasificare a sistemelor AI, definită de EU AI Act, cu obligații suplimentare de documentație tehnică și evaluare de conformitate.",
-      "isPartOf": { "@id": "https://eu-ai-act.ro/#ai-system" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#ai-system"
+      }
     },
     {
       "@type": "DefinedTerm",
       "@id": "https://eu-ai-act.ro/#ai-responsible-person",
       "name": "Persoană Responsabilă AI",
       "description": "Persoana desemnată într-o organizație responsabilă pentru guvernanța și conformitatea sistemelor AI utilizate.",
-      "isPartOf": { "@id": "https://eu-ai-act.ro/#euaiact" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://eu-ai-act.ro/#rrvi",
       "name": "RRVI™ — Remote Regulatory Verification Infrastructure",
-      "provider": { "@id": "https://eu-ai-act.ro/#organization" },
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
       "description": "Infrastructură de verificare la distanță a documentelor de guvernanță AI, prin identificatori unici, timestamp și hash criptografic, fără deplasare fizică a auditorului.",
-      "about": { "@id": "https://eu-ai-act.ro/#article50" }
+      "about": {
+        "@id": "https://eu-ai-act.ro/#article50"
+      }
     },
     {
       "@type": "CreativeWork",
       "@id": "https://eu-ai-act.ro/#evidence-layer",
       "name": "Evidence Layer",
       "description": "Modelul de dovezi digitale al platformei — identificator unic, versiune, timestamp, hash criptografic, audit trail, istoric.",
-      "about": { "@id": "https://eu-ai-act.ro/#ai-responsible-person" },
-      "isBasedOn": { "@id": "https://eu-ai-act.ro/#rrvi" }
+      "about": {
+        "@id": "https://eu-ai-act.ro/#ai-responsible-person"
+      },
+      "isBasedOn": {
+        "@id": "https://eu-ai-act.ro/#rrvi"
+      }
     }
   ]
-}
-</script>
+}</script>
 <link rel="describedby" href="/proof.json"><meta name="ai-signature" content="2395f0b7bd8c3d319a555c0c8638544e343f26d38d1bde28de84d15516990b5e"><script>
 // Visible error banner — catches ANY JS error on this page and shows it
 // on screen, so problems are diagnosable without opening DevTools.
@@ -717,7 +836,7 @@ window.addEventListener("error", function (e) {
   <!-- ARTICLE 50 -->
   <section id="transparency" class="pad">
     <div class="wrap">
-      <div class="banner">-30% reducere pentru firmele care finalizează Stratul de Guvernanță</div>
+      <div class="banner">Evidence Layer: -30% pentru firmele care au finalizat Governance Pack-ul (129 EUR)</div>
       <span class="tag" style="display:block;"><span class="dot">//</span>NIVELUL URMĂTOR</span><span class="stage-badge stage-mofu">MOFU</span>
       <h2 class="h2-title">Articolul 50 <em>— Stratul de Transparență</em>.</h2>
       <p class="sub-lede">EU AI Act nu înseamnă doar documente. Firmele trebuie să poată demonstra transparența interacțiunilor AI — evenimente de transparență Om ↔ AI ↔ Om.</p>
@@ -795,6 +914,7 @@ window.addEventListener("error", function (e) {
           <tr><td>Verificare</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
         </tbody>
       </table>
+      <p class="sub-lede" style="margin-top:18px;"><strong style="color:var(--gold)">Free Readiness Pack, Demo și ASK: gratuite, permanent.</strong> Governance Pack-ul complet — 70 de documente generate și completate cu datele firmei tale — <strong style="color:var(--text)">129 EUR</strong>. Fără abonament, fără card la înscriere.</p>
       <p class="sub-lede" style="margin-top:28px;">Începe gratuit. Nu trebuie să cumperi înainte să înțelegi. Primul pas: descoperă situația firmei tale. Apoi: vezi rezultatul. Apoi: implementează.</p>
     </div>
   </section>
