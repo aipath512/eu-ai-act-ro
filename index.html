@@ -358,6 +358,13 @@ window.addEventListener("error", function (e) {
   .of-home-price small { font-family:var(--mono); font-size:12px; color:var(--text-faint); letter-spacing:.04em; }
   .of-home-desc { font-size:14px; line-height:1.6; color:var(--text-dim); margin:0 0 20px; }
   .of-home-card .btn { margin-top:auto; align-self:flex-start; }
+  .contact-channels { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:640px; margin:24px 0 22px; }
+  @media (max-width:640px){ .contact-channels{ grid-template-columns:1fr; } }
+  .contact-channel { display:block; border:1px solid rgba(255,255,255,.12); border-radius:4px; padding:16px 18px; text-decoration:none; background:rgba(255,255,255,.015); transition:border-color .2s,background .2s; }
+  .contact-channel:hover { border-color:var(--gold); background:rgba(240,193,75,.05); }
+  .cc-label { display:block; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); }
+  .cc-value { display:block; font-family:var(--serif); font-size:19px; color:var(--gold); margin:6px 0 4px; }
+  .cc-note { display:block; font-size:12.5px; line-height:1.45; color:var(--text-dim); }
 </style>
 </head>
 <body>
@@ -1111,9 +1118,31 @@ window.addEventListener("error", function (e) {
     <div class="wrap">
       <span class="tag"><span class="dot">//</span>CONTACT</span><span class="stage-badge stage-bofu">BOFU</span>
       <h2 class="h2-title">Scrie-ne. <em>Citim atent</em>.</h2>
-      <p class="sub-lede">Formular structurat ca să ajungem repede la subiect.</p>
+      <p class="sub-lede">Cel mai rapid răspuns vine pe canalele directe. Formularul de mai jos e pentru cazurile în care preferi să scrii structurat.</p>
+
+      <div class="contact-channels">
+        <a class="contact-channel" href="https://api.whatsapp.com/send/?phone=40737123540">
+          <span class="cc-label">WhatsApp</span>
+          <span class="cc-value">40737123540</span>
+          <span class="cc-note">cel mai rapid — inclusiv pentru programul de partener</span>
+        </a>
+        <a class="contact-channel" href="mailto:contact@aiventure.ro">
+          <span class="cc-label">Email</span>
+          <span class="cc-value">contact@aiventure.ro</span>
+          <span class="cc-note">pentru oferte, facturare și documente</span>
+        </a>
+      </div>
 
       <form id="contactForm" class="form-card" style="max-width:640px;">
+        <div class="form-field" style="margin-bottom:16px;">
+          <label>Ce te interesează</label>
+          <select id="contactSubject" name="subject">
+            <option>Governance Pack — 690 EUR</option>
+            <option>Conformitate activă — 390 EUR/an</option>
+            <option>Program de partener (contabil, avocat, consultant)</option>
+            <option>Altceva</option>
+          </select>
+        </div>
         <div class="form-row">
           <div class="form-field"><label>Nume</label><input type="text" required></div>
           <div class="form-field"><label>Email</label><input type="email" required></div>
