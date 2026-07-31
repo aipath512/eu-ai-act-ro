@@ -37,9 +37,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const mainLinks = document.querySelector('.main-links');
   if (burger && mainLinks) {
-    burger.addEventListener('click', () => {
-      mainLinks.classList.toggle('open-mobile');
-      mainLinks.style.display = mainLinks.classList.contains('open-mobile') ? 'flex' : '';
+    const setNav = (open) => {
+      mainLinks.classList.toggle('open-mobile', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '\u2715' : '\u2630';
+    };
+    setNav(false);
+    burger.setAttribute('aria-controls', 'mainNav');
+    mainLinks.id = mainLinks.id || 'mainNav';
+
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setNav(!mainLinks.classList.contains('open-mobile'));
+    });
+    // click pe un link din meniu -> inchide
+    mainLinks.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') setNav(false);
+    });
+    // click in afara meniului -> inchide
+    document.addEventListener('click', (e) => {
+      if (!mainLinks.classList.contains('open-mobile')) return;
+      if (!mainLinks.contains(e.target) && e.target !== burger) setNav(false);
+    });
+    // Escape -> inchide
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setNav(false);
     });
   }
 
