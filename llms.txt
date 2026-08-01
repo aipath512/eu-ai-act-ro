@@ -1,8 +1,9 @@
 # AI OS: eu-ai-act.ro
-Proof: /proof.json
-Innovations: /ai.json
+Profile: /ai.json
+Proof (content fingerprint): /ai-proof.json
+Innovation registry (network): /proof.json
 Operator: AIVENTURE S.R.L. · CUI 51415878 · EUID ROONRC.J2025016406000 · București, RO
-Language: ro (primary) · Updated: 2026-07-31
+Language: ro (primary) · Updated: 2026-08-01
 
 ## What
 EU AI Act Ready™ — infrastructură operațională pentru pregătirea firmelor pentru Regulamentul (UE) 2024/1689.
@@ -57,4 +58,4 @@ Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială răm�
 /modul-10-raportare-incidente.html
 
 ## Agent resources
-/organization.json · /intents.json · /robots.txt · /sitemap.xml · /proof.json · /ai.json
+/ai.json · /ai-proof.json · /adn.json · /authority.json · /entities.json · /governance.json · /intents.json · /organization.json · /policy.json · /proof.json · /trust-state.json · /robots.txt · /sitemap.xml · /humans.txt · /security.txt
