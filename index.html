@@ -60,7 +60,8 @@
   .trust-badge-wrap > div a { color: var(--gold, #f0c14b) !important; text-decoration: none; }
   .trust-badge-wrap > div a:hover { text-decoration: underline; }
 </style>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -81,6 +82,7 @@
         "streetAddress": "Drumul Pădurea Pustnicu, Nr. 141C, Corp A, Etaj 2, Ap. 5",
         "addressLocality": "București",
         "addressRegion": "Sector 1",
+        "postalCode": "014044",
         "addressCountry": "RO"
       },
       "sameAs": [
@@ -127,22 +129,14 @@
       }
     },
     {
-      "@type": "Service",
-      "@id": "https://eu-ai-act.ro/#governance-pack",
-      "name": "EU AI ACT READY™ Governance Pack",
-      "provider": {
-        "@id": "https://eu-ai-act.ro/#organization"
+      "@type": "WebPage",
+      "@id": "https://eu-ai-act.ro/#webpage",
+      "url": "https://eu-ai-act.ro/",
+      "name": "EU AI ACT READY™",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#website"
       },
-      "areaServed": [
-        "RO",
-        "EU"
-      ],
-      "audience": {
-        "@type": "Audience",
-        "audienceType": "SME, cabinete de avocatură, consultanți, freelanceri"
-      },
-      "description": "Generare automată a 70+ documente operaționale de guvernanță AI, organizate în 10 module, plus asistent conversațional ASK EU AI Act și infrastructură RRVI de verificare la distanță.",
-      "serviceType": "EU AI Act Compliance Governance",
       "about": {
         "@id": "https://eu-ai-act.ro/#euaiact"
       },
@@ -164,8 +158,30 @@
         },
         {
           "@id": "https://eu-ai-act.ro/#evidence-layer"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#governance-pack"
         }
       ],
+      "primaryImageOfPage": "https://eu-ai-act.ro/assets/images/og-image.webp"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eu-ai-act.ro/#governance-pack",
+      "name": "EU AI ACT READY™ Governance Pack",
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "SME, cabinete de avocatură, consultanți, freelanceri"
+      },
+      "description": "Generare automată a 70+ documente operaționale de guvernanță AI, organizate în 10 module, plus asistent conversațional ASK EU AI Act și infrastructură RRVI de verificare la distanță.",
+      "serviceType": "EU AI Act Compliance Governance",
       "offers": [
         {
           "@type": "Offer",
@@ -260,7 +276,7 @@
       ]
     },
     {
-      "@type": "DefinedTerm",
+      "@type": "DefinedTermSet",
       "@id": "https://eu-ai-act.ro/#euaiact",
       "name": "EU AI Act — Regulamentul (UE) 2024/1689",
       "description": "Regulamentul european care stabilește reguli armonizate privind inteligența artificială în Uniunea Europeană.",
@@ -271,7 +287,7 @@
       "@id": "https://eu-ai-act.ro/#article50",
       "name": "Articolul 50 — Obligații de Transparență",
       "description": "Obligații de transparență privind interacțiunea AI cu oamenii, conținut generat AI, conținut sintetic și dezvăluirea deepfake, aplicabile din 2 august 2026.",
-      "isPartOf": {
+      "inDefinedTermSet": {
         "@id": "https://eu-ai-act.ro/#euaiact"
       }
     },
@@ -280,7 +296,7 @@
       "@id": "https://eu-ai-act.ro/#ai-system",
       "name": "Sistem AI",
       "description": "Orice instrument sau aplicație cu funcții de inteligență artificială folosit de o organizație — inclusiv ChatGPT, Microsoft Copilot, Google Gemini, Claude sau automatizări AI de marketing.",
-      "isPartOf": {
+      "inDefinedTermSet": {
         "@id": "https://eu-ai-act.ro/#euaiact"
       }
     },
@@ -289,8 +305,8 @@
       "@id": "https://eu-ai-act.ro/#high-risk-ai",
       "name": "Sistem AI cu Risc Înalt",
       "description": "Categorie de clasificare a sistemelor AI, definită de EU AI Act, cu obligații suplimentare de documentație tehnică și evaluare de conformitate.",
-      "isPartOf": {
-        "@id": "https://eu-ai-act.ro/#ai-system"
+      "inDefinedTermSet": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
       }
     },
     {
@@ -298,7 +314,7 @@
       "@id": "https://eu-ai-act.ro/#ai-responsible-person",
       "name": "Persoană Responsabilă AI",
       "description": "Persoana desemnată într-o organizație responsabilă pentru guvernanța și conformitatea sistemelor AI utilizate.",
-      "isPartOf": {
+      "inDefinedTermSet": {
         "@id": "https://eu-ai-act.ro/#euaiact"
       }
     },
@@ -310,8 +326,8 @@
         "@id": "https://eu-ai-act.ro/#organization"
       },
       "description": "Infrastructură de verificare la distanță a documentelor de guvernanță AI, prin identificatori unici, timestamp și hash criptografic, fără deplasare fizică a auditorului.",
-      "about": {
-        "@id": "https://eu-ai-act.ro/#article50"
+      "serviceOutput": {
+        "@id": "https://eu-ai-act.ro/#evidence-layer"
       }
     },
     {
@@ -321,14 +337,12 @@
       "description": "Modelul de dovezi digitale al platformei — identificator unic, versiune, timestamp, hash criptografic, audit trail, istoric.",
       "about": {
         "@id": "https://eu-ai-act.ro/#ai-responsible-person"
-      },
-      "isBasedOn": {
-        "@id": "https://eu-ai-act.ro/#rrvi"
       }
     }
   ]
-}</script>
-<script>  
+}
+</script>
+<script>
 // Visible error banner — catches ANY JS error on this page and shows it
 // on screen, so problems are diagnosable without opening DevTools.
 window.addEventListener("error", function (e) {
