@@ -250,52 +250,77 @@
 
 <script src="/assets/js/script.js?v=5"></script>
 <script>
-(function(){{
-  var DEMO = {{
-    "REG-001-AIVENTURE-SRL": {
-      document: "REG-001_AI_System_Inventory_Register.md",
+(function(){
+  // Înregistrări demonstrative publice. Prima este REALĂ și oricine o poate
+  // reface: hash-ul de mai jos este SHA-256 al fișierului servit la
+  // https://eu-ai-act.ro/entities.json și este publicat independent în
+  // https://eu-ai-act.ro/ai-proof.json — cele două trebuie să coincidă.
+  var DEMO = {
+    "AIVENTURE-ENTITIES-001": {
+      document: "entities.json — graful de entități al site-ului",
       organizatie: "AIVENTURE S.R.L. (CUI 51415878)",
       versiune: "1.0",
-      generat: "2026-07-30T10:12:22Z",
+      generat: "2026-08-02T06:15:00Z",
       responsabil: "Dan Ionescu (Eli)",
-      hash: "9dcc079be08ae0cc7b161079a259c4bd3493aa51488033d5ebd81d8d351d3475",
-      status: "activ"
+      hash: "2ca49e912ddb7af1604ad5524c76d4b3fc3c870af878dc432002811f7503d1fd",
+      status: "activ",
+      sursa: "Verificabil independent: descarcă /entities.json, calculează SHA-256 și compară cu /ai-proof.json"
     },
-    "REG-001-EXEMPLU-SRL": {{
+    "REG-001-EXEMPLU-SRL": {
       document: "REG-001_AI_System_Inventory_Register.md",
       organizatie: "Exemplu SRL (înregistrare demonstrativă)",
       versiune: "1.0",
       generat: "2026-07-29T09:14:22Z",
       responsabil: "R. Dumitru",
-      hash: "8f2c1a9e4b7d0f3c...",
+      hash: "(valoare demonstrativă — nu corespunde unui document real)",
       status: "activ"
-    }}
-  }};
-  function esc(s){{ return String(s).replace(/[&<>]/g, function(c){{ return {{'&':'&amp;','<':'&lt;','>':'&gt;'}}[c]; }}); }}
-  function row(k,v){{ return '<div class="vf-row"><span>'+esc(k)+'</span><span>'+esc(v)+'</span></div>'; }}
-  function show(id){{
+    }
+  };
+
+  function esc(v){ return String(v).replace(/[&<>]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]; }); }
+  function row(k, v){ return '<div class="vf-row"><span>' + esc(k) + '</span><span>' + esc(v) + '</span></div>'; }
+
+  function show(id){
     var box = document.getElementById("vfResult");
-    var key = (id||"").trim().toUpperCase();
-    if(!key){{ box.className="vf-result on"; box.innerHTML='<p class="vf-no">Introdu un identificator.</p>'; return; }}
-    var d = DEMO[key];
+    var key = (id || "").trim().toUpperCase();
     box.className = "vf-result on";
-    if(d){{
-      box.innerHTML = '<p class="vf-ok">✓ Înregistrare găsită</p>'
-        + row("Document", d.document) + row("Organizație", d.organizatie)
-        + row("Versiune", d.versiune) + row("Generat la", d.generat)
-        + row("Responsabil AI", d.responsabil) + row("SHA-256", d.hash)
-        + row("Status", d.status)
-        + '<p style="margin-top:14px;color:#8a8578;">Aceasta este înregistrarea demonstrativă publică. Documentele reale se verifică din contul organizației emitente sau pe baza pachetului primit de la aceasta.</p>';
-    }} else {{
+
+    if(!key){
+      box.innerHTML = '<p class="vf-no">Introdu un identificator.</p>';
+      return;
+    }
+
+    var d = DEMO[key];
+    if(d){
+      var html = '<p class="vf-ok">✓ Înregistrare găsită</p>'
+        + row("Document", d.document)
+        + row("Organizație", d.organizatie)
+        + row("Versiune", d.versiune)
+        + row("Generat la", d.generat)
+        + row("Responsabil AI", d.responsabil)
+        + row("SHA-256", d.hash)
+        + row("Status", d.status);
+      if(d.sursa){
+        html += '<p style="margin-top:14px;color:#8a8578;">' + esc(d.sursa) + '</p>';
+      }
+      html += '<p style="margin-top:14px;color:#8a8578;">Documentele reale ale organizațiilor nu sunt expuse public. Ele se verifică din contul organizației emitente sau pe baza pachetului primit de la aceasta.</p>';
+      box.innerHTML = html;
+    } else {
       box.innerHTML = '<p class="vf-no">✕ Niciun rezultat public pentru acest identificator.</p>'
-        + '<p style="margin-top:10px;color:#8a8578;">Documentele reale nu sunt expuse public. Dacă ai primit un document de la o organizație, cere-i pachetul de verificare sau confirmarea directă. Poți testa formatul cu identificatorul demonstrativ <strong>REG-001-EXEMPLU-SRL</strong>.</p>';
-    }}
-  }}
-  document.getElementById("vfBtn").addEventListener("click", function(){{ show(document.getElementById("docId").value); }});
-  document.getElementById("docId").addEventListener("keydown", function(e){{ if(e.key==="Enter") show(this.value); }});
+        + '<p style="margin-top:10px;color:#8a8578;">Documentele reale nu sunt expuse public. Dacă ai primit un document de la o organizație, cere-i pachetul de verificare sau confirmarea directă. Poți testa formatul cu <strong>AIVENTURE-ENTITIES-001</strong> (înregistrare reală, verificabilă independent) sau <strong>REG-001-EXEMPLU-SRL</strong> (format demonstrativ).</p>';
+    }
+  }
+
+  document.getElementById("vfBtn").addEventListener("click", function(){
+    show(document.getElementById("docId").value);
+  });
+  document.getElementById("docId").addEventListener("keydown", function(e){
+    if(e.key === "Enter"){ show(this.value); }
+  });
+
   var q = new URLSearchParams(location.search).get("doc");
-  if(q){{ document.getElementById("docId").value = q; show(q); }}
-}})();
+  if(q){ document.getElementById("docId").value = q; show(q); }
+})();
 </script>
 </body>
 </html>
