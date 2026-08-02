@@ -75,6 +75,7 @@ Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială răm�
 /why-us.html — comparație cu platformele enterprise GRC și consultanța clasică
 /intentii.html — întrebările reale, pe categorie de utilizator
 /oferta.html — oferta completă
+/transparency.html — Articolul 50 explicat operațional: rol Provider/Deployer, disclosure, marcare machine-readable, deepfake, texte de interes public, evidence și verificare; 20 de întrebări cu răspuns
 
 ## Module pages (one per governance module, RO)
 /modul-01-inventar-sisteme-ai.html — inventarul sistemelor AI
