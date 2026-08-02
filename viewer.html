@@ -127,30 +127,57 @@
 <div id="doc-wrap"><div id="content"></div></div>
 
 <script>
-  // Reads ?src=/rrvi_templates/01-ai-system-inventory/01-checklist.md
-  // Fetches it from THIS SAME SITE (no GitHub, no CORS issues)
+  // Citeste ?src=/01-ai-system-inventory/CHK-001_....md
+  //
+  // Documentul NU se mai ia de pe acest site. Sabloanele au fost scoase din
+  // repo-ul public in mod deliberat — nu trebuie sa fie descarcabile direct.
+  // In schimb, se cere workerului RRVI, care le ia din sursa privata, le
+  // randeaza cu datele demo si returneaza Markdown. Aceeasi cale pe care o
+  // foloseste si generatorul.
+  const RRVI_SINGLE_API = "https://rrvi-generator-worker-test.aipath512.workers.dev/generate-one";
+
+  // Valorile din pachetul demo — acelea pe care vizitatorul le inlocuieste
+  // manual in Word daca merge pe calea DIY.
+  const DEMO_COMPANY = "AiVenture S.R.L.";
+  const DEMO_RESPONSIBLE = "Dan Ionescu";
+
   const params = new URLSearchParams(window.location.search);
-  const src = params.get("src");
+  let src = params.get("src");
 
   const statusEl = document.getElementById("status");
   const contentEl = document.getElementById("content");
 
   if (!src) {
-    statusEl.textContent = "No document specified. Go back and click a document again.";
+    statusEl.textContent = "Niciun document specificat. Întoarce-te și alege un document.";
   } else {
-    fetch(src)
+    // Workerul asteapta calea relativa in arhiva, fara slash initial.
+    const path = src.replace(/^\/+/, "");
+
+    fetch(RRVI_SINGLE_API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        path: path,
+        companyName: DEMO_COMPANY,
+        responsiblePerson: DEMO_RESPONSIBLE,
+        lang: "ro",
+        format: "md"
+      })
+    })
       .then(res => {
-        if (!res.ok) throw new Error(`File not found (${res.status}): ${src}`);
+        if (!res.ok) throw new Error("HTTP " + res.status);
         return res.text();
       })
       .then(md => {
         statusEl.style.display = "none";
         contentEl.innerHTML = marked.parse(md);
-        const title = src.split("/").pop().replace(".md", "").replace(/[-_]/g, " ");
+        const title = path.split("/").pop().replace(/\.md$/, "").replace(/[-_]/g, " ");
         document.title = title + " — EU AI Act Ready";
       })
       .catch(err => {
-        statusEl.textContent = "Could not load this document (" + err.message + ").";
+        statusEl.textContent =
+          "Documentul nu a putut fi încărcat (" + err.message + "). " +
+          "Reîncarcă pagina sau întoarce-te la lista de module.";
       });
   }
 </script>
