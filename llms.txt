@@ -3,7 +3,7 @@ Profile: /ai.json
 Proof (content fingerprint): /ai-proof.json
 Innovation registry (network): /proof.json
 Operator: AIVENTURE S.R.L. · CUI 51415878 · EUID ROONRC.J2025016406000 · București, RO
-Language: ro (primary) · Updated: 2026-08-01
+Language: ro (primary) · Updated: 2026-08-02
 
 ## What
 EU AI Act Ready™ — infrastructură operațională pentru pregătirea firmelor pentru Regulamentul (UE) 2024/1689.
@@ -45,17 +45,51 @@ Structura, verificarea juridică și deciziile de conținut rămân umane.
 Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială rămâne la autoritatea competentă
 (România: ANCOM și celelalte autorități desemnate prin memorandumul din 12 martie 2026).
 
+## Q&A (121 întrebări cu răspuns, pe categorii — cel mai bogat conținut informațional al site-ului)
+/faq-hub.html — index complet, 12 categorii
+/faq-general.html — generalități despre EU AI Act
+/faq-article50.html — obligațiile de transparență din Articolul 50
+/faq-governance.html — guvernanța AI în organizație
+/faq-governance-pack.html — ce conține pachetul de documente
+/faq-evidence.html — dovezi digitale, audit trail, hash, timestamp
+/faq-rrvi.html — verificare la distanță (RRVI™)
+/faq-ask.html — asistentul conversațional ASK
+/faq-imm.html — întrebări specifice IMM-urilor
+/faq-industrii.html — cazuri de utilizare pe industrii
+/faq-securitate.html — securitate și confidențialitate
+/faq-comercial.html — preț, demo, implementare
+/faq-despre.html — despre AIVENTURE și încredere
+
+## Rol / audiență (aceeași obligație, explicată din unghiul fiecărui rol)
+/imm.html — firme care folosesc ChatGPT, Copilot sau alte instrumente AI
+/avocati.html — cabinete care vor să ofere conformitate AI ca serviciu
+/consultanti.html — consultanți care își extind oferta
+/it-software.html — distincția Provider vs. Deployer pentru firme de software
+/marketing-digital.html — agenții care folosesc AI pentru conținut și automatizări
+/freelanceri.html — responsabilitatea individuală a freelancerului
+
+## Demonstrații și dovezi
+/demo.html — cele 70 de documente, vizibile fără cont
+/verificare.html — verificarea unui document după identificator, versiune, timestamp și amprentă
+/innovations.html — cele 4 capabilități: Governance Pack, ASK, RRVI, Evidence Layer
+/why-us.html — comparație cu platformele enterprise GRC și consultanța clasică
+/intentii.html — întrebările reale, pe categorie de utilizator
+/oferta.html — oferta completă
+
 ## Module pages (one per governance module, RO)
-/modul-01-inventar-sisteme-ai.html
-/modul-02-clasificare-risc.html
-/modul-03-competente-ai.html
-/modul-04-practici-interzise.html
-/modul-05-evaluare-risc-ridicat.html
-/modul-06-documentatie-tehnica.html
-/modul-07-supraveghere-umana.html
-/modul-08-guvernanta-datelor.html
-/modul-09-logging-monitorizare.html
-/modul-10-raportare-incidente.html
+/modul-01-inventar-sisteme-ai.html — inventarul sistemelor AI
+/modul-02-clasificare-risc.html — clasificarea riscului
+/modul-03-competente-ai.html — competențe AI (AI literacy)
+/modul-04-practici-interzise.html — practici interzise (Art. 5)
+/modul-05-evaluare-risc-ridicat.html — evaluarea sistemelor cu risc ridicat
+/modul-06-documentatie-tehnica.html — documentație tehnică
+/modul-07-supraveghere-umana.html — supraveghere umană
+/modul-08-guvernanta-datelor.html — guvernanța datelor
+/modul-09-logging-monitorizare.html — logging și monitorizare
+/modul-10-raportare-incidente.html — raportarea incidentelor
+
+## Legal
+/termeni.html · /confidentialitate.html · /cookies.html · /disclaimer.html
 
 ## Agent resources
 /ai.json · /ai-proof.json · /adn.json · /authority.json · /entities.json · /governance.json · /intents.json · /organization.json · /policy.json · /proof.json · /trust-state.json · /robots.txt · /sitemap.xml · /humans.txt · /security.txt
