@@ -4,14 +4,26 @@
   "governanceFramework": "Auto-evaluare conform EU AI Act — Regulamentul (UE) 2024/1689",
   "aiSystemsUsed": [
     {
-      "name": "ASK EU AI Act™",
+      "name": "ASK EU AI Act™ — generare răspunsuri",
       "purpose": "Asistent conversațional pentru întrebări despre regulament",
-      "provider": "Cloudflare Workers AI",
+      "provider": "Groq, Inc. — model Llama 3.3 70B (Meta)",
       "riskLevel": "Minimal — informare generală, fără decizie automată asupra unei persoane"
+    },
+    {
+      "name": "ASK EU AI Act™ — căutare semantică",
+      "purpose": "Transformarea întrebării în reprezentare vectorială și potrivirea cu fragmentele relevante din regulament",
+      "provider": "Cloudflare Workers AI — model bge-m3, cu Cloudflare Vectorize",
+      "riskLevel": "Minimal — nu generează text, doar regăsește fragmente"
+    },
+    {
+      "name": "Asistență la dezvoltare",
+      "purpose": "Generare cod, arhitectură, documentație și conținut",
+      "provider": "Anthropic PBC — Claude",
+      "riskLevel": "Minimal — uz intern, cu supervizare umană"
     }
   ],
-  "transparencyStatement": "Răspunsurile generate de ASK EU AI Act™ sunt identificate ca fiind generate AI și, unde e posibil, însoțite de surse din textul oficial al regulamentului.",
+  "transparencyStatement": "Răspunsurile generate de ASK EU AI Act™ sunt identificate ca fiind generate AI și, unde e posibil, însoțite de surse din textul oficial al regulamentului. Furnizorii de model sunt declarați explicit în Politica de confidențialitate, conform Articolului 50.",
   "evidenceModel": "RRVI™ — Remote Regulatory Verification Infrastructure (identificator unic, versiune, timestamp, hash criptografic)",
   "humanOversight": "Conținutul site-ului și documentele generate sunt supervizate de fondatorul AIVENTURE S.R.L.",
-  "lastReviewed": "2026-07-30"
+  "lastReviewed": "2026-08-02"
 }

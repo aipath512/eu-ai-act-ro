@@ -107,10 +107,10 @@
         <p>Nu vindem date personale și nu le transmitem în scop de publicitate. Le prelucrăm prin următorii furnizori, în calitate de persoane împuternicite:</p>
         <table>
           <tr><th>Furnizor</th><th>Rol</th><th>Localizare</th></tr>
-          <tr><td>Cloudflare, Inc.</td><td>Găzduire site, funcții de aplicație, baze de date, securitate</td><td>Rețea globală, cu procesare în UE</td></tr>
-          <tr><td>Anthropic PBC (Claude)</td><td>Generarea răspunsurilor în ASK EU AI Act™ — primește textul întrebării tale</td><td>Statele Unite ale Americii</td></tr>
+          <tr><td>Cloudflare, Inc.</td><td>Găzduire site, funcții de aplicație, baze de date, securitate; căutare semantică în ASK EU AI Act™ (Workers AI + Vectorize) — primește textul întrebării tale</td><td>Rețea globală, cu procesare în UE</td></tr>
+          <tr><td>Groq, Inc.</td><td>Generarea răspunsurilor în ASK EU AI Act™ (model Llama 3.3 70B) — primește textul întrebării tale și fragmentele de regulament relevante</td><td>Statele Unite ale Americii</td></tr>
         </table>
-        <div class="legal-note">Întrebările introduse în ASK EU AI Act™ sunt transmise către Anthropic PBC (Statele Unite), care generează răspunsul. Transferul se realizează pe baza clauzelor contractuale standard adoptate de Comisia Europeană, incluse în contractul comercial cu furnizorul. Din acest motiv, te rugăm să nu introduci date personale sau informații confidențiale în întrebări.</div>
+        <div class="legal-note">Întrebările introduse în ASK EU AI Act™ sunt prelucrate în doi pași: mai întâi de Cloudflare Workers AI, care le transformă în reprezentare vectorială pentru a găsi fragmentele relevante din regulament, apoi de Groq, Inc. (Statele Unite), care generează răspunsul folosind modelul Llama 3.3 70B. Transferul se realizează pe baza clauzelor contractuale standard adoptate de Comisia Europeană, incluse în contractul comercial cu furnizorul. Din acest motiv, te rugăm să nu introduci date personale sau informații confidențiale în întrebări.</div>
 
         <h2>4. Cât timp păstrăm datele</h2>
         <ul>

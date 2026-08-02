@@ -732,7 +732,7 @@ window.addEventListener("error", function (e) {
             <input id="askInput" type="text" placeholder="Întreabă orice despre EU AI Act...">
             <button type="submit" class="btn btn-primary" id="askSubmit">Întreabă</button>
           </form>
-          <p class="privacy-note">Întrebarea ta este transmisă către furnizorul de model lingvistic (Anthropic, SUA) pentru generarea răspunsului. Te rugăm să nu introduci date personale sau informații confidențiale. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+          <p class="privacy-note">Întrebarea ta este transmisă către furnizorul de model lingvistic (Groq, SUA — model Llama 3.3 70B) pentru generarea răspunsului, după o etapă de căutare semantică realizată de Cloudflare Workers AI. Te rugăm să nu introduci date personale sau informații confidențiale. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
           <p style="font-family:var(--mono);font-size:11px;color:#5a5648;text-transform:uppercase;margin-top:20px;">Căutări populare</p>
           <div class="ask-examples">
             <button type="button" class="ask-example">Folosim ChatGPT în firmă. Ce trebuie să facem?</button>
@@ -1205,7 +1205,8 @@ window.addEventListener("error", function (e) {
           <thead><tr><th>Sistem AI</th><th>Departament</th><th>Scop</th><th>Nivel de risc</th><th>Responsabil</th></tr></thead>
           <tbody>
             <tr><td>Claude (Anthropic)</td><td>Dezvoltare</td><td>Generare cod, arhitectură site, documentație</td><td>Minimal</td><td>Dan Ionescu</td></tr>
-            <tr><td>Cloudflare Workers AI</td><td>Produs</td><td>Motor conversațional din spatele ASK EU AI Act™</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>Groq — Llama 3.3 70B</td><td>Produs</td><td>Motor conversațional din spatele ASK EU AI Act™ — generarea răspunsurilor</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>Cloudflare Workers AI — bge-m3</td><td>Produs</td><td>Căutare semantică în ASK EU AI Act™ — embeddings și potrivire vectorială</td><td>Minimal</td><td>Dan Ionescu</td></tr>
             <tr><td>ASK EU AI Act™ (chatbot public)</td><td>Interacțiune publică</td><td>Interacțiune directă cu vizitatorii site-ului</td><td>Transparență (Art. 50)</td><td>Dan Ionescu</td></tr>
           </tbody>
         </table>
