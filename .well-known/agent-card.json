@@ -1,7 +1,7 @@
 {
   "name": "EU AI Act Ready",
-  "description": "Infrastructură de conformitate EU AI Act pentru IMM-uri, avocați, consultanți și firme IT din România și UE. Răspunde la întrebări despre Regulamentul (UE) 2024/1689, generează pachetul de 70 de documente operaționale de guvernanță AI personalizate cu datele firmei, și verifică la distanță autenticitatea documentelor emise prin RRVI.",
-  "version": "1.0.0",
+  "description": "Infrastructură de conformitate EU AI Act pentru IMM-uri, avocați, consultanți și firme IT din România și UE. Răspunde la întrebări despre Regulamentul (UE) 2024/1689, generează pachetul de 70 de documente operaționale de guvernanță AI personalizate cu datele firmei, și verifică în registrul RRVI autenticitatea și integritatea documentelor emise.",
+  "version": "1.2.0",
   "provider": {
     "organization": "AIVENTURE S.R.L.",
     "url": "https://eu-ai-act.ro/"
@@ -41,8 +41,8 @@
     {
       "id": "generate-governance-pack",
       "name": "Generare pachet de guvernanță AI",
-      "description": "Generează pachetul complet de 70 de documente operaționale de guvernanță AI (10 module × 7 tipuri: politică, procedură, instrucțiune de lucru, checklist, registru, declarație, dovadă), personalizate cu denumirea firmei și persoana responsabilă AI. Livrare în Markdown sau Word (.docx).",
-      "tags": ["document-generation", "ai-governance", "policy", "procedure", "register", "docx"],
+      "description": "Generează pachetul complet de 70 de documente operaționale de guvernanță AI (10 module × 7 tipuri: politică, procedură, instrucțiune de lucru, checklist, registru, declarație, dovadă), personalizate cu denumirea firmei și persoana responsabilă AI. Fiecare document primește un identificator RRVI și o amprentă SHA-256, verificabile separat. Livrare în Markdown sau Word (.docx).",
+      "tags": ["document-generation", "ai-governance", "policy", "procedure", "register", "docx", "rrvi"],
       "examples": [
         "Generează pachetul de guvernanță AI pentru Acme SRL, responsabil Ion Popescu, în format docx",
         "Dă-mi doar registrul de inventar al sistemelor AI pentru firma mea"
@@ -53,11 +53,12 @@
     {
       "id": "verify-document",
       "name": "Verificare document RRVI",
-      "description": "Verifică la distanță autenticitatea unui document de guvernanță AI emis prin platformă, pe baza identificatorului unic, a versiunii, a marcajului temporal și a amprentei criptografice — fără deplasarea fizică a auditorului.",
-      "tags": ["verification", "rrvi", "audit", "evidence", "cryptographic-hash"],
+      "description": "Verifică în registrul RRVI dacă un document de guvernanță AI a fost emis de această platformă și dacă amprenta lui criptografică s-a schimbat de la emitere. Acceptă fie identificatorul documentului (de forma COD-FIRMA-AMPRENTA), fie amprenta SHA-256 calculată pe varianta Markdown a documentului. Nu divulgă numele persoanei responsabile AI.",
+      "tags": ["verification", "rrvi", "audit", "evidence", "sha-256", "document-integrity"],
       "examples": [
-        "Verifică documentul DEC-001 emis pentru Acme SRL",
-        "Este validă amprenta acestui registru de sisteme AI?"
+        "Verifică documentul PROC-001-AIVENTURE-SRL-00A96748",
+        "Este autentic documentul cu amprenta 993475aa46e4e78384366888bd658207096994d4ff5efca7caaac08f63c33b24?",
+        "A fost modificat registrul de sisteme AI de la emitere?"
       ],
       "inputModes": ["text/plain"],
       "outputModes": ["text/plain"]
