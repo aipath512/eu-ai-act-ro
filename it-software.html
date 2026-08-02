@@ -34,19 +34,123 @@
       "url": "https://eu-ai-act.ro/it-software.html",
       "name": "EU AI Act pentru firme IT & Software — Provider sau Deployer? | EU AI Act Ready™",
       "description": "Dezvolți software cu funcții AI sau doar le folosești? Distincția Provider vs. Deployer schimbă complet obligațiile tale prin EU AI Act. Verifică gratuit unde te situezi.",
-      "isPartOf": { "@id": "https://eu-ai-act.ro/#website" },
-      "about": { "@type": "Audience", "audienceType": "Firme de dezvoltare software și companii IT din Uniunea Europeană" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#website"
+      },
+      "about": {
+        "@type": "Audience",
+        "audienceType": "Firme de dezvoltare software și companii IT din Uniunea Europeană"
+      },
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "inLanguage": "ro",
+      "mentions": [
+        {
+          "@id": "https://eu-ai-act.ro/#governance-pack"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#euaiact"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eu-ai-act.ro/" },
-        { "@type": "ListItem", "position": 2, "name": "Firme IT & Software", "item": "https://eu-ai-act.ro/it-software.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eu-ai-act.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Firme IT & Software",
+          "item": "https://eu-ai-act.ro/it-software.html"
+        }
       ]
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [{"@type": "Question", "name": "Sistemul nostru AI e clasificat drept risc înalt?", "acceptedAnswer": {"@type": "Answer", "text": "Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești, înainte de a decide ce documentație tehnică e necesară."}}, {"@type": "Question", "name": "Sunt Provider sau Deployer conform EU AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Provider e cine dezvoltă sau introduce pe piață un sistem AI sub marca proprie; Deployer e cine folosește un sistem AI fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite ale aceleiași firme."}}, {"@type": "Question", "name": "Ce documentație tehnică mi se cere?", "acceptedAnswer": {"@type": "Answer", "text": "Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață."}}, {"@type": "Question", "name": "Ce structură trebuie să aibă documentația tehnică pentru risc înalt?", "acceptedAnswer": {"@type": "Answer", "text": "Documentația tehnică cerută e mai structurată decât documentația internă tipică de dezvoltare — modulul dedicat din Governance Pack organizează exact secțiunile necesare."}}, {"@type": "Question", "name": "Cum facem evaluarea de conformitate practic?", "acceptedAnswer": {"@type": "Answer", "text": "Pornește de la clasificarea de risc (modulul 02) și continuă cu documentația tehnică — un proces structurat pe module, nu un audit extern separat."}}, {"@type": "Question", "name": "Ce înseamnă monitorizarea post-lansare pentru noi?", "acceptedAnswer": {"@type": "Answer", "text": "Obligațiile continuă după lansare — modulele de Înregistrare și Monitorizare și Raportarea Incidentelor acoperă urmărirea utilizării și gestionarea incidentelor pe termen lung."}}, {"@type": "Question", "name": "De ce o platformă externă și nu documentăm intern?", "acceptedAnswer": {"@type": "Answer", "text": "Documentația tehnică internă de dezvoltare nu e structurată pentru cerințele specifice ale regulamentului — platforma organizează exact secțiunile cerute, plus dovezi verificabile (RRVI™) peste documentația brută."}}, {"@type": "Question", "name": "Cât costă pentru o echipă tehnică mică?", "acceptedAnswer": {"@type": "Answer", "text": "Free Readiness Pack și Demo rămân gratuite — testezi clasificarea de risc pentru produsul tău real înainte de orice decizie de cost. Governance Pack-ul complet costă 690 EUR, plată unică, fără abonament și fără preț pe utilizator."}}, {"@type": "Question", "name": "Cum testăm asta pe un singur produs, înainte să extindem?", "acceptedAnswer": {"@type": "Answer", "text": "Generezi clasificarea de risc și inventarul pentru un singur sistem AI, în aproximativ 15 minute — suficient pentru un pilot tehnic real, nu o demonstrație abstractă."}}]
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Sistemul nostru AI e clasificat drept risc înalt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clasificarea de risc e primul modul din Governance Pack — te ajută să identifici categoria exactă pentru fiecare sistem AI pe care-l dezvolți sau folosești, înainte de a decide ce documentație tehnică e necesară."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sunt Provider sau Deployer conform EU AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Provider e cine dezvoltă sau introduce pe piață un sistem AI sub marca proprie; Deployer e cine folosește un sistem AI fără să-l fi dezvoltat. O firmă IT poate fi ambele, pentru sisteme diferite ale aceleiași firme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce documentație tehnică mi se cere?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Documentație tehnică detaliată, sistem de management al riscului, și — pentru sisteme de risc înalt — evaluare de conformitate înainte de introducerea pe piață."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce structură trebuie să aibă documentația tehnică pentru risc înalt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Documentația tehnică cerută e mai structurată decât documentația internă tipică de dezvoltare — modulul dedicat din Governance Pack organizează exact secțiunile necesare."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cum facem evaluarea de conformitate practic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pornește de la clasificarea de risc (modulul 02) și continuă cu documentația tehnică — un proces structurat pe module, nu un audit extern separat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce înseamnă monitorizarea post-lansare pentru noi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Obligațiile continuă după lansare — modulele de Înregistrare și Monitorizare și Raportarea Incidentelor acoperă urmărirea utilizării și gestionarea incidentelor pe termen lung."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De ce o platformă externă și nu documentăm intern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Documentația tehnică internă de dezvoltare nu e structurată pentru cerințele specifice ale regulamentului — platforma organizează exact secțiunile cerute, plus dovezi verificabile (RRVI™) peste documentația brută."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cât costă pentru o echipă tehnică mică?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Free Readiness Pack și Demo rămân gratuite — testezi clasificarea de risc pentru produsul tău real înainte de orice decizie de cost. Governance Pack-ul complet costă 690 EUR, plată unică, fără abonament și fără preț pe utilizator."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cum testăm asta pe un singur produs, înainte să extindem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generezi clasificarea de risc și inventarul pentru un singur sistem AI, în aproximativ 15 minute — suficient pentru un pilot tehnic real, nu o demonstrație abstractă."
+          }
+        }
+      ],
+      "@id": "https://eu-ai-act.ro/it-software.html#faq",
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/it-software.html"
+      }
     }
   ]
 }

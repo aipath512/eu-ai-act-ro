@@ -68,35 +68,121 @@
       "name": "Ofertă — EU AI Act Ready™",
       "description": "Cele trei niveluri ale ofertei EU AI Act Ready™, prețuri și conținut.",
       "inLanguage": "ro-RO",
-      "isPartOf": { "@type": "WebSite", "url": "https://eu-ai-act.ro/" }
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#website"
+      },
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "url": "https://eu-ai-act.ro/oferta.html",
+      "mentions": [
+        {
+          "@id": "https://eu-ai-act.ro/#governance-pack"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#euaiact"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://eu-ai-act.ro/" },
-        { "@type": "ListItem", "position": 2, "name": "Ofertă", "item": "https://eu-ai-act.ro/oferta.html" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eu-ai-act.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ofertă",
+          "item": "https://eu-ai-act.ro/oferta.html"
+        }
       ]
     },
     {
       "@type": "Service",
       "name": "EU AI Act Ready™",
-      "provider": { "@type": "Organization", "name": "AIVENTURE S.R.L.", "url": "https://eu-ai-act.ro/" },
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
       "areaServed": "RO",
       "offers": [
-        { "@type": "Offer", "name": "Free Readiness Pack, Demo și ASK", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://eu-ai-act.ro/#free-pack" },
-        { "@type": "Offer", "name": "Governance Pack complet — 70 documente, 10 module", "price": "690", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://eu-ai-act.ro/oferta.html" },
-        { "@type": "Offer", "name": "Conformitate activă — abonament anual opțional", "price": "390", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://eu-ai-act.ro/#contact" }
+        {
+          "@type": "Offer",
+          "name": "Free Readiness Pack, Demo și ASK",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://eu-ai-act.ro/#free-pack"
+        },
+        {
+          "@type": "Offer",
+          "name": "Governance Pack complet — 70 documente, 10 module",
+          "price": "690",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://eu-ai-act.ro/oferta.html"
+        },
+        {
+          "@type": "Offer",
+          "name": "Conformitate activă — abonament anual opțional",
+          "price": "390",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://eu-ai-act.ro/#contact"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "Cei 690 EUR sunt plată unică sau abonament?", "acceptedAnswer": { "@type": "Answer", "text": "Plată unică. Governance Pack-ul nu are abonament și nu are preț pe utilizator. Abonamentul Conformitate activă (390 EUR/an) este un serviciu separat și complet opțional." } },
-        { "@type": "Question", "name": "De ce 690 EUR și nu mai puțin?", "acceptedAnswer": { "@type": "Answer", "text": "Alternativele reale din piață sunt: pachete de consultanță în România de la circa 800 EUR, audituri juridice și tehnice între 5.000 și 60.000 EUR, platforme internaționale de AI governance de la 10.000-20.000 EUR pe an. Governance Pack-ul acoperă documentația și dovezile verificabile la o fracțiune din aceste costuri." } },
-        { "@type": "Question", "name": "Ce primesc gratuit, fără să plătesc nimic?", "acceptedAnswer": { "@type": "Answer", "text": "Free Readiness Pack (previzualizare până la 40% din pachet, adaptată firmei tale), Demo-ul complet cu toate cele 70 de documente și ASK, asistentul conversațional pe documentația EU AI Act. Toate rămân gratuite permanent." } },
-        { "@type": "Question", "name": "Ce nu este inclus în ofertă?", "acceptedAnswer": { "@type": "Answer", "text": "Nu certificăm conformitatea și nu suntem organism notificat. Nu înlocuim consultanța juridică. Pachetul susține pregătirea demonstrabilă și produce dovezile verificabile — decizia finală de conformitate rămâne la firmă și la autoritatea competentă." } },
-        { "@type": "Question", "name": "Există condiții pentru contabili, avocați și consultanți?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Pentru profesioniștii care oferă serviciul propriilor clienți există un program de partener, cu condiții stabilite separat, în funcție de volum." } }
-      ]
+        {
+          "@type": "Question",
+          "name": "Cei 690 EUR sunt plată unică sau abonament?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plată unică. Governance Pack-ul nu are abonament și nu are preț pe utilizator. Abonamentul Conformitate activă (390 EUR/an) este un serviciu separat și complet opțional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De ce 690 EUR și nu mai puțin?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alternativele reale din piață sunt: pachete de consultanță în România de la circa 800 EUR, audituri juridice și tehnice între 5.000 și 60.000 EUR, platforme internaționale de AI governance de la 10.000-20.000 EUR pe an. Governance Pack-ul acoperă documentația și dovezile verificabile la o fracțiune din aceste costuri."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce primesc gratuit, fără să plătesc nimic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Free Readiness Pack (previzualizare până la 40% din pachet, adaptată firmei tale), Demo-ul complet cu toate cele 70 de documente și ASK, asistentul conversațional pe documentația EU AI Act. Toate rămân gratuite permanent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce nu este inclus în ofertă?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nu certificăm conformitatea și nu suntem organism notificat. Nu înlocuim consultanța juridică. Pachetul susține pregătirea demonstrabilă și produce dovezile verificabile — decizia finală de conformitate rămâne la firmă și la autoritatea competentă."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Există condiții pentru contabili, avocați și consultanți?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da. Pentru profesioniștii care oferă serviciul propriilor clienți există un program de partener, cu condiții stabilite separat, în funcție de volum."
+          }
+        }
+      ],
+      "@id": "https://eu-ai-act.ro/oferta.html#faq",
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/oferta.html"
+      }
     }
   ]
 }
