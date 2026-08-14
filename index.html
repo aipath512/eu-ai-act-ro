@@ -432,6 +432,7 @@ window.addEventListener("error", function (e) {
       <a href="/why-us.html">De ce noi?</a>
       <a href="#faq">Resurse</a>
       <a href="/transparency.html">Transparență Art. 50</a>
+      <a href="https://eu-112.ro?utm_source=eu-ai-act-ro&utm_medium=nav" style="color:var(--gold);font-weight:600;">Întreabă rapid → EU-112</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="#free-pack" class="nav-cta">Firma Ta →</a>
@@ -1139,6 +1140,11 @@ window.addEventListener("error", function (e) {
           <span class="cc-value">contact@5thelement.ai</span>
           <span class="cc-note">pentru oferte, facturare și documente</span>
         </a>
+        <a class="contact-channel" href="https://eu-112.ro?utm_source=eu-ai-act-ro&utm_medium=contact-channel">
+          <span class="cc-label">EU-112</span>
+          <span class="cc-value">eu-112.ro</span>
+          <span class="cc-note">întrebare rapidă, gratuită, fără cont — 1000+ răspunsuri</span>
+        </a>
       </div>
 
       <form id="contactForm" class="form-card" style="max-width:640px;">
@@ -1301,5 +1307,16 @@ window.addEventListener("error", function (e) {
 <script src="/assets/js/ask-demo-lead.js?v=5"></script>
 <script src="/assets/js/generator.js?v=1"></script>
 <script src="/assets/js/auth.js?v=2"></script>
+<script>
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var source = params.get('utm_source');
+    if(source === 'eu-112-ro'){
+      var medium = params.get('utm_medium') || 'unknown';
+      fetch('https://api.countapi.xyz/hit/eu-ai-act-ro/from-eu-112-ro-' + medium).catch(function(){});
+      fetch('https://api.countapi.xyz/hit/eu-ai-act-ro/from-eu-112-ro-total').catch(function(){});
+    }
+  })();
+</script>
 </body>
 </html>
