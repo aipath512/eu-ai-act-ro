@@ -15,14 +15,19 @@
   ],
   "offers": [
     {
-      "name": "Free Readiness Pack",
+      "name": "Governance — Free Readiness Pack, Demo, ASK",
       "price": "0",
       "priceCurrency": "EUR"
     },
     {
-      "name": "EU AI Act Ready™ Governance Pack",
+      "name": "Transparency — pachet complet 70 documente, RRVI inclus",
       "priceCurrency": "EUR",
       "price": "690"
+    },
+    {
+      "name": "Conformitate activă — abonament anual opțional",
+      "priceCurrency": "EUR",
+      "price": "390"
     }
   ],
   "knowsAbout": [

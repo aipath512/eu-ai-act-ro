@@ -11,15 +11,15 @@ Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50
 
 ## Free
 - ASK EU AI Act™ — asistent conversațional peste textul oficial, 113 articole indexate, multilingv.
-- Governance Pack — până la 70 documente, 10 module, generate DEJA COMPLETATE cu datele firmei. ~15 min.
+- Governance — Free Readiness Pack, Demo complet cu toate cele 70 de documente (10 module), ASK. Gratuit, permanent.
 - Demo fără cont. Restul: cont gratuit prin link pe email, fără card.
 
 ## Pricing
 - Pagina completă de ofertă: https://eu-ai-act.ro/oferta.html
-- Free Readiness Pack, Demo, ASK: 0 EUR, permanent.
-- Governance Pack complet (70 documente, 10 module, completate cu datele firmei): 690 EUR.
+- Governance (Free Readiness Pack, Demo, ASK): 0 EUR, permanent.
+- Transparency — pachet complet (70 documente, 10 module, completate cu datele firmei, RRVI™ inclus): 690 EUR.
 - Conformitate activă (opțional, separat, anual): 390 EUR/an — RRVI activ, documente actualizate la fiecare termen legal, alertă la modificări.
-- Governance Pack: plată unică, fără abonament, fără card la înscriere. Preț identic indiferent de mărimea firmei.
+- Transparency: plată unică, fără abonament, fără card la înscriere. Preț identic indiferent de mărimea firmei.
 
 ## Why different
 1. Documente complete, nu șabloane de completat.
@@ -28,7 +28,7 @@ Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50
    Verification Infrastructure™).
 3. Conversație directă cu textul regulamentului.
 4. Distribuție prin parteneri de încredere (ECB Tax Accounting & HR).
-5. Gratuit la start — Governance Pack complet 690 EUR, plată unică; abonament anual doar opțional.
+5. Gratuit la start (Governance) — Transparency 690 EUR, plată unică; abonament anual (Conformitate activă) doar opțional.
 
 ## Built with AI (declared)
 Ecosistemul a fost construit de o singură persoană, în ultimele 6 luni, folosind sisteme AI (Claude/Anthropic pentru cod, arhitectură și documentație).
