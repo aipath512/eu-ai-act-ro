@@ -36,6 +36,9 @@
       "name": "FAQ Hub — 120 de întrebări despre EU AI Act, pe categorii",
       "isPartOf": {
         "@id": "https://eu-ai-act.ro/#website"
+      },
+      "author": {
+        "@id": "https://eu-ai-act.ro/faq-hub.html#dan-ionescu"
       }
     },
     {
@@ -1344,7 +1347,18 @@
       "@id": "https://eu-ai-act.ro/faq-hub.html#dan-ionescu",
       "name": "Dan Ionescu",
       "alternateName": "Eli",
-      "jobTitle": "Fondator, AIVENTURE S.R.L."
+      "jobTitle": "Fondator, AIVENTURE S.R.L.",
+      "url": "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+      "sameAs": [
+        "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+        "https://www.linkedin.com/company/107338970",
+        "https://www.linkedin.com/showcase/5thelement-ai/",
+        "https://www.crunchbase.com/organization/aiventure-s-r-l",
+        "https://www.facebook.com/people/Aiventure/61573220584246",
+        "https://x.com/aipath512",
+        "https://www.youtube.com/@AIVenture-q8u",
+        "https://medium.com/@aipath512"
+      ]
     },
     {
       "@type": "Legislation",
@@ -1449,6 +1463,29 @@
   @media (max-width:780px) { .faqhub-grid { grid-template-columns:1fr 1fr; } }
   @media (max-width:480px) { .faqhub-grid { grid-template-columns:1fr; } }
 </style>
+<style>
+  /* casetă autor (E-E-A-T) + tabel termene cheie — portate de pe eu-112.ro */
+  .byline{max-width:760px;margin:18px 0 0;padding:14px 18px;background:var(--panel);
+    border:1px solid var(--border);border-radius:10px;font-size:12px;color:var(--text-faint);}
+  .byline-name{color:var(--gold);font-weight:700;}
+  .byline-links{margin-top:6px;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11px;}
+  .byline-links a{color:var(--text-faint);text-decoration:none;}
+  .byline-links a:hover{color:var(--gold);text-decoration:underline;}
+
+  .facts-wrap{margin:28px 0 0;}
+  .facts-title{font-size:16px;color:var(--gold);margin-bottom:12px;font-family:var(--serif);}
+  .facts-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--border);border-radius:10px;overflow:hidden;font-size:12.5px;}
+  .facts-table th{background:#0d0d0d;color:var(--gold);text-align:left;padding:9px 12px;font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;}
+  .facts-table td{padding:9px 12px;border-top:1px solid var(--border);color:var(--text-dim);}
+  .facts-table td:nth-child(2){color:var(--gold);font-weight:600;white-space:nowrap;}
+  .facts-table td:nth-child(3){color:var(--text-faint);font-size:11px;}
+  .facts-note{font-size:11px;color:#6b6b60;margin-top:10px;}
+  @media(max-width:900px){
+    .facts-table{font-size:11.5px;}
+    .facts-table td:nth-child(2){white-space:normal;}
+    .facts-table th,.facts-table td{padding:7px 9px;}
+  }
+</style>
 </head>
 <body>
 
@@ -1486,6 +1523,31 @@
       </nav>
       <h1>120 de întrebări, <em>12 categorii</em>, câte o pagină dedicată.</h1>
       <p class="hero-subtitle">Alege o categorie — fiecare are propria pagină, cu schema.org FAQPage proprie și 10 întrebări canonice.</p>
+
+      <div class="byline">
+        <span class="byline-name">Scris de Dan Ionescu</span> — CEO &amp; Fondator, AiVenture S.R.L.
+        <div class="byline-links"><a href="https://ro.linkedin.com/in/dan-ionesco-a856082a0" rel="noopener" target="_blank">LinkedIn (personal)</a> · <a href="https://www.linkedin.com/company/107338970" rel="noopener" target="_blank">LinkedIn (companie)</a> · <a href="https://www.linkedin.com/showcase/5thelement-ai/" rel="noopener" target="_blank">LinkedIn (5thelement.ai)</a> · <a href="https://www.crunchbase.com/organization/aiventure-s-r-l" rel="noopener" target="_blank">Crunchbase</a> · <a href="https://www.facebook.com/people/Aiventure/61573220584246" rel="noopener" target="_blank">Facebook</a> · <a href="https://x.com/aipath512" rel="noopener" target="_blank">X</a> · <a href="https://www.youtube.com/@AIVenture-q8u" rel="noopener" target="_blank">YouTube</a> · <a href="https://api.whatsapp.com/send/?phone=40737123540" rel="noopener" target="_blank">WhatsApp</a> · <a href="https://medium.com/@aipath512" rel="noopener" target="_blank">Medium</a></div>
+      </div>
+
+      <div class="facts-wrap">
+        <h2 class="facts-title">Termene cheie — actualizate cu Omnibus-ul (Regulamentul (UE) 2026/1744, 8 iulie 2026)</h2>
+        <table class="facts-table">
+          <thead>
+            <tr><th>Obligație</th><th>Termen</th><th>Sursă</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Transparență (chatboturi, deepfake, conținut generat) — Art. 50</td><td>2 august 2026</td><td>Regulamentul (UE) 2024/1689</td></tr>
+            <tr><td>Sisteme high-risk — Anexa III (recrutare, educație, credit etc.)</td><td>2 decembrie 2027</td><td>Amânat prin Omnibus, Art. 6 alin. 2</td></tr>
+            <tr><td>Sisteme high-risk — Anexa I (componente de siguranță în produse)</td><td>2 august 2028</td><td>Amânat prin Omnibus, Art. 6 alin. 1</td></tr>
+            <tr><td>Notificare incident grav — termen standard</td><td>15 zile</td><td>Art. 73</td></tr>
+            <tr><td>Notificare incident grav — deces sau încălcare gravă a drepturilor</td><td>2 zile</td><td>Art. 73</td></tr>
+            <tr><td>Notificare incident grav — deces, cu investigație suplimentară</td><td>10 zile</td><td>Art. 73</td></tr>
+            <tr><td>Retenție documentație tehnică (provider)</td><td>minim 10 ani</td><td>Art. 18</td></tr>
+            <tr><td>Retenție loguri (deployer)</td><td>minim 6 luni</td><td>Art. 26 alin. 5</td></tr>
+          </tbody>
+        </table>
+        <p class="facts-note">Toate termenele reflectă modificările aduse de Regulamentul (UE) 2026/1744 (Omnibus) — multe surse online mai vechi arată încă termenul inițial de 2 august 2026 pentru toate sistemele high-risk.</p>
+      </div>
       <div class="faqhub-grid">
         
         <a href="/faq-general.html" class="faqhub-card">
