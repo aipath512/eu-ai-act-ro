@@ -365,6 +365,7 @@ nav.main-links a:hover{color:var(--gold);}
 /* ---------- faq ---------- */
 .faq-item{border-bottom:1px solid var(--border);padding:20px 0;}
 .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:var(--sans);font-size:15.5px;}
+h2.faq-q,h3.faq-q,h4.faq-q{margin:0;font-weight:400;letter-spacing:normal;line-height:1.5;color:inherit;}
 .faq-q .plus{font-family:var(--mono);color:var(--gold);transition:transform .2s ease;}
 .faq-item.open .plus{transform:rotate(45deg);}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--text-dim);font-size:14.5px;}
