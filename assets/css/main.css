@@ -436,13 +436,14 @@ footer{background:var(--bg-alt);}
 }
 
 /* ---------- mobil: CTA vizibil pe primul ecran ---------- */
-@media(max-width:640px){
+@media(max-width:900px){
   .status-bar .status-row{justify-content:flex-start;}
   .status-bar .live{display:none;}
   .status-bar .status-row > span:last-child{display:none;}
   .deploy-strip{display:none;}
+  .hero > .wrap > .tag{display:none;}
   .hero nav[aria-label="breadcrumb"]{display:none;}
-  .hero{padding:28px 0 40px;}
+  .hero{padding:24px 0 40px;}
   .hero h1{font-size:30px;line-height:1.12;}
   .hero-subtitle{font-size:15px;margin-top:10px;}
   .hero .lede{font-size:16px;margin-top:14px;}
