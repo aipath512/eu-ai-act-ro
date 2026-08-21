@@ -443,6 +443,7 @@ footer{background:var(--bg-alt);}
   .deploy-strip{display:none;}
   .hero > .wrap > .tag{display:none;}
   .hero nav[aria-label="breadcrumb"]{display:none;}
+  .free-kicker{display:none;}
   .hero{padding:24px 0 40px;}
   .hero h1{font-size:30px;line-height:1.12;}
   .hero-subtitle{font-size:15px;margin-top:10px;}
