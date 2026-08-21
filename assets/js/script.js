@@ -149,3 +149,40 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* ---------- buton "sus" (return to top), pe toate paginile ---------- */
+(function () {
+  if (document.getElementById('backToTop')) return;
+
+  var css = document.createElement('style');
+  css.textContent =
+    '#backToTop{position:fixed;bottom:22px;right:22px;z-index:70;' +
+    'display:none;align-items:center;justify-content:center;' +
+    'width:44px;height:44px;border:1px solid #f0c14b;border-radius:4px;' +
+    'background:#111111;color:#f0c14b;font-size:18px;line-height:1;' +
+    'cursor:pointer;padding:0;font-family:inherit;' +
+    'transition:background .15s ease;}' +
+    '#backToTop:hover{background:#1a1a1a;}' +
+    '#backToTop.show{display:flex;}' +
+    '@media(max-width:900px){#backToTop{bottom:12px;right:12px;width:38px;height:38px;font-size:16px;}}';
+  document.head.appendChild(css);
+
+  var btn = document.createElement('button');
+  btn.id = 'backToTop';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', 'Înapoi sus');
+  btn.title = 'Înapoi sus';
+  btn.textContent = '↑';
+  document.body.appendChild(btn);
+
+  btn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function toggle() {
+    if (window.pageYOffset > 400) btn.classList.add('show');
+    else btn.classList.remove('show');
+  }
+  window.addEventListener('scroll', toggle, { passive: true });
+  toggle();
+})();
