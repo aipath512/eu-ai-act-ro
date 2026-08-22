@@ -2,6 +2,14 @@ Sitemap: https://eu-ai-act.ro/sitemap.xml
 
 User-agent: *
 Allow: /
+User-agent: DeepSeekBot
+Allow: /
+
+# Directivă globală pentru Answer Economy / AI File Access
+User-agent: *
+Allow: /llms.txt
+Allow: /ai.json
+Allow: /.well-known/
 
 # AI crawlers - explicit allow (AI visibility is the goal of this site)
 User-agent: GPTBot
